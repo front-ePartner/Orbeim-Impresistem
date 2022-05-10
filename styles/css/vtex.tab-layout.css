@@ -1,0 +1,38 @@
+/*------------------------------------------------------------------*/
+/*  Cambiando estilo de boton de vitrinas de manera independiente  */
+/*----------------------------------------------------------------*/
+/*Estilos de botones de vitrinas cuando no están activos*/
+.listItem :global(.vtex-button) {
+  border-color: rgb(190, 190, 190);
+  height: 25px;
+  color: rgb(190, 190, 190);
+  font-size: 12px;
+  width: 100%;
+}
+
+/*Estilos de botones de vitrinas cuando si están activos*/
+.listItemActive :global(.vtex-button) {
+  background: #001e49;
+  height: 25px;
+  color: #fff;
+  border-color: #001e49;
+  font-size: 12px;
+  width: 100%;
+}
+
+/*Espaciado entre botones*/
+.listContainer {
+  display: flex;
+}
+/*----------------------------------------------------------*/
+.listItem--listTabProductosDestacado{
+  width: 25%;
+  margin: 0px 0px 10px 0px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-width: 700px) {
+.contentContainer {
+  padding: 0px 0px !important;
+}
+}

@@ -1,0 +1,40 @@
+{
+  "flex-layout.col#Shelf-tablets": {
+    "props": {
+      "blockClass": ["Shelf", "Shelf--tablets"]
+    },
+    "children": [
+      "list-context.product-list#Shelf-tablets"
+    ]
+  },
+
+  // * Container
+  "list-context.product-list#Shelf-tablets": {
+    "props": {
+      "blockClass": [
+        "Shelf__container",
+        "Shelf__container--tablets"
+      ],
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "children": ["slider-layout#Shelf-tablets"],
+    "blocks": ["product-summary.shelf#HomeVitrinas"]
+  },
+
+  // * Slider Shelf
+  "slider-layout#Shelf-tablets": {
+    "props": {
+      "blockClass": [
+        "Shelf__Slider",
+        "Shelf__Slider--tablets"
+      ],
+      "showPaginationDots": "mobileOnly",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true
+    }
+  }
+}

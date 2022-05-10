@@ -1,0 +1,40 @@
+{
+  "flex-layout.col#Shelf-destacados": {
+    "props": {
+      "blockClass": ["Shelf", "Shelf--laptops"]
+    },
+    "children": [
+      "list-context.product-list#Shelf-destacados"
+    ]
+  },
+
+  // * Container
+  "list-context.product-list#Shelf-destacados": {
+    "props": {
+      "blockClass": [
+        "Shelf__container",
+        "Shelf__container--laptops"
+      ],
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "children": ["slider-layout#Shelf-destacados"],
+    "blocks": ["product-summary.shelf#HomeVitrinas"]
+  },
+
+  // * Slider Shelf
+  "slider-layout#Shelf-destacados": {
+    "props": {
+      "blockClass": [
+        "Shelf__Slider",
+        "Shelf__Slider--laptops"
+      ],
+      "showPaginationDots": "mobileOnly",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true
+    }
+  }
+}

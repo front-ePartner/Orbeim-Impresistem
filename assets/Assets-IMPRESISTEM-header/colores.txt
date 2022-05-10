@@ -1,0 +1,8 @@
+background: #F9F9F9
+azul principal: #001E49
+azul claro: #EDF4FF
+gris oscuro: #2A2A2A
+gris: #808080
+gris claro: #D3D3D3
+amarillo: #FFC533
+amarillo claro: #FFEDC2

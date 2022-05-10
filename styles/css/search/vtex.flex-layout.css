@@ -32,3 +32,96 @@
 .flexCol--summaryUpDetailsListMobile {
   margin-bottom: 0.25rem
 }
+/*-------------------------------------*/
+/*               desktop part          */
+/*-------------------------------------*/
+
+/*footer*/
+.flexCol--desarrollado--por--desktop{
+  margin-top: -46px;
+}
+
+.flexColChild--desarrollado--por--desktop :global(.vtex-rich-text-0-x-paragraph){
+  color: white;
+
+}
+
+/*-------------------------------------*/
+/*-------------------------------------*/
+/* phone part                          */
+/*-------------------------------------*/
+
+.flexRow--price--cart{
+  position: relative; /*vitrina*/
+}
+
+.flexRow--separacion{
+  margin-left: 6%;
+  margin-top: -3%;
+  background: #bdb9b9;
+  width: 171px;
+  height: 1px;
+}
+
+.flexRow--phone__second--collage--imagenes{
+  height: 296px;
+}
+
+/* espacio para no tener que colocar una margen superior*/
+
+.flexRow--phone__home__espacio{
+  background: pink;
+  height: 24px;
+}
+
+.flexRow--phone__home__espacio--grande{
+  background: pink;
+  height: 44px;
+}
+
+/*--------------------------------------*/
+/* footer del phone                     */
+/*--------------------------------------*/
+
+.flexColChild--phone--desarrollado--por{
+  margin-left: 147px;
+  margin-bottom: 31px;
+}
+
+
+.flexColChild--phone--desarrollado--por :global(.vtex-rich-text-0-x-paragraph){
+  color: white;
+  font-weight: 600;
+}
+
+.flexRow--2-footer-mobile{
+  background: black;
+}
+
+.flexRow--newsletter-form--phone{
+  position: relative;
+    margin-left: 14%;
+}
+
+
+.flexCol--espacio--menu--divisiones{
+  background: rgb(214, 214, 214);
+    height: 1px;
+}
+
+.flexRow--home__footer--columna-1{
+  width: 424%;
+}
+.flexRow--home__footer--columna-2{
+  width: 562%;
+}
+.flexRow--home__footer--columna-3{
+  width: 1938%;
+}
+.flexRow--home__footer--columna-4{
+  width: 532%;
+}
+
+/*--------------------------------------*/
+
+/*--------------------------------------*/

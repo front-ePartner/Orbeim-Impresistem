@@ -9,9 +9,16 @@
   font-size: 1.25rem;
 }
 
-.sellingPriceValue {
-  font-size: 2.25rem;
-  font-weight: 700;
+/* Cambio de color y posicion del precio de vitrinas*/
+
+@media screen and (max-width: 700px) {
+  .sellingPriceValue {
+    position: relative;
+    bottom: -2px;
+    font-size: 15px;
+    font-weight: 700;
+    z-index: 999999999;
+  }
 }
 
 .installments {
@@ -22,6 +29,7 @@
 .savings {
   font-weight: 500;
   color: #79B03A;
+  display: none;
 }
 
 .sellingPriceValue--summary {
@@ -76,4 +84,16 @@
   vertical-align: baseline;
   color: #FFFFFF;
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+.currencyDecimal {
+  display: none;
+}
+.currencyFraction {
+  display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+.listPrice .listPriceValue {font-size: 12px;}
 }

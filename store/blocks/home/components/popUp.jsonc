@@ -1,0 +1,122 @@
+{
+  "responsive-layout.desktop#popUp_desktop":{
+    "children":[
+      "modal-trigger#trigger_modal_popUp_desktop"
+    ]
+  },
+  "responsive-layout.tablet#popUp_tablet":{
+    "children":[
+      "modal-trigger#trigger_modal_popUp_tablet"
+    ]
+  },
+  "responsive-layout.mobile#popUp_mobile":{
+    "children":[
+      "modal-trigger#trigger_modal_popUp_mobile"
+    ]
+  },
+
+  //=============================================== ESCRITORIO
+  "modal-trigger#trigger_modal_popUp_desktop": {
+    "props": {
+      "trigger": "event",
+      "customPixelEventName": "pageView"
+    },
+    "children":[
+      "modal-layout#modal_popUp_desktop"
+    ]
+  },
+  "modal-layout#modal_popUp_desktop": {
+    "props":{
+      "blockClass":"modal_popUp_desktop"
+    },
+    "children": [
+      //"image#closePopUp",
+      "modal-header#blanco",
+      "image#imagenPopUp_desktop"
+    ]
+  },
+  "modal-header#blanco": {
+    "props": {
+      "blockClass": "x-de-cerrado"
+    }
+  },
+
+  //=============================================== TABLET
+  "modal-trigger#trigger_modal_popUp_tablet": {
+    "props": {
+      "trigger": "event",
+      "customPixelEventName": "pageView"
+    },
+    "children":[
+      "modal-layout#modal_popUp_tablet"
+    ]
+  },
+  "modal-layout#modal_popUp_tablet": {
+    "props":{
+      "blockClass":"modal_popUp_tablet",
+      "fullScreen": true
+    },
+    "children": [
+      //"image#closePopUp",
+      "modal-header#blanco",
+      "image#imagenPopUp_tablet"
+    ]
+  },
+
+  //=============================================== MOVIL
+  "modal-trigger#trigger_modal_popUp_mobile": {
+    "props": {
+      "trigger": "event",
+      "customPixelEventName": "pageView"
+    },
+    "children":[
+      "modal-layout#modal_popUp_mobile"
+    ]
+  },
+  "modal-layout#modal_popUp_mobile": {
+    "props":{
+      "blockClass":"modal_popUp_mobile",
+      "fullScreen": true
+    },
+    "children": [
+      //"image#closePopUp",
+      "modal-header#blanco",
+      "image#imagenPopUp_mobile"
+    ]
+  },
+
+  //=============================================== IMAGENES
+  "image#closePopUp": {
+    "props": {
+      "blockClass": "img-closePopUp"
+      //"src": "assets/img/cerrar.png"
+    }
+  },
+  "image#imagenPopUp_desktop": {
+    "props": {
+      "src": "assets/Assets-IMPRESISTEM-popup/popup-desk.png",
+      "link": {
+        "newTab": true,
+        "url": "https://www.google.com"
+      }
+    }
+  },
+  "image#imagenPopUp_tablet": {
+    "props": {
+      "src": "assets/Assets-IMPRESISTEM-popup/popup-mobile.png",
+      "link": {
+        "newTab": true,
+        "url": "https://www.google.com"
+      }
+    }
+  },
+  "image#imagenPopUp_mobile": {
+    "props": {
+      "src": "assets/Assets-IMPRESISTEM-popup/popup-mobile.png",
+      "link": {
+        "newTab": true,
+        "url": "https://www.google.com"
+      }
+    }
+  }
+}

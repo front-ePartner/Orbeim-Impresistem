@@ -1,0 +1,7 @@
+/*Insertando fuente personalizada*/
+@font-face{
+  font-family:'TT-Norms';
+  font-style:normal;
+  font-weight:400;
+  src: url(https://orbeim.myvtex.com/arquivos/TT-Norms-Regular.woff.css) format('woff')
+}

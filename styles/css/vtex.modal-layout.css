@@ -16,7 +16,6 @@
   }
 }
 
-
 @media screen and (min-width: 75em) {
   .paper--quickview {
     width: calc(100% - 4rem);
@@ -64,7 +63,7 @@
 }
 
 .triggerContainer--quickview {
-  padding: .75rem;
+  padding: 0.75rem;
 }
 
 .triggerContainer {
@@ -73,10 +72,11 @@
 
 .actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview) {
   border-top-color: rgb(238, 238, 238);
-  box-shadow: -4px 0px 27px -12px rgba(0,0,0,0.64);
+  box-shadow: -4px 0px 27px -12px rgba(0, 0, 0, 0.64);
 }
 
-.actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview) .actionsContentWrapper {
+.actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview)
+  .actionsContentWrapper {
   border-top-color: transparent;
 }
 
@@ -86,4 +86,44 @@
 
 .paper--product-gifts {
   padding: 1.5rem;
+}
+
+.paper--modal_popUp_desktop,
+.paper--modal_popUp_tablet{
+  background: none;
+}
+.paper--modal_popUp_mobile{
+  max-width: fit-content !important;
+  max-height: 84% !important;
+  display: flex;
+  justify-content: center;
+  background: none;
+}
+.backdrop--modal_popUp_desktop,
+.backdrop--modal_popUp_tablet,
+.backdrop--modal_popUp_mobile{
+  background-color: black;
+}
+/*
+  __  __          _ _          ___                        
+ |  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __ _   _ 
+ | |\/| |/ _ \/ _` | |/ _` | | | | | | | |/ _ \ '__| | | |
+ | |  | |  __/ (_| | | (_| | | |_| | |_| |  __/ |  | |_| |
+ |_|  |_|\___|\__,_|_|\__,_|  \__\_\\__,_|\___|_|   \__, |
+                                                    |___/ 
+
+*/
+@media (max-width: 600px) {
+  .paperScrollContent {
+    max-width: 8rem;
+  }
+
+}
+
+
+/*--------------QA DESPUES DEL 09-05-2022*/
+
+.headerContainer--x-de-cerrado {
+  position: absolute;
+  right: 0;
 }

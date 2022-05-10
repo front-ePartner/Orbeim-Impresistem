@@ -1,0 +1,435 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+
+  /*footer desktop*/
+  "footer-layout.desktop": {
+    "props":{
+      "blockClass": "footer--desktop"
+    },
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#medios--de--pago--texto",
+      "flex-layout.row#medios--de--pago",
+      "flex-layout.row#footer-2-desktop"
+    ]
+  },
+  /*primera sesion del footer*/
+  "flex-layout.row#footer-1-desktop": {
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    },
+    "children": [
+      "flex-layout.col#footer-1-desktop--menu",
+      "flex-layout.col#siguenos--en"
+    ]
+  },
+  "flex-layout.col#footer-1-desktop--menu":{
+
+    "children":[
+      "flex-layout.row#footer-1-desktop--menu--fila"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop--menu--fila":{
+    "props":{
+      "blockClass":"footer-1-desktop--menu--fila"
+    },
+    "children":[
+      "flex-layout.col#sobre--nosotros",
+      "flex-layout.col#productos",
+      "flex-layout.col#servicio--al--cliente",
+      "flex-layout.col#contactanos"
+    ]
+  },
+  "flex-layout.col#sobre--nosotros":{
+    "children":[
+      "vtex.menu@2.x:menu#sobre--nosotros"
+    ]
+  },
+  "flex-layout.col#productos":{
+    "children":[
+      "vtex.menu@2.x:menu#productos"
+    ]
+  },
+  "flex-layout.col#servicio--al--cliente":{
+    "children":[
+      "vtex.menu@2.x:menu#servicio--al--cliente"
+    ]
+  },
+  "flex-layout.col#contactanos":{
+    "props":{
+      "marginRight":2
+    },
+    "children":[
+      "vtex.menu@2.x:menu#contactanos"
+    ]
+  },
+  /*segunda sesion del footer*/
+  "flex-layout.row#medios--de--pago--texto":{
+    "props":{
+      "blockClass": "medios--de--pago"
+    },
+    "children":[
+      "rich-text#medios--de--pago"
+    ]
+  },
+  "rich-text#medios--de--pago":{
+    "props":{
+      "blockClass": ["flexRow--home__collage--imagenes", "title-medios-de-pago"],
+      "text":"##### MEDIOS DE PAGO"
+    }
+  },
+
+  /*tercera sesion del footer*/
+  "flex-layout.row#medios--de--pago":{
+    "props":{
+      "blockClass":"medios--de--pago"
+    },
+    "children":[
+      "flex-layout.col#medios--de--pago--desktop",
+      "flex-layout.col#desarrollado--por"
+    ]
+  },
+  "flex-layout.col#medios--de--pago--desktop":{
+    "props":{
+      "width":"73%"
+    },
+    "children":[
+      "image#medios--de--pago"
+    ]
+  },
+  "image#medios--de--pago":{
+    "props":{
+      "blockClass":"medios--de--pago",
+      "src":"assets/iconosIM/pagos-desk.png",
+      "maxHeight": 20
+    }
+  },
+  "flex-layout.col#desarrollado--por":{
+    "props":{
+      "blockClass":"desarrollado--por--desktop"
+    },
+    "children":[
+      "rich-text#desarrollado--por",
+      "image#desarrollado--por"
+    ]
+  },
+  "rich-text#desarrollado--por":{
+    "props":{
+      "text":"DESARROLLADO POR"
+    }
+  },
+  "image#desarrollado--por":{
+    "props":{
+      "blockClass":"desarrollado--por--logo",
+      "src":"assets/iconosIM/desarrolladores.png",
+      "maxHeight": 24
+    }
+  },
+
+
+
+  "flex-layout.col#siguenos--en":{
+    "props":{
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true,
+      "blockClass":"siguenos--en--row",
+      "width":"30%"
+    },
+    "children":[
+      "newsletter-form",
+      "rich-text#siguenos--en",
+      "flex-layout.row#social-networks"
+    ]
+  },
+
+  /*input para ingresar correo*/
+  "newsletter-form": {
+    "children": [
+      "flex-layout.row#newsletter-form",
+      "newsletter-checkbox-confirmation"
+    ]
+  },
+  "flex-layout.row#newsletter-form":{
+    "props":{
+      //"preventHorizontalStretch":true,
+      //"preventVerticalStretch":true,
+      "blockClass": "newsletter-form"
+    },
+    "children": [
+      "flex-layout.col#newsletter-form--email",
+      "flex-layout.col#newsletter-form--submit"
+    ]
+  },
+  "flex-layout.col#newsletter-form--email":{
+    "props":{
+      "width": "88%"
+    },
+    "children":[
+      "newsletter-input-email"
+    ]
+  },
+  "newsletter-input-email":{
+    "props":{
+      "placeholderText":"Ingresa tu correo"
+    }
+  },
+  "flex-layout.col#newsletter-form--submit":{
+    "props":{
+      "blockClass":"newsletter-form--submit"
+    },
+    "children":[
+      "newsletter-submit"
+    ]
+  },
+  "newsletter-submit":{
+    "props":{
+      "blockClass":"newsletter-submit",
+      "submitButtonLabel":""
+    }
+  },
+  "newsletter-checkbox-confirmation":{
+    "props":{
+      "blockClass":"newsletter-checkbox-confirmation",
+      "checkboxLabel":"Si, quiero recibir correos electrónicos sobre productos y noticias"
+    }
+  },
+
+  "rich-text#siguenos--en":{
+    "props":{
+      "blockClass": "siguenos--en",
+      "text":" SIGUENOS EN"
+    }
+  },
+
+  "flex-layout.row#social-networks":{
+    "props":{
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true
+    },
+    "children":[
+      "flex-layout.col#facebook",
+      "flex-layout.col#instagram"
+    ]
+  },
+  "flex-layout.col#facebook":{
+    "props":{
+      "blockClass":"logo--siguenos--facebook"
+    }
+  },
+  "flex-layout.col#instagram":{
+    "props":{
+      "blockClass":"logo--siguenos--instagram"
+    }
+  },
+  "image#facebook":{
+    "props":{
+      "src":"assets/iconosIM/fb-hover.png",
+      "maxHeight": 24
+    }
+  },
+  "image#instagram":{
+    "props":{
+      "blockClass":"logo--siguenos--instagram",
+      "src":"assets/iconosIM/ig-hover.png",
+      "maxHeight": 24
+    }
+  },
+
+
+  /*ultima sesion del footer*/
+  "flex-layout.row#footer-2-desktop": {
+    "children": ["rich-text#footer"],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "Todos los derechos reservados. COPYRIGHT © IMPRESISTEM",
+      "blockClass": ["footer", "footer-copyright"]
+    }
+  },
+
+  /*parte mobile*/
+  "footer-layout.mobile": {
+    "props": {
+      "blockClass": "footer--mobile"
+    },
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile"
+    ]
+  },
+
+  /*primera parte del mobile*/
+  "flex-layout.row#1-footer-mobile": {
+    "children":[
+      "flex-layout.col#1-footer-mobile",
+      "flex-layout.col#newsletter-form",
+      "flex-layout.col#phone--redes--sociales",
+      "flex-layout.col#phone--medios--de--pago",
+      "flex-layout.col#phone--desarrollado--por"
+    ]
+  },
+  "flex-layout.col#1-footer-mobile":{
+    "props":{
+      "blockClass":"1-footer-mobile"
+    },
+    "children":[
+      "flex-layout.col#PrimeraCol1",
+      "flex-layout.col#PrimeraCol2",
+      "flex-layout.col#PrimeraCol3",
+      "flex-layout.col#PrimeraCol4"
+    ]
+  },
+
+  "flex-layout.col#newsletter-form":{
+    "props":{
+      "marginLeft":7,
+      "blockClass":"newsletter-form--contenedor"
+    },
+    "children":[
+      "newsletter-form#phone"
+    ]
+  },
+   /*input para ingresar correo*/
+   "newsletter-form#phone": {
+     "props":{
+       "blockClass":"newsletter-form--phone"
+     },
+    "children": [
+      "flex-layout.row#newsletter-form--phone",
+      "newsletter-checkbox-confirmation#phone"
+    ]
+  },
+  "flex-layout.row#newsletter-form--phone":{
+    "props":{
+      "blockClass":"newsletter-form--phone",
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true
+    },
+    "children": [
+      "newsletter-input-email#phone",
+      "newsletter-submit#phone"
+    ]
+  },
+  "newsletter-input-email#phone":{
+    "props":{
+      "placeholderText":"Ingresa tu correo"
+    }
+  },
+  "newsletter-submit#phone":{
+    "props":{
+      "blockClass":"newsletter-submit--phone",
+      "submitButtonLabel":""
+    }
+  },
+  "newsletter-checkbox-confirmation#phone":{
+    "props":{
+      "blockClass":"newsletter-checkbox-confirmation--phone",
+      "checkboxLabel":"Si, quiero recibir correos electrónicos sobre productos y noticias"
+    }
+  },
+
+
+  "flex-layout.col#phone--redes--sociales":{
+    "props":{
+      "blockClass":"redes--sociales",
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true
+    },
+    "children":[
+      "image#phone--facebook",
+      "image#phone--instagram"
+    ]
+  },
+  "image#phone--facebook":{
+    "props":{
+      "blockClass": "phone--facebook",
+      "src":"assets/iconosIM/fb-hover.png",
+      "maxHeight": 30
+    }
+  },
+  "image#phone--instagram":{
+    "props":{
+      "blockClass": "phone--instagram",
+      "src":"assets/iconosIM/ig-hover.png",
+      "maxHeight": 30
+    }
+  },
+  "flex-layout.col#phone--medios--de--pago":{
+    "props":{
+      "blockClass":"medios--de--pago"
+    },
+    "children":[
+      "rich-text#phone--medios--de--pago",
+      "image#phone--medios--de--pago"
+    ]
+  },
+  "rich-text#phone--medios--de--pago":{
+    "props":{
+      "blockClass":"medios--de--pago--phone",
+      "text":"#### MEDIOS DE PAGO"
+    }
+  },
+  "image#phone--medios--de--pago":{
+    "props":{
+      "blockClass":"phone--medios--de--pago--image",
+      "src":"assets/iconosIM/pagos-mobile.png",
+      "maxHeight": 54
+    }
+  },
+  "flex-layout.col#phone--desarrollado--por":{
+    "props":{
+      "blockClass":"phone--desarrollado--por"
+    },
+    "children":[
+      "rich-text#phone--desarrollado--por",
+      "image#phone--desarrollado--por"
+    ]
+  },
+  "rich-text#phone--desarrollado--por":{
+    "props":{
+      "text":"DESARROLLADO POR"
+    }
+  },
+  "image#phone--desarrollado--por":{
+    "props":{
+      "blockClass":"desarrollado--por--logo",
+      "src":"assets/iconosIM/desarrolladores.png",
+      "maxHeight": 24
+    }
+  },
+
+  /*segunda parte del footer mobile*/
+  "flex-layout.row#2-footer-mobile": {
+    "children": ["flex-layout.col#footer-1-mobile"],
+    "props": {
+      "blockClass": "2-footer-mobile",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "footer-1-mobile",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "Todos los derechos reservados. COPYRIGHT © IMPRESISTEM",
+      "blockClass": "footer-mobile--text"
+    }
+  }
+}

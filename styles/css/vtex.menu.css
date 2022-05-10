@@ -1,0 +1,205 @@
+/*_   _ _____    _    ____  _____ ____
+| | | | ____|  / \  |  _ \| ____|  _ \
+| |_| |  _|   / _ \ | | | |  _| | |_) |
+|  _  | |___ / ___ \| |_| | |___|  _ <
+|_| |_|_____/_/   \_\____/|_____|_| \_\    */
+
+.submenuContainer--SubSubMenu__Group {
+  top: 0;
+  position: absolute;
+  left: 100%;
+}
+
+.submenuWrapper--isOpen {
+  width: 21rem;
+  background: white;
+  margin: 0;
+  margin-top: -2px;
+}
+
+.submenuWrapper--SubSubMenu__Group--isOpen {
+  width: calc(100vw - 21rem);
+  display: flex;
+  justify-content: flex-start;
+  max-height: 32.35vw;
+  min-height: 39.79rem;
+  z-index: -1;
+}
+
+.submenu--SubSubMenu__Group {
+  width: auto;
+}
+
+.menuContainer--Menu__Group {
+  display: flex;
+  flex-wrap: nowrap;
+  max-height: 50rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  min-width: 17rem;
+  min-height: 38rem;
+  height: 28vw;
+}
+
+/* width */
+.menuContainer--Menu__Group::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.menuContainer--Menu__Group::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.menuContainer--Menu__Group::-webkit-scrollbar-thumb {
+  border-radius: 1rem 0 0 1rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(209 209 209)), color-stop(0.72, rgb(189 189 189)), color-stop(0.86, rgb(189 189 189)));
+}
+
+/* Handle on hover */
+.menuContainer--Menu__Group::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.styledLinkContainer--MenuItem__Category {
+  margin-left: 4rem;
+  border-radius: 2px;
+}
+.styledLinkContent.styledLinkContent--MenuItem:hover {
+  background: #ffedc2;
+  border-radius: 2px;
+}
+
+.styledLinkContent.styledLinkContent--MenuItem {
+  width: auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  min-height: 3rem;
+  padding: 0 7px;
+  text-align: center;
+  justify-content: center;
+  min-width: 7rem;
+}
+
+.styledLinkContainer--subMenuItem__Tile:hover {
+  background: #ffedc2;
+}
+
+
+.styledLinkContent--subMenuItem__Tile-1:hover {
+  color: #001e49;
+  font-weight: 900;
+}
+.styledLinkContent--subMenuItem__Tile-1 {
+  font-family: 'TT-Norms';
+  font-style: normal;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  color: #001e49;
+}
+.submenu--SubSubMenu__Group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.styledLinkContent--subMenuItem__Tile::before {
+  content: "";
+  width: 35px;
+  height: 46px;
+  margin-right: 15px;
+  margin-left: 7px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(/arquivos/accesorios.png);
+}
+.styledLinkContent--subMenuItem--2::before {
+  background-image: url(/arquivos/almacenamiento.png);
+}
+.styledLinkContent--subMenuItem--3::before {
+  background-image: url(/arquivos/almacenamiento.png);
+}
+.styledLinkContent--subMenuItem--4::before {
+  background-image: url(/arquivos/almacenamiento.png);
+}
+.styledLinkContent--subMenuItem--5::before {
+  background-image: url(/arquivos/gamer.png);
+}
+.styledLinkContent--subMenuItem--6::before {
+  background-image: url(/arquivos/computacion.png);
+}
+.styledLinkContent--subMenuItem--7::before {
+  background-image: url(/arquivos/almacenamiento.png);
+}
+.styledLinkContent--subMenuItem--8::before {
+  background-image: url(/arquivos/celulares-tablet.png);
+}
+.styledLinkContent--subMenuItem--9::before {
+  background-image: url(/arquivos/almacenamiento.png);
+}
+.styledLinkContent--subMenuItem--10::before {
+  background-image: url(/arquivos/televisores.png);
+}
+.styledLinkContent--subMenuItem--11::before {
+  background-image: url(/arquivos/almacenamiento.png);
+}
+.styledLinkContent--subMenuItem--12::before {
+  background-image: url(/arquivos/movilidad.png);
+}
+.styledLinkContent--subMenuItem--13::before {
+  background-image: url(/arquivos/almacenamiento.png);
+}
+.styledLinkContent--subMenuItem--14::before {
+  background-image: url(/arquivos/almacenamiento.png);
+}
+
+.styledLink--subMenuItem__Tile {
+  width: 100%;
+  display: flex;
+}
+
+
+.menuItem--subsubMenuItem {
+  margin: 0.44rem 0;
+}
+.styledLinkContent--subMenuItem__Tile {
+  display: flex;
+  align-items: center;
+  min-width: 18rem;
+  justify-content: flex-start;
+}
+
+.styledLinkContent--MenuItem__Category::before {
+  content: "";
+  width: 35px;
+  height: 46px;
+  margin-right: 15px;
+  margin-left: 7px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 7px;
+  background-image: url(https://orbeim.vteximg.com.br/arquivos/menu.png);
+}
+
+@media (max-width: 600px) {
+  .styledLinkContent {
+    color: black;
+  }
+}
+/*------------------------------*/
+.menuItem--text {
+  width: 360px;
+}
+.styledLinkContent--texto--menu {
+  color: rgb(146, 146, 146);
+  font-size: 12px;
+  white-space: pre-line;
+}
+.styledLinkContent--texto--menu:hover {
+  color: rgb(255, 238, 80);
+}
+.styledLinkContent--titulos {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 13px;
+}

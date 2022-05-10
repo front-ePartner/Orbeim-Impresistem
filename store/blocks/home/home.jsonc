@@ -1,103 +1,183 @@
 {
   "store.home": {
     "blocks": [
+      /*componentes generales*/
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+
+      //Slider de marcas
+      "flex-layout.row#phone__nuestras--marcasTitulo",
+      "flex-layout.row#phone__nuestras--marcas",
+
+      //Banners Categorias DESK
+      "responsive-layout.desktop#flex-layout.row-nuestras-marcas-b",
+
+      // tabber
+      "responsive-layout.desktop#flex-layout.row--product__tabs",
+      "responsive-layout.phone#flex-layout.row--product__tabs",
+
+      //Banners Categorias MOBILE
+      "responsive-layout.phone#flex-layout.row-nuestras-marcas-b",
+
+
+
+      "responsive-layout.phone#flex-layout.row--home__tercer-collage--imagenes",
+      "responsive-layout.desktop#flex-layout.row--home__first--collage--imagenes",
+      "responsive-layout.desktop#flex-layout.row--home__second--collage--imagenes",
+      "flex-layout.row#title--productos--destacados",
+      "flex-layout.row#Shelf-destacados",
+      //"responsive-layout.desktop#flex-layout.row--home__second-slider-images",
+      "responsive-layout.desktop#flex-layout.row--home__tercer-collage--imagenes",
+      "responsive-layout.desktop#flex-layout.descubre-nuestros-productos",
+
+      "responsive-layout.desktop#flex-layout.descubre-la-laptop-ideal",
+
+
+
+
+       "flex-layout.row#title--productos--+vendidos",
+       "flex-layout.row#Shelf-destacados",
+
+       //
+       "responsive-layout.desktop#flex-layout.row--home__third-slider-images",
+
+       "responsive-layout.phone#flex-layout.row--home__third-slider-images",
+      /*componentes desktop*/
+      /*componentes phone*/
+
+/*
+     "responsive-layout.phone#rich-text--title--productos--destacados",
+      "responsive-layout.phone#flex-layout.row--product__tabs",
+      "responsive-layout.phone#flex-layout.row--home__first--collage--imagenes",
+      "responsive-layout.phone#flex-layout.row--home__second--collage--imagenes",
+      "responsive-layout.phone#rich-text--title--productos--destacados",
+      "responsive-layout.phone#flex-layout.row--home__second-slider-images",
+      "responsive-layout.phone#flex-layout.row--home__espacio--grande",
+      "responsive-layout.phone#flex-layout.row--home__tercer-collage--imagenes",
+      "responsive-layout.phone#flex-layout.row--home__espacio--grande",
+      
+      "responsive-layout.phone#flex-layout.row--home__espacio",
+      "responsive-layout.phone#rich-text--title--productos--destacados",
+      "responsive-layout.phone#flex-layout.row--home__second-slider-images",
+      "responsive-layout.phone#flex-layout.row--home__espacio--grande",
+      "responsive-layout.phone#flex-layout.row--home__third-slider-images",
+*/
+      /*componentes generales*/
+
+      //Trigger Modal
+      "responsive-layout.desktop#popUp_desktop",
+      "responsive-layout.tablet#popUp_tablet",
+      "responsive-layout.mobile#popUp_mobile"
     ]
   },
+
+  /*componentes generales que se pueden repetir en ambas vistas (desktop y phone)*/
+
+  /*primer slider*/
+
 
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 720,
+      "height": 920,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://orbeim.vteximg.com.br/arquivos/Group-1285.png",
+          "mobileImage": "https://orbeim.vteximg.com.br/arquivos/Group-1285.png",
+          "link":{
+            "url":"/mujer/ropa"
+          }
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://orbeim.vteximg.com.br/arquivos/Group-1285.png",
+          "mobileImage": "https://orbeim.vteximg.com.br/arquivos/Group-1285.png",
+          "link":{
+            "url":"/hombre"
+          }
+        },
+        {
+          "image": "https://orbeim.vteximg.com.br/arquivos/Group-1285.png",
+          "mobileImage": "https://orbeim.vteximg.com.br/arquivos/Group-1285.png",
+          "link":{
+            "url":"/coleccion/bosque-encantado"
+          }
         }
       ]
     }
   },
-  "slider-layout#demo-images": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+
+
+  
+
+
+
+
+
+
+
+
+
+  /*texto parte tabs...como se repite en ambos...se deja aca*/
+  "rich-text#tabs__content--impresoras":{
+    "props":{
+      "text":"impresoras..."
+    }
+  },
+  "rich-text#tabs__content--celulares":{
+    "props":{
+      "text":"celulares..."
+    }
+  },
+  "rich-text#tabs__content--tablets":{
+    "props":{
+      "text":"tablets..."
     }
   },
 
-  "rich-text#shelf-title": {
-    "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
-    }
-  },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
-  "slider-layout#demo-products": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
+  /*imagen computador...como se repite...se deja aca*/
+  "image#second--computer":{
+    "props":{
+      "src": "https://asyco.co/wp-content/uploads/2021/03/asus03.jpg"
     }
   },
 
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
+  /*texto computador...como se repite...se deja aca*/
+  "rich-text#first--computer--text":{
+    "props":{
+      "text":"Computador portatil ASUS (13.3,Intel)  \n Laptop 2 en 1 con tecnologia intel Eco \n opcional, IA y seguridad biometrica"
+    }
+  },
+  "rich-text#titleVitrina":{
+    "props":{
+      "blockClass":"titleVitrina",
+      "text":"Computador portatil ASUS (13.3,Intel)"
+    }
+  },
+  "rich-text#descriptionVitrina":{
+    "props":{
+      "blockClass":"descriptionVitrina",
+      "text":"Laptop 2 en 1 con tecnologia intel Eco opcional, IA y seguridad biometrica"
     }
   },
 
-  "rich-text#question": {
+  "rich-text#nuestras--marcas": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "text": "NUESTRAS MARCAS",
+      "blockClass": "nuestras--marcas"
     }
   },
 
-  "rich-text#link": {
+  "rich-text#home__lo--ultimo--de--impresistem": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "text": "## LO ULTIMO QUE IMPRESISTEM TIENE PARA TI",
+      "blockClass": ["nuestras--marcas", "impre-tiene-para-ti"]
+    }
+  },
+
+  //Texto de ultimas noticias
+  "rich-text#ultimas-noticias": {
+    "props": {
+      "text": "Actualizate de las últimas noticias que tenemos para ti",
+      "blockClass": ["nuestras--marcas", "impre-tiene-para-ti"]
     }
   }
 }

@@ -1,16 +1,143 @@
 {
-  "product-summary.shelf": {
+  "product-summary.shelf#HomeVitrinas": {
+    "props": {
+      "blockClass": [
+        "ProductShelf",
+        "ProductShelfHome"
+      ]
+    },
     "children": [
-      "stack-layout#prodsum",
+      "product-summary-brand",
+      "flex-layout.row#imageVitrina",
       "product-summary-name",
-      "flex-layout.col#productRating",
-      "product-summary-space",
-      "product-list-price#summary",
-      "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "add-to-cart-button"
+      "product-summary-description#vitrina",
+    //  "flex-layout.row#ProductShelfHome",
+      "flex-layout.row#price_and_cart"
     ]
   },
+
+  "product-summary-description#vitrina":{
+    "props":{
+      "blockClass": "vitrina-description",
+      "height": "20px"
+    }
+  },
+
+  "flex-layout.row#imageVitrina": {
+    "children":["product-summary-image"],
+    "props":{
+      "blockClass": "imageVitrina"
+    }
+  },
+
+  // Se introducen el precio y el carrito de compras en un contenedor para poder posicionarlos
+  "flex-layout.row#price_and_cart":{
+    "children":[
+      "flex-layout.col#priceContainer",
+      "flex-layout.col#cartContainer"
+    ],
+    "props":{
+      "blockClass": ["style-price-and-cart","vitrina"]
+    }
+  },
+  "flex-layout.row#price_and_cart_Categoria":{
+    "children":[
+      "flex-layout.col#priceContainerCategoria",
+      "flex-layout.col#cartContainerCategoria"
+    ],
+    "props":{
+      "blockClass": ["style-price-and-cart", "cetegoria"]
+    }
+  },
+  "flex-layout.col#priceContainer":{
+    "children":[
+      "flex-layout.row#ProductShelfHome",
+      "product-selling-price"
+    ],
+    "props":{
+      "width": "75%",
+      "blockClass":"vitrina"
+    }
+  },
+  "flex-layout.col#priceContainerCategoria":{
+    "children":[
+      "product-price-savings",
+      "product-selling-price"
+    ],
+    "props":{
+      "width": "75%",
+      "blockClass":"Categoria"
+    }
+  },
+  
+  "flex-layout.col#cartContainer":{
+    "children":[
+      "add-to-cart-button#ProductShelfHome"
+    ],
+    "props":{
+      "width": "25%",
+      "blockClass":["buycolection","shelf-vitrina"]
+    }
+  },
+  "flex-layout.col#cartContainerCategoria":{
+    "children":[
+      "add-to-cart-button#ProductShelfCategoria"
+    ],
+    "props":{
+      "width": "25%",
+      "blockClass":["buycolection","shelf-categoria"]
+    }
+  },
+
+
+  "flex-layout.row#ProductShelfHome": {
+    "props": {
+      "blockClass": [
+        "ProductShelfHome"
+      ]
+    },
+    "children": [
+      "product-list-price"
+    ]
+  },
+  "flex-layout.row#ProductShelfCategoria": {
+    "props": {
+      "blockClass": [
+        "ProductShelfCategoria"
+      ]
+    },
+    "children": [
+      "product-list-price",
+      "product-price-savings"
+    ]
+  },
+  // * Add to cart Button
+  "add-to-cart-button#ProductShelfHome": {
+    "props": {
+      "blockClass": "botonvitrina",
+      "text": " "
+    }
+  },
+  "add-to-cart-button#ProductShelfCategoria": {
+    "props": {
+      "blockClass": ["botonvitrina","botonCategoria"],
+      "text": " "
+    }
+  },
+
+  "product-summary.shelf": {
+    "props": {
+      "blockClass": "vitrina-categoria",
+      "text": " "
+    },
+    "children": [
+      "flex-layout.row#imageVitrina",
+      "product-summary-name",
+      "flex-layout.row#ProductShelfCategoria",
+      "flex-layout.row#price_and_cart_Categoria"
+    ]
+  },
+
   "flex-layout.col#productRating": {
     "props": {
       "blockClass": "productRating"
@@ -20,15 +147,15 @@
 
   "stack-layout#prodsum": {
     "children": [
-      "product-summary-image#shelf",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "product-summary-image#shelf", // ? Image
+      "vtex.product-highlights@2.x:product-highlights#collection", // ? Flags
+      "modal-trigger#quickview" // ? Check quickview.jsonc
     ]
   },
 
   "product-summary-image#shelf": {
     "props": {
-      "showBadge": false,
+      "showBadge": true,
       "aspectRatio": "1:1",
       "maxHeight": 300
     }
@@ -81,10 +208,16 @@
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": [
-        "discount"
-      ],
-      "blockClass": "summary"
+      "blockClass": "summary",
+      "percentageStyle":["compact"]
+    }
+  },
+
+  "add-to-cart-button#summary": {
+    "props": {
+      "blockClass": ["summary", "fondoBotonCategory"],
+      "text": "Agregar"
     }
   }
+
 }

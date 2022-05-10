@@ -20,3 +20,138 @@
 .galleryItem--list {
   border-bottom: 1px #E7E9EE solid;
 }
+
+/*Cambiar color de filtro de precios en category*/
+.filterrTemplateOverflow {
+  background-color: #001E49;
+}
+
+
+/*Cambiar color de check del filtro en category*/
+.filterItem.selectedFilterItem.filterItem--selected {
+  background-color: #FFC533;
+}
+
+.filter__container--selectedFilters :global(.vtex-checkbox__container) {
+    display: none;
+}
+
+.filter__container--selectedFilters :global(.vtex-checkbox__container) {
+  display: none;
+}
+.filter__container--selectedFilters .selectedFilterItem {
+  width: 46%;
+}
+.filter__container--selectedFilters .filterTemplateOverflow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.filter__container--selectedFilters :global(.vtex-checkbox__label)::after {
+  content: "x";
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+.filter__container--selectedFilters :global(.vtex-checkbox__label) {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 8px;
+  align-items: center;}
+/*-------------------------------------------------------*/
+
+/*Estilos para la zona de filtros flechitas desplegables*/
+.filterContent :global(.vtex-checkbox__line-container) {
+  align-items: center;
+}
+.filter__container .filterTemplateOverflow .filterItem--selected :global(.vtex-checkbox__label) {
+  font-weight: 700;
+}
+.filterItem.selectedFilterItem.filterItem--selected {
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.filterTitle .caretIcon {
+  color: transparent;
+  background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-filtros.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+.filterIsOpen .caretIcon {
+  transform: rotate(0deg);
+}
+/*----------------------------------------------------*/
+
+/*Estilos de filtros e iconos de como ver los category */
+.totalProducts--layout {
+  display: none;
+}
+.filterTemplateOverflow :global(.vtex-slider__values-container) {
+  justify-content: space-between;
+}
+.galleryLayoutOptionButton {
+  color: transparent;
+  background-color: transparent;
+  display: grid;
+  padding: 7px;
+  width: 100%;
+  grid-template-columns: 100% 0;
+}
+.galleryLayoutOptionButton.galleryLayoutOptionButton--selected {
+  color: transparent;
+  padding: 7px;display: grid;
+  width: 100%;
+  grid-template-columns: 100% 0%;
+}
+.galleryLayoutOptionButton--selected :global(.vtex-store-icons-0-x-gridIcon) {
+  filter: invert(1);
+}
+.galleryLayoutOptionButton.galleryLayoutOptionButton--selected {
+  filter: invert(1);
+}
+.galleryLayoutSwitcher::before {
+  content: "Visualización:";
+  color: #808080;
+}
+.galleryLayoutSwitcher {
+  display: flex;
+  align-items: center;
+}
+.filterPopupTitle {
+  font-size: 0;
+}
+.filterPopupTitle .orderByText {
+  text-transform: capitalize;
+  font-size: 15px;
+  display: block;
+}
+
+
+@media (max-width: 600px) {
+  .orderByButton {padding: 5px 0;}
+  .filterPopupButton .filterPopupTitle {font-size: 17px;margin: 0;color: #979797;text-transform: capitalize;}
+  .filterPopupButton {width: 100%;padding: 0;}
+  .filterPopupButton .filterPopupArrowIcon {color: transparent;background-image: url(https://orbeim.vteximg.com.br/arquivos/mi_filter.png);background-position: center;background-size: 100%;}
+  .filterPopupButton .filterPopupArrowIcon .filterIcon {visibility: hidden;}
+  .filterPopupButton {background: white;padding: 0 10px;border-radius: 5px;}
+}
+/*----------------------------------------------------------*/
+
+
+
+/*Cambiar estilo de checbox marcado en category*/
+.filterItem :global(.vtex__icon-check) {
+  width: 10px;
+  height: 10px;
+  background: #0F3E99;
+  border-radius: 50%;
+  color: transparent;
+}
+
+.filterItem :global(.vtex-checkbox__inner-container) {
+  border-color: #E3E4E6;
+  background-color: transparent;
+}
+/*------------------------------------------*/
+

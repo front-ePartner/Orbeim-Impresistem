@@ -1,53 +1,177 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
     "props": {
+      "blockClass":"menu--header",
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#Smart-Consumer",
+      "menu-item#Smart-Solution"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#Smart-Consumer": {
     "props": {
-      "id": "menu-item-category-apparel",
+      "id": "menu-item-Smart-Consumer",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"menu--Smart-Consumer",
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Smart Consumer",
+        "text": "Smart Consumer"
+        
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#Smart-Consumer"
+    ]
+  },
+  "menu-item#Smart-Solution": {
+    "props": {
+      "id": "menu-item-Smart-Consumer",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Smart Consumer",
+        "text": "Smart Solution"
       }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
-    ]
+    }
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
+  "vtex.menu@2.x:submenu#Smart-Consumer":{
     "props": {
+      "orientation": "vertical",
       "width": "auto"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-apparel"
+      "vtex.menu@2.x:menu#Accesories",
+      "vtex.menu@2.x:menu#Storage",
+      "vtex.menu@2.x:menu#Gamer"
     ]
   },
-  "vtex.menu@2.x:menu#category-apparel": {
+  "vtex.menu@2.x:menu#Accesories":{
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+    "children":[
+      "flex-layout.row#Accesories"
     ]
   },
-  "menu-item#category-apparel-clothing": {
+  "flex-layout.row#Accesories":{
+    "props":{
+      "blockClass": "Accesories",
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true
+    },
+    "children":[
+      "image#Accesories",
+      "menu-item#Accesories",
+      "image#arrow--Accesories"
+    ]
+  },
+  "vtex.menu@2.x:menu#Storage":{
     "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "blockClass": "Storage",
+      "orientation": "vertical"
+    },
+    "children":[
+      "flex-layout.row#Storage"
+    ]
+  },
+  "flex-layout.row#Storage":{
+    "props":{
+      "blockClass": "Storage",
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true
+    },
+    "children":[
+      "image#Storage",
+      "menu-item#Storage",
+      "image#arrow--Storage"
+    ]
+  },
+  "vtex.menu@2.x:menu#Gamer":{
+    "props": {
+      "blockClass": "Gamer",
+      "orientation": "vertical"
+    },
+    "children":[
+      "flex-layout.row#Gamer"
+    ]
+  },
+  "flex-layout.row#Gamer":{
+    "props":{
+      "blockClass": "Gamer",
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true
+    },
+    "children":[
+      "image#Gamer",
+      "menu-item#Gamer",
+      "image#arrow--Gamer"
+    ]
+  },
+  "image#Accesories":{
+    "props":{
+      "blockClass": "img",
+      "src": "assets/Assets-IMPRESISTEM-iconos/accesorios.png",
+      "maxHeight": 24
+    }
+  },
+  "image#arrow--Accesories":{
+    "props":{
+      "blockClass": "arrow",
+      "src": "assets/iconosMenu/flecha--senala--derecha.png",
+      "maxHeight": 24
+    }
+  },
+  "menu-item#Accesories":{
+    "props": {
+      "id": "Accesories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "text",
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "Accesories",
+        "text": "Accesories"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu#submenu--Accesories"
+    ]
+  },
+  "vtex.menu@2.x:submenu#submenu--Accesories":{
+    "props":{
+      "blockClass":"submenu--Accesories"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#menu--Accesories"
+    ]
+  },
+  "vtex.menu@2.x:menu#menu--Accesories":{
+    "props":{
+      "blockClass":"submenu--Accesories",
+      "orientation": "vertical"
+    },
+    "children":[
+      "menu-item#submenu--Accesories--item1",
+      "menu-item#submenu--Accesories--item2",
+      "menu-item#submenu--Accesories--item3",
+      "menu-item#submenu--Accesories--item4"
+    ]
+  },
+
+  "menu-item#submenu--Accesories--item1":{
+    "props": {
+      "id": "menu--item1--item1--item1",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -55,149 +179,203 @@
         "type": "internal",
         "href": "/apparel---accessories/clothing/",
         "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "menu--item1--item1--item1",
+        "text": "Teclados Mecanicos"
       }
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#submenu--Accesories--item2":{
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "id": "menu--item1--item1--item2",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/accessories/",
+        "href": "/apparel---accessories/clothing/",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
+        "tagTitle": "menu--item1--item1--item2",
+        "text": "Mouses Gamer"
       }
     }
   },
-  "menu-item#category-apparel-eyeglasses": {
+  "menu-item#submenu--Accesories--item3":{
     "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
+      "id": "menu--item1--item1--item3",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
+        "href": "/apparel---accessories/clothing/",
         "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
+        "tagTitle": "menu--item1--item1--item3",
+        "text": "audifonos"
       }
     }
   },
-  "menu-item#category-home": {
+  "menu-item#submenu--Accesories--item4":{
     "props": {
-      "id": "menu-item-category-home",
+      "id": "menu--item1--item1--item4",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/home---decor/",
+        "href": "/apparel---accessories/clothing/",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "menu--item1--item1--item4",
+        "text": "Soporte"
       }
     }
   },
-  "menu-item#more": {
+
+
+
+
+
+
+
+
+
+
+  "image#Storage":{
+    "props":{
+      "blockClass": "img",
+      "src": "assets/Assets-IMPRESISTEM-iconos/storage.png",
+      "maxHeight": 24
+    }
+  },
+  "image#arrow--Storage":{
+    "props":{
+      "blockClass": "arrow",
+      "src": "assets/iconosMenu/flecha--senala--derecha.png",
+      "maxHeight": 24
+    }
+  },
+  "menu-item#Storage":{
     "props": {
-      "id": "menu-item-custom-sale",
+      "id": "Storage",
       "type": "custom",
       "iconId": null,
       "highlight": false,
+      "blockClass": "text",
       "itemProps": {
         "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "Storage",
+        "text": "Storage"
       }
     },
-    "blocks": [
-      "vtex.menu@2.x:submenu#more"
+    "blocks":[
+      "vtex.menu@2.x:submenu#submenu--Storage"
     ]
   },
-  "vtex.menu@2.x:submenu#more": {
-    "props": {
-      "width": "100%"
+  "vtex.menu@2.x:submenu#submenu--Storage":{
+    "props":{
+      "blockClass":"submenu--Storage"
     },
     "children": [
-      "flex-layout.row#menu-more"
+      "vtex.menu@2.x:menu#menu--Storage"
     ]
   },
-  "flex-layout.row#menu-more": {
-    "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
-    ]
-  },
-  "flex-layout.col#menu-more-1": {
-    "children": [
-      "vtex.menu@2.x:menu#more"
-    ]
-  },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
-  "vtex.menu@2.x:menu#more": {
-    "props": {
+  "vtex.menu@2.x:menu#menu--Storage":{
+    "props":{
       "orientation": "vertical"
     },
-    "children": [
-      "menu-item#about-us",
-      "menu-item#faq"
+    "children":[
+      "menu-item#submenu--Storage--item1"
     ]
   },
-  "menu-item#about-us": {
+
+  "menu-item#submenu--Storage--item1":{
     "props": {
-      "id": "menu-item-about-us",
+      "id": "menu--item1--item1--item1",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "menu--item1--item1--item1",
+        "text": "Teclados Mecanicos"
       }
     }
   },
-  "menu-item#faq": {
-    "props": {
-      "id": "menu-item-faq",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/faq",
-        "noFollow": true,
-        "tagTitle": "FAQ",
-        "text": "FAQ"
-      }
+
+
+
+
+
+
+
+
+
+
+  "image#Gamer":{
+    "props":{
+      "blockClass": "img",
+      "src": "assets/Assets-IMPRESISTEM-iconos/gamer.png",
+      "maxHeight": 24
     }
   },
-  "menu-item#contact-us": {
+  "image#arrow--Gamer":{
+    "props":{
+      "blockClass": "arrow",
+      "src": "assets/iconosMenu/flecha--senala--derecha.png",
+      "maxHeight": 24
+    }
+  },
+  "menu-item#Gamer":{
     "props": {
-      "id": "menu-item-contact-us",
+      "id": "Accesories",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass":"text",
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "Accesories",
+        "text": "Accesories"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu#submenu--Gamer"
+    ]
+  },
+  "vtex.menu@2.x:submenu#submenu--Gamer":{
+    "props":{
+      "blockClass":"submenu--Gamer"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#menu--Gamer"
+    ]
+  },
+  "vtex.menu@2.x:menu#menu--Gamer":{
+    "props":{
+      "orientation": "vertical"
+    },
+    "children":[
+      "menu-item#submenu--Gamer--item1"
+    ]
+  },
+
+  "menu-item#submenu--Gamer--item1":{
+    "props": {
+      "id": "menu--item1--item1--item1",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/contact-us",
-        "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "menu--item1--item1--item1",
+        "text": "Teclados Mecanicos"
       }
     }
   }

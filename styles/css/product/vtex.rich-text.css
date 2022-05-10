@@ -1,0 +1,10 @@
+/* estilos del titulo de la vitrina destacada en producto */
+.wrapper--vitrinas-tittle .heading{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.wrapper--vitrinas-tittle{
+    margin-left: 45px;
+    margin-top: 35px;
+}

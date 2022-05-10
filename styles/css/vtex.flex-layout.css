@@ -1,7 +1,101 @@
+.flexRowContent.flexRowContent--orderByAndSwitcher {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 600px) {
+  .flexRowContent.flexRowContent--visual-organizar {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.flexCol--maq,
+.maq,
+.flexColChild--maq,
+.flexRow--maq,
+.flexRowContent--maq {
+  border: 1px red solid;
+}
+/*_   _ _____    _    ____  _____ ____
+| | | | ____|  / \  |  _ \| ____|  _ \
+| |_| |  _|   / _ \ | | | |  _| | |_) |
+|  _  | |___ / ___ \| |_| | |___|  _ <
+|_| |_|_____/_/   \_\____/|_____|_| \_\    */
+
+.flexRowContent--Header-top
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(1n) {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flexRowContent--Header-top
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2n) {
+  display: flex;
+  justify-content: flex-start;
+}
+.vtex-flex-layout-0-x-flexRow--Header-top
+  :global(.vtex-store-components-3-x-container) {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  max-width: initial;
+}
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
   padding: 0 0.5rem;
 }
+.flexRow--Header-top {
+  background: #2a2a2a;
+}
+.flexRowContent--flex-card {
+  margin: 4rem 12rem 0px 0px;
+}
+.flexRow--Header-top :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+  width: 100%;
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+.flexRowContent--Header-top {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.flexRowContent--Header-top-tablet {
+  display: flex;
+}
+
+/*
+  __  __          _ _          ___
+ |  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __ _   _
+ | |\/| |/ _ \/ _` | |/ _` | | | | | | | |/ _ \ '__| | | |
+ | |  | |  __/ (_| | | (_| | | |_| | |_| |  __/ |  | |_| |
+ |_|  |_|\___|\__,_|_|\__,_|  \__\_\\__,_|\___|_|   \__, |
+                                                    |___/
+
+*/
+
+@media (max-width: 600px) {
+  .flexCol--header--titulos--opciones
+    :global(.vtex-disclosure-layout-1-x-trigger) {
+    width: 100%;
+  }
+  .flexColChild--header--titulos--opciones {
+    margin-left: 0 !important;
+  }
+  .styledLinkContent {
+    font-family: "TT Norms";
+    font-style: normal;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    color: black;
+  }
+}
+
+/*----------------------------------------------------------------------------------*/
 
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
@@ -17,18 +111,18 @@
 }
 
 .flexRowContent--menu-link {
-  background-color: #03044e;
+  background-color: #ffffff;
   color: #fff;
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: #ffff;
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
-  background-color: #f0f0f0;
+  background-color: #ffff;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -91,4 +185,607 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+
+/*---------------------------------------------------------------------------*/
+/*   Primer flex layout header - barra gris inicial con info de descuento   */
+/*-------------------------------------------------------------------------*/
+
+.flexRow--notification--bar {
+  background: black;
+  height: 32px;
+  position: relative;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<*/
+
+/*-------------------------------------*/
+/* segundo flex layout header          */
+/*-------------------------------------*/
+
+/* Ubicación de login y carrito */
+.flexRow--login--and--minicart {
+  background: #edf4ff;
+  background-image: url("https://epartner.vtexassets.com/assets/vtex/assets-builder/vtex.store-theme/4.4.2/img/menu-login-and-minicart.png");
+  background-size: cover;
+  border-radius: 15px;
+  height: 38px;
+  margin-left: 30em;
+  margin-top: 3%;
+}
+
+.flexCol--login {
+  margin-left: 18px;
+  margin-top: 5px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*--------------------------------------*/
+/* primer collage home                  */
+/*--------------------------------------*/
+
+/*Se elimina el margen interior superior*/
+.flexRow--home__collage--imagenes {
+  background: white;
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*--------------------------------------*/
+/* segundo collage home                 */
+/*--------------------------------------*/
+
+.flexCol--home__first--collage--imagenes--2 {
+  margin-right: 10px;
+}
+.flexCol--home__second--collage--imagenes--2 {
+  margin: 0px 10px;
+}
+.flexCol--home__third--collage--imagenes--2 {
+  margin-left: 10px;
+}
+.flexCol--home__four--collage--imagenes--2 {
+  margin-right: 10px;
+}
+.flexCol--home__five--collage--imagenes--2 {
+  margin: 0px 10px;
+}
+.flexColChild--home__first--collage--imagenes--2,
+.flexColChild--home__second--collage--imagenes--2,
+.flexColChild--home__third--collage--imagenes--2,
+.flexColChild--home__four--collage--imagenes--2,
+.flexColChild--home__five--collage--imagenes--2 {
+  width: 100%;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+/*---------------------------------------------*/
+/*   footer                                    */
+/*---------------------------------------------*/
+
+.flexRow--medios--de--pago {
+  margin-left: 2%;
+}
+
+/*seccion o zona de copyright en el footer*/
+.flexRow--credits {
+  background: #00183a;
+}
+
+.flexRow--footer-1-desktop--menu--fila {
+  width: 95%;
+}
+
+.flexCol--siguenos--en--row {
+  margin-left: 44px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*parte mobil*/
+/*--------------------------------------*/
+/* primer header mobil                  */
+/*--------------------------------------*/
+
+.flexRow--mobile__home--menu--1 {
+  position: relative;
+  background: black;
+}
+
+.flexCol--mobile__home--menu--title--1 {
+  margin-left: 18px;
+}
+
+.flexCol--mobile__home--menu--title--2 {
+  position: absolute;
+  top: 0px;
+  left: 206px;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*------------------------------------*/
+/* segundo headre mobil               */
+/*------------------------------------*/
+
+.flexRow--mobile__home--menu--2 {
+  position: relative;
+}
+
+.flexCol--mobile__home--logo {
+  position: absolute;
+  top: 9px;
+  left: 30px;
+}
+
+.flexRow--mobile__home--login--minicart {
+  position: relative;
+  background: #edf4ff;
+  border-radius: 50px;
+}
+
+.flexCol--mobile__home--minicar {
+  position: absolute;
+  top: -13px;
+}
+
+/*hamburguesa*/
+.flexCol--header--titulos--opciones
+  :global(.vtex-disclosure-layout-1-x-trigger) {
+  background: transparent;
+  border: transparent;
+}
+
+.flexRow--home__header--columna-1 {
+  position: relative;
+}
+
+.flexColChild--header--titulos--opciones {
+  margin-left: 17px;
+}
+
+.flexCol--menu--Gamer--contenido {
+  position: relative;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><*/
+
+/*--------------------------------------*/
+/* primer collage imagenes              */
+/*--------------------------------------*/
+
+.flexRow--phone__first--collage--2--imagenes {
+  position: relative;
+}
+
+.flexCol--phone__third--collage--imagenes--1 {
+  position: absolute;
+  top: 248px;
+  left: 201px;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><*/
+
+/*----------------------------------------*/
+/* segundo collage de imagenes            */
+/*----------------------------------------*/
+
+.flexRow--phone__second--collage--imagenes {
+  margin-top: 306px;
+}
+
+.flexRow--phone__second--collage--imagenes--first {
+  position: relative;
+}
+
+.flexRow--phone__second--collage--imagenes--second {
+  position: relative;
+}
+/*><>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><*/
+
+/*------------------------------------------*/
+/* footer                                   */
+/*------------------------------------------*/
+
+.flexCol--1-footer-mobile {
+  height: 307px;
+}
+
+.flexCol--redes--sociales {
+  position: relative;
+}
+
+.flexCol--medios--de--pago {
+  position: relative;
+}
+
+/*footer phone*/
+.flexCol--1-footer-mobile :global(.vtex-disclosure-layout-1-x-trigger) {
+  background: transparent;
+  border: transparent;
+  position: relative;
+}
+.flexRowContent--newsletter-form {
+  padding-right: 30px;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*------------------------------------------*/
+/* Vitrinas                                 */
+/*------------------------------------------*/
+.flexRow--cardVitrinas {
+  padding: 20px;
+  width: 322px;
+  height: 440px;
+  left: 680px;
+  top: 0px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  flex: none;
+  flex-grow: 0;
+  margin: 0px 20px 20px 20px;
+}
+.flexRow--cardVitrinas:hover {
+  border: 1px solid #808080;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/*.flexRowContent--ProductShelfHome.flexRowContent--ProductShelfHome {
+  position: absolute;
+  bottom: 30px;
+}*/
+
+/*Seccion de acordeon despues de nuestras marcas */
+.flexColChild--slider-images-nuestras-marcas {
+  width: max-content;
+}
+.flexCol--slider-images-nuestras-marcas {
+  width: 75%;
+  height: 230px;
+  overflow: hidden;
+  margin: 25px 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.1s all ease;
+}
+.flexCol--slider-images-nuestras-marcas:hover {
+  width: 95%;
+  z-index: 1;
+}
+/*----------------------------------------*/
+
+/*Quitar puntos de slides que muestra el carrusel de marcas*/
+.stretchChildrenWidth
+  :global(.vtex-slider-layout-0-x-paginationDotsContainer--carousel) {
+  display: none;
+}
+/*-----------------------------------------------------*/
+
+/* Eliminar estilos del boton del carrito de compras*/
+.flexColChild--buycolection :global(.vtex-button) {
+  background: transparent;
+  border: none;
+}
+/*No visualizar otro botón de color azul apareciendo en el hover*/
+.flexColChild--buycolection :global(.vtex-button__label) {
+  background-color: white;
+}
+/*vitrinas*/
+.flexCol--buycolection {
+  display: flex;
+  justify-content: end;
+}
+.flexCol--add-to-cart-button :global(.vtex-button) {
+  background: transparent;
+  border: transparent;
+}
+.flexColChild--add-to-cart-button
+  :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+
+/*Estilos de precio Tachado*/
+
+.flexRowContent--ProductShelfHome {
+  position: relative;
+  top: 9px;
+}
+
+.flexRowContent--imageVitrina {
+  align-items: center;
+  height: 230px;
+  overflow: hidden;
+}
+
+
+
+.flexColChild--second-col-images {
+  height: 100% !important;
+}
+.flexRowContent--home__collage--imagenes {
+  border-radius: 7px;
+  overflow: hidden;
+}
+.flexRow--home__second--collage--imagenes--text-1 {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+}
+.flexColChild--home__second--collage--imagenes--mini-collage-3 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.flexRowContent--home__second--collage--imagenes--mini-collage-2 {
+  margin-top: 20px;
+}
+.flexColChild--home__second--collage--imagenes--text-2,
+.flexColChild--container-text-descubre-nuestros-productos,
+.flexColChild--container-text-descubre-la-laptop-ideal {
+  text-align: center;
+}
+.flexColChild--Shelf {
+  margin-bottom: 30px;
+}
+.flexRowContent--descubre-nuestros-productos {
+  border-radius: 7px;
+  overflow: hidden;
+  border: 1px #d4cee5 solid;
+  margin-bottom: 15px;
+}
+.flexRowContent--descubre-la-laptop-ideal {
+  border-radius: 7px;
+  overflow: hidden;
+  border: 1px #ffde59 solid;
+  margin-bottom: 15px;
+}
+
+.flexRow--colorBotonCategory
+  :global(.vtex-product-summary-2-x-element)
+  :global(.vtex-button) {
+  background-color: #001e49;
+  border-color: #001e49;
+}
+
+@media screen and (min-width: 700px) {
+  .vtex-flex-layout-0-x-flexRowContent--imageVitrina {
+    align-items: center;
+    height: 230px;
+    overflow: hidden;
+    margin-bottom: -103%;
+  }
+}
+
+/* STATIC: Quienes Somos */
+.flexColChild--bannerContent {
+  position: relative;
+  display: flex;
+  align-items: end;
+}
+.flexRow--bannerText {
+  position: absolute;
+  padding-left: 4%;
+  padding-bottom: 12%;
+}
+.flexRow--cardWelcomeDesktop,
+.flexRow--cardWelcomeTablet {
+  margin: auto;
+}
+.flexCol--cardWelcomeDesktop,
+.flexCol--cardWelcomeTablet {
+  position: relative;
+  background: #f7f7f7;
+}
+.flexCol--cardWelcomeDesktop {
+  top: -60px;
+  width: 80% !important;
+  padding: 0px 30px;
+}
+.flexCol--separator1A,
+.flexCol--separator2A {
+  width: 69% !important;
+  border-top: 1px #9c9d90 solid;
+}
+.flexCol--separator1A {
+  margin: 0px 0px 61px 0px;
+}
+.flexCol--separator2A {
+  margin: 48px 0px 61px 0px;
+}
+.flexCol--cardWelcomeTablet {
+  top: -40px;
+  width: 90% !important;
+  padding: 0px 10px 10px 10px;
+}
+.flexCol--cardSmartInfoDesktop {
+  width: 90% !important;
+}
+.flexCol--cardSmartDesktop_1,
+.flexCol--cardSmartDesktop_2,
+.flexCol--cardSmartDesktop_3 {
+  padding: 0px 10px;
+}
+.flexColChild--cardSmartTablet_1,
+.flexColChild--cardSmartTablet_2,
+.flexColChild--cardSmartTablet_3 {
+  text-align: center;
+  padding: 0px 10%;
+}
+.flexCol--bannerCardSmart_1,
+.flexCol--bannerCardSmart_2,
+.flexCol--bannerCardSmart_3 {
+  position: relative;
+}
+.flexRow--containerCreativeDesktop {
+  width: 90% !important;
+  margin: auto;
+}
+.flexColChild--creativeDesktop_2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.flexRow--cardCreative {
+  background: #f7f7f7;
+  position: absolute;
+  left: -10%;
+}
+.flexCol--containerCreativeTablet {
+  background: #f7f7f7;
+  width: 90% !important;
+  position: relative;
+  top: -20%;
+  padding: 0px 5%;
+}
+.flexCol--exploreProductsNetwork_1,
+.flexCol--exploreProductsNetwork_2 {
+  padding: 10% 3% 0px 3%;
+}
+.flexCol--exploreProductsNetwork_1 {
+  display: flex;
+  text-align: end;
+}
+.flexCol--exploreProductsButton {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
+
+.flexRow--colorBotonCategory
+  :global(.vtex-product-summary-2-x-element)
+  :global(.vtex-button) {
+  background-color: #00183a;
+}
+
+/*
+     _          _                 _   _
+    / \   _ __ (_)_ __ ___   __ _| |_(_) ___  _ __  ___
+   / _ \ | '_ \| | '_ ` _ \ / _` | __| |/ _ \| '_ \/ __|
+  / ___ \| | | | | | | | | | (_| | |_| | (_) | | | \__ \
+ /_/   \_\_| |_|_|_| |_| |_|\__,_|\__|_|\___/|_| |_|___/
+
+*/
+
+@media screen and (min-width: 1050px) {
+  .flexRowContent--container-accordion {
+    height: 17rem;
+  }
+
+  .flexRowContent--container-accordion .stretchChildrenWidth {
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+    margin: 0 0.125em;
+    transition: all 1s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid pink;
+    position: relative;
+  }
+
+  .flexRowContent--container-accordion .stretchChildrenWidth:hover {
+    flex: 3;
+  }
+  .flexRow--cardVitrinas:hover {
+    border: 1px solid #808080;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .flexCol--slider-images-nuestras-marcas:hover {
+    width: 95%;
+    z-index: 1;
+  }
+}
+/*
+  __  __          _ _          ___
+ |  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __ _   _
+ | |\/| |/ _ \/ _` | |/ _` | | | | | | | |/ _ \ '__| | | |
+ | |  | |  __/ (_| | | (_| | | |_| | |_| |  __/ |  | |_| |
+ |_|  |_|\___|\__,_|_|\__,_|  \__\_\\__,_|\___|_|   \__, |
+                                                    |___/
+
+*/
+
+@media (max-width: 1049px) {
+  .flexColChild--mobile__home--drawer
+    :global(.vtex-store-drawer-0-x-openIconContainer)::before {
+    width: auto;
+    height: auto;
+    background-size: 36%;
+    background-repeat: no-repeat;
+    content: url(https://orbeim.vteximg.com.br/arquivos/menu.png);
+  }
+  .flexColChild--mobile__home--drawer
+    :global(.vtex-store-drawer-0-x-openIconContainer) {
+    padding: 0;
+  }
+  .flexColChild--mobile__home--drawer
+    :global(.vtex-store-drawer-0-x-openIconContainer)
+    :global(.vtex-store-drawer-0-x-menuIcon) {
+    display: none;
+  }
+  .flexRow--newsletter-form--phone {
+    margin-left: 0rem;
+  }
+  .flexRowContent--flex-card {
+    margin: 0;
+  }
+  .flexRowContent--flex-card .stretchChildrenWidth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Posición de botón de añadir carrito de compras category */
+  .flexCol--buycolection {
+    margin-left: 67%;
+    margin-top: -23%;
+  }
+}
+.flexCol--logo--siguenos--facebook,
+.flexCol--logo--siguenos--instagram {
+  width: 24px;
+  height: 24px;
+  margin: 0px 5px;
+  background-size: contain;
+  cursor: pointer;
+}
+.flexCol--logo--siguenos--facebook {
+  background-image: url(/arquivos/iconFb.png);
+}
+.flexCol--logo--siguenos--facebook:hover {
+  background-image: url(/arquivos/iconFbHover.png);
+}
+.flexCol--logo--siguenos--instagram {
+  background-image: url(/arquivos/iconInst.png);
+}
+.flexCol--logo--siguenos--instagram:hover {
+  background-image: url(/arquivos/iconInstHover.png);
+}
+
+
+:global(.vtex-product-summary-2-x-containerNormal--ProductShelfHome):hover .flexRowContent--style-price-and-cart.flexRowContent--vitrina {border-top-color: lightgrey;visibility:visible}
+.flexRowContent--style-price-and-cart.flexRowContent--vitrina {border-top: 1px solid transparent;margin: 15px auto 0;padding: 5px 0;display: flex;align-items: center;visibility: hidden;transition: 0.1s cubic-bezier(0.55, 0.09, 0.68, 0.53);}
+.flexCol.flexCol--vitrina {margin-bottom: 10px;}
+
+.flexRowContent.flexRowContent--imageVitrina {justify-content: center;align-items: center;}
+.flexRowContent.flexRowContent--imageVitrina .stretchChildrenWidth {height: 100%;align-items: center;}
+
+.flexRowContent--Home__Shelf {flex-wrap: wrap;}
+
+
+
+@media screen and (max-width: 700px) {
+.flexRowContent--style-price-and-cart.flexRowContent--vitrina {border-color: #b9babb !important;visibility: visible;}
+.flexCol.flexCol--buycolection.flexCol--shelf-vitrina {margin-left: 0;}
+.flexCol.flexCol--buycolection.flexCol--shelf-vitrina :global(.vtex-button__label) {padding: 0;}
+.flexRowContent--imageVitrina {align-items: center;height: 180px;overflow: hidden;}
 }

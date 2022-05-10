@@ -1,0 +1,42 @@
+/* estilos del tabber  */
+.container--product .listContainer {
+    padding: 0 100px;
+    justify-content: center;
+}
+.container--product .listItem {
+    padding: 0;
+    margin: 0 10px;
+    width: 25%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.container--product .listItem :global(.vtex-button){
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.container--product .listItem :global(.vtex-button):hover{
+    background: #001E49;
+    transition: 400ms all;
+}
+.container--product .listItem :global(.vtex-button):hover :global(.vtex-button__label){
+    color: white;
+}
+.contentContainer {
+    padding: 0 30px;
+}
+.contentContainer  :global(.vtex-store-components-3-x-container){
+    margin: 0;
+    border: 1px solid #D3D3D3;
+    background: #F9F9F9;
+    border-radius: 5px;
+}
+.container--product .listItem :global(.vtex-button__label){
+    color: #808080;
+    font-weight: bold;
+}
+.container--product .listItemActive :global(.vtex-button__label){
+    color: white;
+}
+.container--product .contentItem :global(.vtex-flex-layout-0-x-flexRowContent--InformacionDos){
+    padding: 30px 130px;
+}

@@ -1,0 +1,39 @@
+.homeLink::before {
+    content: "Home";
+    font-size: 11px;
+    color: #808080;
+    text-decoration: underline;
+}
+.homeIcon{
+    display: none;
+}
+.link{
+    color: #808080;
+    font-size: 11px;
+    text-decoration: underline;
+}
+.term {
+    color: #001E49;
+    font-size: 12px;
+    font-weight: bold;
+}
+.arrow::before {
+    content: "";
+    background: #001E49;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.arrow {
+    display: flex;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.caretIcon{
+    display: none;
+}

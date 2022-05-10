@@ -1,0 +1,94 @@
+{
+    "responsive-layout.mobile#tabbers": {
+        "children": [
+            "disclosure-layout#especificaciones",
+            "disclosure-layout#caracteristicas",
+            "disclosure-layout#adicional"
+        ]
+    },
+    //Tabbers-mobile
+    "disclosure-layout#especificaciones": {
+        "children": ["disclosure-trigger#especificaciones", "disclosure-content#especificaciones"],
+        "props": {
+          "animated": true,
+          "blockClass":"especificaciones"
+        }
+    },
+    "disclosure-trigger#especificaciones": {
+        "children": ["rich-text#especificaciones"],
+        "props": {
+            "blockClass":"especificaciones"
+        }
+    },
+    "disclosure-content#especificaciones": {
+        "children": [
+            "product-specification-group#table"
+        ],
+        "props": {
+            "blockClass": "product1MMM"
+        }
+    },
+    "rich-text#especificaciones": {
+        "props": {
+            "text": "Especificaciones",
+            "blockClass": "productMOBILE1"
+        }
+    },
+    //Tabbers-mobile2
+    "disclosure-layout#caracteristicas": {
+        "children": ["disclosure-trigger#caracteristicas", "disclosure-content#caracteristicas"],
+        "props": {
+            "animated": true,
+            "blockClass":"especificaciones"
+        }
+    },
+    "disclosure-trigger#caracteristicas": {
+        "children": ["rich-text#caracteristicas"],
+        "props": {
+            "blockClass":["especificaciones", "benefits"]
+        }
+    },
+    "disclosure-content#caracteristicas": {
+        "children": [
+            "product-specification-group#table"
+        ],
+        "props":{
+            "blockClass": "Informacioncaracteristicas"
+        }
+    },
+    "rich-text#caracteristicas": {
+        "props": {
+            "text": "Caracteristicas",
+            "blockClass": "productMOBILE1"
+        }
+    },      
+    //Tabbers-mobile3
+    "disclosure-layout#adicional": {
+        "children": ["disclosure-trigger#adicional", "disclosure-content#adicional"],
+        "props": {
+            "animated": true,
+            "blockClass":"especificaciones"
+        }
+    },
+    "disclosure-trigger#adicional": {
+        "children": ["rich-text#adicional"],
+        "props": {
+            "blockClass":["especificaciones", "docs"]
+        }
+    },
+    "disclosure-content#adicional": {
+        "children": [
+            "product-specification-group#table"
+        ],
+        "props": {
+            "tabId": "Informacionadicional",
+            "blockClass": "Informacionadicional"
+        }
+    },
+    "rich-text#adicional": {
+        "props": {
+            "text": "Adicional",
+            "blockClass": "productMOBILE1"
+        }
+    }
+}

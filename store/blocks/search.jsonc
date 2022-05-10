@@ -1,6 +1,6 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["list-context.image-list#banner-Categoria","search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -23,7 +23,7 @@
   },
 
   "store.search#department": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["list-context.image-list#banner-Categoria", "search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -33,7 +33,7 @@
   },
 
   "store.search#category": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["list-context.image-list#banner-Categoria","search-result-layout"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -47,19 +47,47 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12,
+        "orderByField": "OrderByReleaseDateDESC"
       }
     }
   },
 
   "search-result-layout": {
     "blocks": [
+      
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"
     ]
   },
 
+
+  "list-context.image-list#banner-Categoria": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "images": [
+        {
+          "image": "https://orbeim.vteximg.com.br/arquivos/catalogo-desk.png",
+          "mobileImage": "https://orbeim.vteximg.com.br/arquivos/catalogo-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showPaginationDots": "always",
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
@@ -69,9 +97,16 @@
     "props": {
       "pagination": "show-more",
       "preventRouteChange": false,
-      "defaultGalleryLayout": "grid"
+      "defaultGalleryLayout": "grid",
+      "maxItemsPerPage": 12
     }
   },
+  "image#categoriaDesk": {
+    "props": {
+      "src": "https://orbeim.vteximg.com.br/arquivos/catalogo-desk.png"
+    }
+  },
+
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
@@ -86,13 +121,14 @@
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
     "props": {
       "preventHorizontalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": ["colorBotonCategory", "checkFiltrado"]
     }
   },
   "flex-layout.col#filter": {
     "children": ["filter-navigator.v3"],
     "props": {
-      "blockClass": "filterCol"
+      "blockClass": ["filterCol", "styleCheckSelected"]
     }
   },
   "flex-layout.col#content": {
@@ -156,7 +192,9 @@
 
   "search-result-layout.mobile": {
     "children": [
+      "flex-layout.row#filtroSeleccionado",
       "flex-layout.row#searchinfomobile",
+      "flex-layout.row#filterMobile",
       "flex-layout.row#searchbread",
       "flex-layout.row#productCountMobile",
       "flex-layout.row#fetchprevious",
@@ -178,15 +216,20 @@
       "preserveLayoutOnMobile": true
     }
   },
-
+  "image#categoriaMobile": {
+    "props": {
+      "src": "https://orbeim.vteximg.com.br/arquivos/catalogo-mobile.png"
+    }
+  },
   "flex-layout.row#searchinfomobile": {
     "children": [
       "flex-layout.col#orderByMobile",
-      "flex-layout.col#filterMobile",
+      
       "flex-layout.col#switcherMobile"
     ],
     "props": {
       "preserveLayoutOnMobile": true,
+      "blockClass": "visual-organizar",
       "colSizing": "auto",
       "colJustify": "around"
     }
@@ -206,7 +249,7 @@
     }
   },
 
-  "flex-layout.col#filterMobile": {
+  "flex-layout.row#filterMobile": {
     "children": ["filter-navigator.v3"],
     "props": {
       "blockClass": "filterMobileCol"
@@ -251,10 +294,10 @@
         {
           "name": "list",
           "component": "ListSummary",
-          "itemsPerRow": 1
+          "itemsPerRow": 3
         }
       ],
-      "ListSummary": "product-summary.shelf#listLayout",
+      "ListSummary": "product-summary.shelf",
       "GridSummary": "product-summary.shelf"
     }
   },
@@ -308,6 +351,21 @@
       "text": "List",
       "textColor": "c-auto",
       "blockClass": "layout-option"
+    }
+  },
+  "flex-layout.row#filtroSeleccionado": {
+    "children": ["breadcrumb.search#bread-filtros" ],
+    "props": {
+      "blockClass": "filtroseleccionado"
+    }
+  },
+  "breadcrumb.search#bread-filtros": {
+    "props": {
+      "showOnMobile": true,
+      "homeIconSize": "0",
+      "caretIconSize": "0",
+      "blockClass": "filtroseleccionado"
+    
     }
   }
 }

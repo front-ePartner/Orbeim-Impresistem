@@ -1,0 +1,423 @@
+{
+  // Contenido Columnas
+"flex-layout.col#PrimeraCol1": {
+  "children": [
+    "disclosure-layout#simple"
+  ]
+},
+"flex-layout.col#PrimeraCol2":{
+  "children": [
+    "disclosure-layout#simple2"
+  ]
+},
+"flex-layout.col#PrimeraCol3":{
+  "children": [
+    "disclosure-layout#simple3"
+  ]
+},
+"flex-layout.col#PrimeraCol4":{
+  "children": [
+    "disclosure-layout#simple4"
+  ]
+},
+
+
+// Cierre contenido
+
+//flechas titulos
+"disclosure-state-indicator#footer": {
+  "props": {
+      "blockClass":"footer--state--indicator1",
+    "Show": "image#icon-angle--down",
+    "Hide": "image#icon-angle--up"
+  }
+},
+"disclosure-state-indicator#footer2": {
+  "props": {
+      "blockClass":"footer--state--indicator2",
+    "Show": "image#icon-angle--down2",
+    "Hide": "image#icon-angle--up2"
+  }
+},
+"disclosure-state-indicator#footer3": {
+  "props": {
+      "blockClass":"footer--state--indicator3",
+    "Show": "image#icon-angle--down3",
+    "Hide": "image#icon-angle--up3"
+  }
+},
+"disclosure-state-indicator#footer4": {
+  "props": {
+      "blockClass":"footer--state--indicator4",
+    "Show": "image#icon-angle--down4",
+    "Hide": "image#icon-angle--up4"
+  }
+},
+
+/*flecha hacia abajo*/
+"image#icon-angle--down":{
+  "props": {
+      "blockClass":"image--icon-angle--down",
+      "src": "assets/iconosIM/flecha-hacia-abajo-para-navegar.png",
+      "maxHeight": 24
+    }
+},
+"image#icon-angle--down2":{
+  "props": {
+      "blockClass":"image--icon-angle--down2",
+      "src": "assets/iconosIM/flecha-hacia-abajo-para-navegar.png",
+      "maxHeight": 24
+    }
+},
+"image#icon-angle--down3":{
+  "props": {
+      "blockClass":"image--icon-angle--down3",
+      "src": "assets/iconosIM/flecha-hacia-abajo-para-navegar.png",
+      "maxHeight": 24
+    }
+},
+"image#icon-angle--down4":{
+  "props": {
+      "blockClass":"image--icon-angle--down4",
+      "src": "assets/iconosIM/flecha-hacia-abajo-para-navegar.png",
+      "maxHeight": 24
+    }
+},
+
+
+
+/*flecha hacia arriba*/
+"image#icon-angle--up":{
+  "props": {
+      "blockClass":"image--icon-angle--up",
+      "src": "assets/iconosIM/flecha-hacia-arriba-para-navegar.png",
+      "maxHeight": 24
+    }
+},
+"image#icon-angle--up2":{
+  "props": {
+      "blockClass":"image--icon-angle--up2",
+      "src": "assets/iconosIM/flecha-hacia-arriba-para-navegar.png",
+      "maxHeight": 24
+    }
+},
+"image#icon-angle--up3":{
+  "props": {
+      "blockClass":"image--icon-angle--up3",
+      "src": "assets/iconosIM/flecha-hacia-arriba-para-navegar.png",
+      "maxHeight": 24
+    }
+},
+"image#icon-angle--up4":{
+  "props": {
+      "blockClass":"image--icon-angle--up4",
+      "src": "assets/iconosIM/flecha-hacia-arriba-para-navegar.png",
+      "maxHeight": 24
+    }
+},
+/*----------------------------------------------------------------------------*/
+/*                         Comienzo de Columna 1                             */
+/*--------------------------------------------------------------------------*/
+
+"disclosure-layout#simple":{
+  "props":{
+      "blockClass":"disclosure--layout--simple"
+  },
+  "children": ["disclosure-trigger#simple", "disclosure-content#simple"]
+},
+"disclosure-trigger#simple": {
+  "props":{
+      "blockClass":"disclosure--trigger--simple"
+  },
+  "children": ["flex-layout.row#home__footer--columna-1"]
+},
+"flex-layout.row#home__footer--columna-1":{
+  "props":{
+      "blockClass":"home__footer--columna-1"
+  },
+  "children": [
+      "disclosure-state-indicator#footer",
+      "flex-layout.col#home__footer--columna-1--tileFCol",
+      "flex-layout.col#espacio--menu"
+  ]
+},
+/*lineas que se colocan en el menu*/
+"flex-layout.col#espacio--menu":{
+  "props":{
+    "blockClass":"espacio--menu--divisiones"
+  }
+},
+"flex-layout.col#home__footer--columna-1--tileFCol":{
+  "children": ["rich-text#tileFCol"]
+},
+"disclosure-content#simple": {
+  "children": [
+      "rich-text#answer--primera--columna", 
+      "rich-text#answer2--primera--columna", 
+      "rich-text#answer3--primera--columna", 
+      "rich-text#answer4--primera--columna", 
+      "rich-text#answer5--primera--columna",
+       "rich-text#answer6--primera--columna"]
+},
+"rich-text#tileFCol": {
+  "props": {
+    "blockClass": "TituloCont",
+    "text": "SOBRE NOSOTROS"
+  }
+},
+"rich-text#answer--primera--columna": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Quiénes somos](/)"
+  }
+},
+"rich-text#answer2--primera--columna": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Nuestras SEDES](/)"
+  }
+},
+"rich-text#answer3--primera--columna": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Aviso legal](/)"
+  }
+},
+"rich-text#answer4--primera--columna": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Donde consignar](/)"
+  }
+},
+"rich-text#answer5--primera--columna": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Certificación comercial](/)"
+  }
+},
+"rich-text#answer6--primera--columna": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Politicas de tratamiento de datos](/)"
+  }
+},
+/* >>>>>>>>>>>>Cierre de  Columna 1*/
+
+/*----------------------------------------------------------------------------*/
+/*                         Comienzo de Columna 2                             */
+/*--------------------------------------------------------------------------*/
+
+"disclosure-layout#simple2":{
+  "props":{
+      "blockClass":"disclosure--layout--simple2"
+  },
+  "children": ["disclosure-trigger#simple2", "disclosure-content#simple2"]
+},
+"disclosure-trigger#simple2": {
+  "props":{
+      "blockClass":"disclosure--trigger--simple2"
+  },
+  "children": ["flex-layout.row#home__footer--columna-2"]
+},
+"flex-layout.row#home__footer--columna-2":{
+  "props":{
+      "blockClass":"home__footer--columna-2"
+  },
+  "children": [
+      "disclosure-state-indicator#footer2",
+      "flex-layout.col#home__footer--columna-2--tileFCol",
+      "flex-layout.col#espacio--menu"
+  ]
+},
+"flex-layout.col#home__footer--columna-2--tileFCol":{
+  "children": ["rich-text#tileFCol2"]
+},
+"disclosure-content#simple2": {
+  "children": [
+      "rich-text#answer--primera--columna2", 
+      "rich-text#answer2--primera--columna2"]
+},
+"rich-text#tileFCol2": {
+  "props": {
+    "blockClass": "TituloCont",
+    "text": "INFORMACION"
+  }
+},
+"rich-text#answer--primera--columna2": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Preguntas frecuentes](/)"
+  }
+},
+"rich-text#answer2--primera--columna2": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Términos y condiciones](/)"
+  }
+},
+/* >>>>>>>>>>>>Cierre de  Columna 2*/
+
+/*----------------------------------------------------------------------------*/
+/*                         Comienzo de Columna 3                            */
+/*--------------------------------------------------------------------------*/
+
+"disclosure-layout#simple3":{
+  "props":{
+      "blockClass":"disclosure--layout--simple3"
+  },
+  "children": ["disclosure-trigger#simple3", "disclosure-content#simple3"]
+},
+"disclosure-trigger#simple3": {
+  "props":{
+      "blockClass":"disclosure--trigger--simple3"
+  },
+  "children": ["flex-layout.row#home__footer--columna-3"]
+},
+"flex-layout.row#home__footer--columna-3":{
+  "props":{
+      "blockClass":"home__footer--columna-3"
+  },
+  "children": [
+      "disclosure-state-indicator#footer3",
+      "flex-layout.col#home__footer--columna-3--tileFCol3",
+      "flex-layout.col#espacio--menu"
+  ]
+},
+"flex-layout.col#home__footer--columna-3--tileFCol3":{
+  "children": ["rich-text#tileFCol3"]
+},
+"disclosure-content#simple3": {
+  "children": [
+      "rich-text#answer--primera--columna3", 
+      "rich-text#answer2--primera--columna3", 
+      "rich-text#answer3--primera--columna3", 
+      "rich-text#answer4--primera--columna3", 
+      "rich-text#answer5--primera--columna3",
+       "rich-text#answer6--primera--columna3"]
+},
+"rich-text#tileFCol3": {
+  "props": {
+    "blockClass": "TituloCont",
+    "text": "FAQ"
+  }
+},
+"rich-text#answer--primera--columna3": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Quiénes somos](/)"
+  }
+},
+"rich-text#answer2--primera--columna3": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Nuestras SEDES](/)"
+  }
+},
+"rich-text#answer3--primera--columna3": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Aviso legal](/)"
+  }
+},
+"rich-text#answer4--primera--columna3": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Donde consignar](/)"
+  }
+},
+"rich-text#answer5--primera--columna3": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Certificación comercial](/)"
+  }
+},
+"rich-text#answer6--primera--columna3": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Politicas de tratamiento de datos](/)"
+  }
+},
+/* >>>>>>>>>>>>Cierre de  Columna 3*/
+
+/*----------------------------------------------------------------------------*/
+/*                         Comienzo de Columna 4                             */
+/*--------------------------------------------------------------------------*/
+
+"disclosure-layout#simple4":{
+  "props":{
+      "blockClass":"disclosure--layout--simple4"
+  },
+  "children": ["disclosure-trigger#simple4", "disclosure-content#simple4"]
+},
+"disclosure-trigger#simple4": {
+  "props":{
+      "blockClass":"disclosure--trigger--simple4"
+  },
+  "children": ["flex-layout.row#home__footer--columna-4"]
+},
+"flex-layout.row#home__footer--columna-4":{
+  "props":{
+      "blockClass":"home__footer--columna-4"
+  },
+  "children": [
+      "disclosure-state-indicator#footer4",
+      "flex-layout.col#home__footer--columna-4--tileFCol",
+      "flex-layout.col#espacio--menu"
+  ]
+},
+"flex-layout.col#home__footer--columna-4--tileFCol":{
+  "children": ["rich-text#tileFCol4"]
+},
+"disclosure-content#simple4": {
+  "children": [
+      "rich-text#answer--primera--columna4", 
+      "rich-text#answer2--primera--columna4", 
+      "rich-text#answer3--primera--columna4", 
+      "rich-text#answer4--primera--columna4", 
+      "rich-text#answer5--primera--columna4",
+       "rich-text#answer6--primera--columna4"]
+},
+"rich-text#tileFCol4": {
+  "props": {
+    "blockClass": "TituloCont",
+    "text": "CONTACTANOS"
+  }
+},
+"rich-text#answer--primera--columna4": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Quiénes somos](/)"
+  }
+},
+"rich-text#answer2--primera--columna4": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Nuestras SEDES](/)"
+  }
+},
+"rich-text#answer3--primera--columna4": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Aviso legal](/)"
+  }
+},
+"rich-text#answer4--primera--columna4": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Donde consignar](/)"
+  }
+},
+"rich-text#answer5--primera--columna4": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Certificación comercial](/)"
+  }
+},
+"rich-text#answer6--primera--columna4": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Politicas de tratamiento de datos](/)"
+  }
+}
+/* >>>>>>>>>>>>Cierre de  Columna 4*/
+}

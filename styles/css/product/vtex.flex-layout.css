@@ -1,0 +1,48 @@
+/* estilos de cantidad */
+.flexRowContent--cantidadPrecio {
+    padding: 20px 0;
+    border-bottom: 1px solid #eeee;
+}
+
+/* estilos de la descripcion */
+.flexRowContent--description {
+    margin: 5px 0;
+}
+/* estilos del precio pagina producto */
+.flexColChild--containerPrecio :global(.vtex-product-price-1-x-sellingPriceValue) :global(.vtex-product-price-1-x-currencyContainer){
+    font-size: 28px;
+    color: #2A2A2A;
+} 
+/* estilos del botton de comprar en el producto */
+.flexRowContent--button-buy-product :global(.vtex-button){
+    background: #001E49;
+    padding: 15px 0;
+}
+.flexRowContent--button-buy-product :global(.vtex-button__label){
+    font-size: 0;
+}
+.flexRowContent--button-buy-product :global(.vtex-button__label)::before{
+    font-size: 15px;
+    content: "AGREGAR AL PEDIDO";
+}
+/* estilos de las especificaciones */
+.flexColChild .flexRow--productSpecificationGroupName{
+    background: transparent;
+}
+.flexRowContent--InformacionDos :global(.vtex-product-specifications-1-x-groupName){
+    color: #2A2A2A;
+    font-size: 13px;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .flexRowContent--cantidadPrecio{
+        display: flex;
+    }
+    .flexRowContent--cantidadPrecio .stretchChildrenWidth{
+        width: 50%;
+    }
+    .flexColChild--containerPrecio :global(.vtex-product-price-1-x-sellingPriceValue) :global(.vtex-product-price-1-x-currencyContainer){
+        font-size: 22px;
+        color: #2A2A2A;
+    } 
+}

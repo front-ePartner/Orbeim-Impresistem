@@ -1,0 +1,66 @@
+{
+  "flex-layout.row#accordion": {
+    "props": {
+      "blockClass": "container-accordion",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.col#col-image1",
+      "flex-layout.col#col-image2",
+      "flex-layout.col#col-image3",
+      "flex-layout.col#col-image4"
+    ]
+  },
+  "flex-layout.col#col-image1": {
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    },
+    "children": ["image#1"]
+  },
+  "flex-layout.col#col-image2": {
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    },
+    "children": ["image#2"]
+  },
+  "flex-layout.col#col-image3": {
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    },
+    "children": ["image#3"]
+  },
+  "flex-layout.col#col-image4": {
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    },
+    "children": ["image#4"]
+  },
+  "image#1": {
+    "props": {
+      "blockClass": "image-accordion",
+      "src": "assets/img/img19.png"
+    }
+  },
+  "image#2": {
+    "props": {
+      "blockClass": "image-accordion",
+      "src": "assets/img/img1.png"
+    }
+  },
+  "image#3": {
+    "props": {
+      "blockClass": "image-accordion",
+      "src": "assets/img/img2.png"
+    }
+  },
+  "image#4": {
+    "props": {
+      "blockClass": "image-accordion",
+      "src": "assets/img/img3.png"
+    }
+  }
+}

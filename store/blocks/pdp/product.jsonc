@@ -3,12 +3,13 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "flex-layout.row#description",
-      "flex-layout.row#specifications-title",
-      "product-specification-group#table",
-      "shelf.relatedProducts",
+      "responsive-layout.mobile#tabbers",
+      "responsive-layout.desktop#tabbers",
       "product-reviews",
-      "product-questions-and-answers"
+      "product-questions-and-answers",
+      "rich-text#relacionados1",
+      "responsive-layout.desktop#related1",
+      "responsive-layout.phone#related1"
     ]
   },
   "flex-layout.row#specifications-title": {
@@ -27,7 +28,7 @@
   },
   "flex-layout.row#description": {
     "props": {
-      "marginBottom": 7
+      "blockClass":"description"
     },
     "children": ["product-description"]
   },
@@ -100,23 +101,20 @@
     },
     "children": [
       "flex-layout.row#product-name",
-      "product-rating-summary",
-      "flex-layout.row#list-price-savings",
-      "flex-layout.row#selling-price",
-      "product-installments",
-      "product-separator",
       "product-identifier.product",
-      "sku-selector",
-      "product-quantity",
+      "product-rating-summary",
+      "flex-layout.row#description",
+      "product-separator",
+      "flex-layout.row#cantidad-precio",
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
       "availability-subscriber",
-      "shipping-simulator",
-      "share#default"
+      "image#bannerProducto-sale" 
+      // "shipping-simulator",
+      // "share#default"
     ]
   },
-
   "flex-layout.row#product-name": {
     "props": {
       "marginBottom": 3
@@ -130,10 +128,38 @@
       "showValueNameForImageVariation": true
     }
   },
-
+  // contenedor del cantidad precio
+  "flex-layout.row#cantidad-precio": {
+    "props": {
+      "blockClass":"cantidadPrecio"
+    },
+    "children": [
+      "flex-layout.col#precioConatine",
+      "flex-layout.col#cantidadConatine"
+    ]
+  },
+  "flex-layout.col#precioConatine": {
+    "props": {
+      "blockClass":"containerPrecio"
+    },
+    "children": [
+      "flex-layout.row#list-price-savings",
+      "flex-layout.row#selling-price"
+    ]
+  },
+  "flex-layout.col#cantidadConatine": {
+    "props": {
+      "blockClass":"containerCantidad"
+    },
+    "children": [
+      "product-quantity"
+    ]
+  },
+  // fin del contenedor de precio
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
+      "blockClass":"button-buy-product",
       "marginBottom": 7
     },
     "children": ["add-to-cart-button"]
@@ -180,5 +206,50 @@
         "Pinterest": true
       }
     }
+  },
+  "image#bannerProducto-sale":{
+    "props": {
+      "blockClass":"bannerProducto",
+      "src": "https://orbeim.vteximg.com.br/arquivos/saleProductoImpre.png"
+    }
+  },
+  "rich-text#relacionados1": {
+    "props": {
+      "text": "## Productos más vendidos",
+      "blockClass": ["title--productos--destacados","vitrinas-tittle"]
+    }
+  },
+  // responsive layout related products
+  "responsive-layout.desktop#related1": {
+    "children": ["shelf.relatedProducts#1"]
+  },
+  "responsive-layout.phone#related1": {
+    "children": ["shelf.relatedProducts#1M"]
+  },
+  // vitrinas
+  "shelf.relatedProducts#1M": {
+    "props": {
+        "recommendation": "view",
+        "productList": {
+            "minItemsPerPage":2,
+            "itemsPerPage": 5,
+            "maxItems":5
+        },
+        "blockClass": "shelf"
+    },
+    "blocks": ["product-summary.shelf#HomeVitrinas"]
+  },
+  "shelf.relatedProducts#1": {
+    "props": {
+        "recommendation": "view",
+        "productList": {
+          "minItemsPerPage":4,
+          "itemsPerPage": 4,
+          "maxItems":4
+        },
+        "blockClass": "shelf",
+        "showPaginationDots":"never"
+    },
+    "blocks": ["product-summary.shelf#HomeVitrinas"]
   }
 }

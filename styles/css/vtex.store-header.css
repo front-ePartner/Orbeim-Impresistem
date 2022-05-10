@@ -55,13 +55,13 @@
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck):not(:hover)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
-    background: rgba(240, 240, 240, 0.8);
+    background: #ffff;
   }
 }
 
 /* stick wrapper with the same color as the desktop/mobile header */
 :global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
-  background-color: #f0f0f0;
+  background-color: #ffff;
 }
 
 /* resize the logo for neat effect */
@@ -82,3 +82,18 @@
     transition: none;
   }
 }
+
+/*_   _ _____    _    ____  _____ ____  
+| | | | ____|  / \  |  _ \| ____|  _ \   
+| |_| |  _|   / _ \ | | | |  _| | |_) |  
+|  _  | |___ / ___ \| |_| | |___|  _ <    
+|_| |_|_____/_/   \_\____/|_____|_| \_\    */
+
+.headerStickyRow--Menu-Bottom {
+  padding: 0 !important;
+}
+
+.headerRowContainer--Menu-Bottom {
+  padding: 10px 0;
+}
+/*----------------------------------------------------------------------------------*/

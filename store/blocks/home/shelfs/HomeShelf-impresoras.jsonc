@@ -1,0 +1,40 @@
+{
+  "flex-layout.col#Shelf-impresoras": {
+    "props": {
+      "blockClass": ["Shelf", "Shelf--impresoras"]
+    },
+    "children": [
+      "list-context.product-list#Shelf-impresoras"
+    ]
+  },
+
+  // * Container
+  "list-context.product-list#Shelf-impresoras": {
+    "props": {
+      "blockClass": [
+        "Shelf__container",
+        "Shelf__container--impresoras"
+      ],
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "children": ["slider-layout#Shelf-impresoras"],
+    "blocks": ["product-summary.shelf#HomeVitrinas"]
+  },
+
+  // * Slider Shelf
+  "slider-layout#Shelf-impresoras": {
+    "props": {
+      "blockClass": [
+        "Shelf__Slider",
+        "Shelf__Slider--impresoras"
+      ],
+      "showPaginationDots": "mobileOnly",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true
+    }
+  }
+}

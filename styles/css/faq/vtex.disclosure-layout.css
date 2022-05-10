@@ -11,7 +11,7 @@
 
 .trigger--question:focus,
 .trigger--question:focus :global(.vtex-rich-text-0-x-paragraph) {
-  color: #0F3E99;
+  color: #0f3e99;
 }
 
 .trigger :global(.vtex-store-icons-0-x-caretIcon) {
@@ -19,7 +19,8 @@
 }
 
 .content--answer {
-  transition: opacity 250ms ease-in-out, height 250ms ease-in-out, transform 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out, height 250ms ease-in-out,
+    transform 250ms ease-in-out;
   opacity: 0;
   height: 0;
   transform: translate3d(0, -10%, 0);
@@ -34,4 +35,48 @@
 .content--answer[data-leave] {
   height: 0;
   overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .trigger--disclosure-icon-search-mobile--visible::before {
+    content: "X";
+    font-size: 2rem;
+    top: 2rem;
+    position: absolute;
+    font-family: "Encode Sans";
+    font-weight: 600;
+    color: #324545;
+    background: white;
+    margin-left: 0;
+  }
+  .trigger--Disclosure__Trigger-Politics {
+    margin-bottom: 15px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: #f2f2f0;
+    border-radius: 5px;
+  }
+
+  .searchBarContainer :global(.vtex-input-prefix__group) {
+    height: 37px;
+    background: white;
+    border: none;
+    width: 90%;
+    margin: 7px auto;
+  }
+  .searchBarContainer {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    left: 0;
+    height: auto;
+    width: 100% !important;
+  }
+  .trigger--disclosure-icon-search-mobile {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-top: 9px;
+  }
 }

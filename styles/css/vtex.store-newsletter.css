@@ -1,0 +1,60 @@
+/*footer */
+
+.formSubmitContainer--newsletter-submit :global(.vtex-button){
+    width: 91px;
+}
+
+/*---------------------------*/
+/*footer    desktop          */
+/*---------------------------*/
+
+.confirmationCheckboxContainer--newsletter-checkbox-confirmation{
+    margin-top: 16px;
+}
+
+
+.confirmationCheckboxContainer--newsletter-checkbox-confirmation :global(.vtex-checkbox__label){
+    margin-right: 44px;
+    color: white;
+    font-size: 14px;
+}
+
+.formSubmitContainer--newsletter-submit :global(.vtex-button){
+    width: 54px;
+    background: yellow;
+    border-color: yellow;
+    background-image: url(/arquivos/envelope.png);
+    background-size: 50% 51%;
+    background-repeat: no-repeat;
+    background-position: 12px 8px;
+}
+
+/*---------------------------*/
+
+/*----------------------------*/
+/* footer phone               */
+/*----------------------------*/
+
+.formSubmitContainer--newsletter-submit--phone{
+    position: absolute;
+    top: 0;
+    left: 232px;
+}
+
+.formSubmitContainer--newsletter-submit--phone :global(.vtex-button){
+    background: yellow;
+    border-color: yellow;
+    background-image: url(/arquivos/envelope.png);
+    background-size: 50% 51%;
+    background-repeat: no-repeat;
+    background-position: 12px 8px;
+}
+.confirmationCheckboxContainer--newsletter-checkbox-confirmation--phone{
+    margin-top: 10px;
+}
+
+.confirmationCheckboxContainer--newsletter-checkbox-confirmation--phone :global(.vtex-checkbox__label){
+    color: white;
+}
+
+/*-----------------------------*/

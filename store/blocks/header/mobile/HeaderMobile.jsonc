@@ -1,0 +1,110 @@
+{
+  // * Header Mobile
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#header-top_tablet_mobile", // /header.jsonc
+      "sticky-layout#fixed_table_mobile_header"
+    ]
+  },
+  "sticky-layout#fixed_table_mobile_header": {
+    "props": {
+      "blockClass": "sticky-header_t"
+    },
+    "children": [
+      "flex-layout.row#1-mobile"
+    ]
+  },
+  // * Row Header
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "flex-layout.col#mobile__home--drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "disclosure-layout#simple",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "disclosure-layout#simple": {
+    "props": {
+      "blockClass": "disclosure-search-mobile"
+    },
+    "children": ["disclosure-trigger#simple", "disclosure-content#simple"]
+  },
+  "disclosure-trigger#simple": {
+    "props": {
+      "blockClass": "disclosure-icon-search-mobile"
+    },
+    "children": ["image#ImageSearch"]
+  },
+  "disclosure-content#simple": {
+    "props": {
+      "blockClass": "disclosure-search-mobile"
+    },
+    "children": ["search-bar#mobile"]
+  },
+  "rich-text#question": {
+    "props": {
+      "text": "How can I change my shipping address?"
+    }
+  },
+  "rich-text#answer": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234"
+    }
+  },
+  // * Logo
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "arquivos/logo.png"
+    }
+  },
+
+  "search-bar#mobile": {
+    "props": {
+      "blockClass": "search-bar-mobil"
+    }
+  },
+
+  "image#ImageSearch": {
+    "props": {
+      "blockClass": ["Search__Image", ""],
+      "src": "https://pianteco.vteximg.com.br/arquivos/search-icon-piante.png"
+    }
+  },
+
+  "flex-layout.col#mobile__home--drawer":{
+    "props":{
+      "blockClass": "mobile__home--drawer"
+    },
+    "children":[
+      "drawer"
+    ]
+  },
+
+  /*hamburguesa menu phone*/
+  "drawer": {
+    "children": ["flex-layout.col#opciones--menu"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "flex-layout.col#opciones--menu": {
+    "children": [
+      "flex-layout.col#PrimeraCol1--header",
+      "flex-layout.col#opciones--menu--espacio"
+    ]
+  },
+  "flex-layout.col#opciones--menu--espacio": {
+    "props": {
+      "blockClass": "opciones--menu--espacio"
+    }
+  }
+}

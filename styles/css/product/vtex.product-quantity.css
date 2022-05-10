@@ -1,0 +1,27 @@
+.quantitySelectorContainer {
+    margin: 0;
+}
+.quantitySelectorTitle {
+    color: #2A2A2A;
+    font-weight: bold;
+    font-size: 13px;
+}
+/* estilos del box quantity */
+:global(.vtex-numeric-stepper__minus-button){
+    background: transparent;
+}
+:global(.vtex-numeric-stepper__input){
+    border-left: 0;
+    border-right: 0;
+    width: 35px;
+    height: 45px;
+}
+:global(.vtex-numeric-stepper__minus-button){
+    height: 45px;
+}
+:global(.vtex-numeric-stepper__plus-button){
+    height: 45px;
+}
+:global(.vtex-numeric-stepper__plus-button__text){
+    color: #2A2A2A;
+}

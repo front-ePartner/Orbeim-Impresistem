@@ -1,0 +1,621 @@
+{
+
+  /*titulo productos destacados*/
+  "responsive-layout.phone#rich-text--title--productos--destacados":{
+        "children":[
+            "rich-text#phone--title--productos--destacados"
+        ]
+    },
+    "rich-text#phone--title--productos--destacados": {
+        "props": {
+          "text": "Productos Destacados",
+          "blockClass": "phone--title--productos--destacados"
+        }
+    },
+
+    /*tab (selector de diferentes opciones)*/
+    "responsive-layout.phone#flex-layout.row--product__tabs":{
+        "children":[
+            "flex-layout.row#phone--product__tabs"
+        ]
+    },
+    "flex-layout.row#phone--product__tabs":{
+        "props":{
+          "blockClass": "phone--home__collage--imagenes"
+        },
+        "children":[
+          "tab-layout#product__tabs--phone"
+        ]
+    },
+    "tab-layout#product__tabs--phone":{
+      "children":[
+        "tab-list#product__tab--list--phone",
+        "tab-content#product__tab--content--phone"
+      ]
+    },
+
+    "tab-list#product__tab--list--phone":{
+      "children":[
+
+        "slider-layout#slider-tabber-mobile"
+
+        //"tab-list.item#tabs__list--laptos--phone",
+        //"tab-list.item#tabs__list--impresoras--phone"
+      ]
+    },
+    "slider-layout#slider-tabber-mobile": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 2
+        },
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "blockClass": "carousel"
+      },
+      "children": [
+        "tab-list.item#tabs__list--laptos--phone",
+        "tab-list.item#tabs__list--impresoras--phone"
+      ]
+    },
+    "tab-list.item#tabs__list--laptos--phone":{
+      "props":{
+        "tabId":"laptos",
+        "label":"laptos",
+        "defaultActiveTab":true
+      }
+    },
+    "tab-list.item#tabs__list--impresoras--phone":{
+      "props":{
+        "tabId":"impresoras",
+        "label":"impresoras"
+      }
+    },
+    "tab-content#product__tab--content--phone":{
+      "children":[
+        "shelf#Tabber-1",
+        "tab-content.item#tabs__content--impresoras--phone"
+      ]
+    },
+    "tab-content.item#tabs__content--laptos--phone":{
+      "props":{
+        "tabId":"laptos"
+      },
+      "children":[
+        "shelf#Tabber-2",
+        "flex-layout.row#phone__home__espacio--grande"
+      ]
+    },
+    "tab-content.item#tabs__content--impresoras--phone":{
+      "props":{
+        "tabId":"impresoras"
+      },
+      "children":["rich-text#tabs__content--impresoras"]
+    },
+
+    /*collage imagenes*/
+    "responsive-layout.phone#flex-layout.row--home__first--collage--imagenes":{
+        "children":[
+            "flex-layout.row#phone__first--collage--imagenes"
+        ]
+    },
+    "flex-layout.row#phone__first--collage--imagenes":{
+        "props":{
+            "blockClass": "phone__collage--imagenes"
+          },
+          "children": [
+            "flex-layout.col#phone__first--collage--imagenes"
+          ]
+    },
+    "flex-layout.col#phone__first--collage--imagenes":{
+        "props":{
+          "blockClass": "phone__first--collage--imagenes"
+        },
+          "children": [
+            "flex-layout.col#phone__first--collage--imagenes--1",
+            "flex-layout.row#phone__first--collage--2--imagenes"
+          ]
+    },
+    "flex-layout.row#phone__first--collage--2--imagenes":{
+        "props":{
+          "blockClass":"phone__first--collage--2--imagenes"
+        },
+        "children":[
+          "image#phone__second--image---first--collage",
+          "image#phone__third--image---first--collage"
+        ]
+    },
+    "flex-layout.col#phone__first--collage--imagenes--1":{
+        "children":[
+          "image#phone__first--image---first--collage"
+        ]
+      },
+      "image#phone__first--image---first--collage":{
+        "props": {
+          "blockClass": "phone__first--image---first--collage",
+          "src": "assets/img/img3.png"
+
+        }
+      },
+      "image#phone__second--image---first--collage":{
+        "props": {
+          "blockClass": "phone__second--image---first--collage",
+          "src": "assets/img/img2.png"
+        }
+      },
+      "image#phone__third--image---first--collage":{
+        "props": {
+          "blockClass": "phone__second--image---first--collage--2",
+          "src": "assets/img/img2.png"
+        }
+      },
+
+      /*collage imagenes*/
+      "responsive-layout.phone#flex-layout.row--home__second--collage--imagenes":{
+        "children":[
+          "flex-layout.row#phone__second--collage--imagenes"
+        ]
+      },
+      "flex-layout.row#phone__second--collage--imagenes":{
+        "props":{
+          "blockClass": "phone__second--collage--imagenes"
+        },
+        "children":[
+          "flex-layout.col#phone__second--collage--imagenes"
+        ]
+      },
+      "flex-layout.col#phone__second--collage--imagenes":{
+        "props": {
+          "blockClass": "phone__second--collage--imagenes"
+        },
+        "children":[
+          "flex-layout.row#phone__second--collage--imagenes--first",
+          "flex-layout.row#phone__second--collage--imagenes--second"
+        ]
+      },
+      "flex-layout.row#phone__second--collage--imagenes--first":{
+        "props": {
+          "blockClass": "phone__second--collage--imagenes--first"
+        },
+        "children":[
+          "image#phone__first--image---second--collage",
+          "rich-text#phone__second--collage--imagenes--1--text"
+        ]
+      },
+      "image#phone__first--image---second--collage":{
+        "props": {
+          "blockClass": "phone__first--image---second--collage",
+          "src": "assets/img/img4.png"
+        }
+      },
+      "rich-text#phone__second--collage--imagenes--1--text":{
+        "props":{
+          "text":"TODO LO \n QUE UN \n GAMER NECESITA",
+          "blockClass": "hone__second--collage--imagenes--1--text"
+        }
+      },
+      "flex-layout.row#phone__second--collage--imagenes--second":{
+        "props": {
+          "blockClass": "phone__second--collage--imagenes--second"
+        },
+        "children":[
+          "image#phone__second--image---second--collage",
+          "image#phone__third--image---second--collage"
+        ]
+      },
+      "image#phone__second--image---second--collage":{
+        "props": {
+          "blockClass": "phone__second--image---second--collage",
+          "src": "assets/img/img5.png"
+        }
+      },
+      "image#phone__third--image---second--collage":{
+        "props": {
+          "blockClass": "phone__third--image---second--collage",
+          "src": "assets/img/img6.png"
+        }
+      },
+
+      /*slider imagenes*/
+      "responsive-layout.phone#flex-layout.row--home__second-slider-images":{
+        "children":[
+          "flex-layout.row#phone__second-slider-images"
+        ]
+      },
+      "flex-layout.row#phone__second-slider-images":{
+        "props":{
+          "blockClass": "phone__second--imagenes"
+        },
+        "children":[
+          "slider-layout#phone__second-slider-images"
+        ]
+      },
+      "slider-layout#phone__second-slider-images": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 2,
+            "phone": 2
+          },
+          "infinite": true,
+          "showNavigationArrows": "always",
+          "blockClass": "carousel--phone"
+        },
+        "children":[
+          "flex-layout.col#first--computer--phone",
+          "flex-layout.col#first--computer--phone",
+          "flex-layout.col#first--computer--phone",
+          "flex-layout.col#first--computer--phone"
+        ]
+      },
+      "flex-layout.col#first--computer--phone":{
+        "props":{
+          "blockClass":"first--computer--phone"
+        },
+        "children":[
+          "image#second--computer",
+          "rich-text#computer--text--title",
+          "rich-text#computer--text--contenido",
+          "flex-layout.row#separacion",
+          "flex-layout.row#price--cart"
+        ]
+      },
+      "rich-text#computer--text--title":{
+        "props":{
+          "blockClass":"computer--text--title",
+          "text":"Computador portatil ASUS \n (13.3'' Intel) "
+        }
+      },
+      "rich-text#computer--text--contenido":{
+        "props":{
+          "blockClass":"computer--text--contenido",
+          "text":"Laptop 2 en 1 con tecnologia intel Eco \n opcional, IA y seguridad biometrica"
+        }
+      },
+
+      /*separacion para no tener que colocar tanta margen*/
+      "flex-layout.row#separacion":{
+        "props":{
+          "blockClass":"separacion"
+        }
+      },
+      "flex-layout.row#price--cart":{
+        "props":{
+          "blockClass":"price--cart"
+        },
+        "children":[
+          "rich-text#first--computer--price",
+          "link.product#shopping--cart"
+          //"add-to-cart-button"
+        ]
+      },
+      "rich-text#first--computer--price":{
+        "props":{
+          "blockClass":"computer--price",
+          "text":"### $2.600.000"
+        }
+      },
+      "link.product#shopping--cart":{
+        "props":{
+          "blockClass":"shopping--cart",
+          "href":"/"
+        },
+        "children":[
+          "image#shopping--cart"
+        ]
+      },
+      "image#shopping--cart":{
+        "props":{
+          "blockClass":"shopping--cart",
+          "src": "https://cdn-icons-png.flaticon.com/512/3144/3144456.png",
+          "maxHeight": 24
+        }
+      },
+
+      /*collage imagenes*/
+      "responsive-layout.phone#flex-layout.row--home__tercer-collage--imagenes":{
+        "children":[
+          "flex-layout.row#phone__tercer-collage--imagenes"
+        ]
+      },
+      "flex-layout.row#phone__tercer-collage--imagenes": {
+        "props":{
+          "blockClass": "phone__tercer--imagenes"
+        },
+        "children": [
+          "image#phone__first--image---third--collage",
+          "image#phone__second--image---third--collage"
+        ]
+      },
+      "image#phone__first--image---third--collage":{
+        "props": {
+          "blockClass": "phone__first--image---third--collage",
+          "src": "assets/img/img9.png"
+        }
+      },
+      "image#phone__second--image---third--collage":{
+        "props": {
+          "blockClass": "phone__second--image---third--collage",
+          "src": "assets/img/img10.png"
+        }
+      },
+
+      /*espacio...para no tener que colocar tanto margin*/
+      "responsive-layout.phone#flex-layout.row--home__espacio":{
+        "children":[
+          "flex-layout.row#phone__home__espacio"
+        ]
+      },
+      "flex-layout.row#phone__home__espacio":{
+        "props":{
+          "blockClass":"phone__home__espacio"
+        }
+      },
+      "responsive-layout.phone#flex-layout.row--home__espacio--grande":{
+        "children":[
+          "flex-layout.row#phone__home__espacio--grande"
+        ]
+      },
+      "flex-layout.row#phone__home__espacio--grande":{
+        "props":{
+          "blockClass":"phone__home__espacio--grande"
+        }
+      },
+
+
+      /*slider nuestras marcas*/
+
+
+      "responsive-layout.phone#flex-layout.row--home__nuestras--marcas":{
+        "children":[
+          "flex-layout.row#phone__nuestras--marcas"
+        ]
+      },
+
+      "flex-layout.row#phone__nuestras--marcasTitulo":{
+        "props":{
+          "blockClass": "phone__collage--imagenes"
+        },
+        "children":[
+          "rich-text#title--productos--Marcas"
+        ]
+      },
+
+      "flex-layout.row#phone__nuestras--marcas":{
+        "props":{
+          "blockClass": "phone__collage--imagenes"
+        },
+        "children":[
+          
+          "slider-layout#phone__third-slider-images"
+        ]
+      },
+      "slider-layout#phone__third-slider-images": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 6,
+            "tablet": 1,
+            "phone": 4
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "mobileOnly",
+          "blockClass": "carousel--marcas"
+        },
+        "children":[
+          "image#phone__third-slider-images--1",
+          "image#phone__third-slider-images--2",
+          "image#phone__third-slider-images--3",
+          "image#phone__third-slider-images--4",
+          "image#phone__third-slider-images--5",
+          "image#phone__third-slider-images--6",
+          "image#phone__third-slider-images--7"
+        ]
+      },
+      "image#phone__third-slider-images--1":{
+        "props":{
+          "src": "https://1000marcas.net/wp-content/uploads/2020/02/Intel-Logo-2005.png",
+          "maxHeight": 70,
+          "blockClass": "phone__third-slider-images--1"
+        }
+      },
+      "image#phone__third-slider-images--2":{
+        "props":{
+          "src": "https://cdn.worldvectorlogo.com/logos/ryzen.svg",
+          "maxHeight": 70,
+          "blockClass": "phone__third-slider-images--1"
+        }
+      },
+      "image#phone__third-slider-images--3":{
+        "props":{
+          "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ0i8EcQEZCH5ufBc66GxnlX5peR8OwW01QcrNw1Zk4U5WCtVnck1YmRwKskKUGSMCVdc&usqp=CAU",
+          "maxHeight": 70,
+          "blockClass": "phone__third-slider-images--1"
+        }
+      },
+      "image#phone__third-slider-images--4":{
+        "props":{
+          "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AfbgAebYAe7cAdrUAdLQAcrMAdbQAcLIAerdvps20z+N6rNBJlcRensl9r9Lv9fmqyd++1Obk7vX2+vzo8ffZ5/HK3evT4+8hhbyEs9SixN09j8HC2OhxqM4oh72Zv9pRmMWRuthhoMkAa7BJqeVdAAAOxElEQVR4nOVdaZeqOBBtshFaUVFEcV/m///GAVulsrEmgL575rwPPQhcktSWqsrPT2+IF+vVKkmS1Wq9iPt7rHPEyXK/+w1TwjmjlDL2+Jdzkob33X6ZfDTXbTQPEWM+QQh7KjBGxKcMhfNo+3k8V5PpmVGCsI6aSpSy8zRaDf3StbGOfgNGtMNWAkQYukfroV++Gttd2pzdazQzluluOzSFMmymiKJW5MBYMjTdDE1Ej2SX0Ws3ePJQUrRLhqYjI47OzAq9F0mW7sckX5MTI/boPUkSdhrLQB4PrOvi0wOxw3FochkmKas7fJlyxDm8Glry+QuaTgbmF3l+NS9EiM8Yz8Ts+ZDj7CGam3CkjkXg42hAfpMKfrm1woNweplskoX020WymVymIea0Qn1i3xtqHDcpLXmxIDPFDtNqizPOrNcDyyRVCU2aDrEeV6F5/WFCyWzfxDhJ9vfsN+YbsrB3q3XOA+Pg8cOljZxPLgduJBnwqXUOZVgig34ICLtO2qvqeDJjxPDpEOpvOS5Cqv/UhIcd6D0xuXKin6o0lMWVI0T6BRhQ72LnDRYXj2oHMmB7Kw8oRxxqJSjiV5vybjPj2nVAD86HcamdoITNbcu69Vxr62K6tPwgCSfdDCX05sIPiG++hiPmJwfPemGdamQAojdnD7z4mgeS1FmsY6kZQMR3Tv24ncZvwczRTN1xzZS5u175i1+ufle2c/Goq2pl03MfPmpyVqWbH1p/zCJVZgtiffk1kRrfQqnlybNSpBpms/4CKfFdmaqYWJ0/G2UJIuJYL0k4qpYwsxh0XCoE6bXvSFg8U2wpbs0Uj2SCuLcVCDFRlBW3ZKbuZYIoHWYTZX2W9b8dihcmz9C7jdu2wq/8LuzS/aZ76abY1tRohUiWqd39KXkNYjrs3tBWVltdP7gsRa0r2sZQTI9uElXWg+Rg60U74CDJG95BL64kgv7M3nt2wF2ykFlr62YhfSzq0vdsgqkk/UjbpZOKi5o6cVlaYSfaNzhtd5uruKTd+GQtcRNHEbVypnbibB/RCOa4iaPot3g7SU+MjGAe3hBnWGNXZy3ewB+LkCkwFecYaxqeEqUMGc4UNeMuiPqm0uYk/BqNQdGrOAiikDSaZkvW5fP0BnGi8QZLMRaCW7i1QnWNhWCGY1o/7hCK32a8mWZbQeDj2loxEnTNIBGLuoiE5URrvupC+BX5dfuOHfEriERWbz0Jc3S0UuYFQdrUm6dLYY7ysee0roWlSOu4w0L+Tt2ZPSAEqYFR9Q/mUI2icbi85ZgJbzyvulxw6zEZU46nCbGgFXlVLDeESRCudiItQ7DAggphs4EXf8QczSHMU1aeEyLI3gZW0LCIBWFTqt8m8NIPkKMvCPK0VGN48Fuce3vB7jgLlrT5ugi6zXwseeR1kEAV4JsnH/wOaIxuvRl3wRs2XTURhnCsTqEeC2EQTSsxhUM4tthaFXZwEA3i9Ah14cdoihcEjWHQiQcgj4i7XDVXuAFPEWtDZ4kwhH2/X3eIg6hTBCcwkT9wCMVBRJrQYgyFEfu0VZhDYMBVBnv4BSqdrFFiCmehur0P7Z7Rhy70gL6tanNCORNch3g/C7gC51aRNVBh0pHW4VbiCMSpYrII8adBXs8GQHmYHJPaAPbkMsjb2QBUGNJMhGLow2xuCBg8RWIpGJikVaGcUeNgmqZbOEmHrrztgghOU7hnBiXpR9ozL0C7RpCmwDP8WGX4B6gSgZcIEy/sT9JeE4rhNAXpGfDPGpO14zP/6zOwDKMZpIhI/RbLUO87dsAv85C7UiwVQJqiYnMXmAKW1f3ikXzurBRLA6D0cfD64wosQ2q3EsV/LnzeW2ALKj72EgETsAyJ+IYTLZbbetPuUuSdG0qxjtKd9bFc+apSYahT7cBkC0SpcOJEB58yFt4qk1CuMHKCsG52XJl45/+0NzpQ8fG89KmFvngbbsD5lVzjqbktC0bUu5TJ3ZUnp5xrsupnUua9PgIWSlcR7VVPXMBCfLnBcBmKA1PC8PGkkqxapeBUW6PsgKGwEI1/qskwexYySEml4FRfx+CAITTcngMG9L2sDSsZZopAt4MTyxUDplIiBwyFRfcnuUD2heRT1WCY3eWsrMYkkH4HSolEOeiCIQj8PoOGocK5EUMvwNL8U6r5AvRa3vGBC9LaBUM4J/90FPB+5aKmWgw9jIVRVArMyOH1/xOMRBvOBUMQkfnzgmPwQrLZXY+hF4Dg5EIpEmTvqf83uNCGc8EQZh4+nF0QKVVypmoyBAmMbzvtjaLy6vR6UmHDuWD4Ax2o3MxYFju/imNRl+E7A/ki1wci72UbwsH1w9ghQ+Be+Pl7gQ0LZcemNsPn6CvVyIU5uhF6B6EgcccQOIMPGw3EaJRNNZkh8jMQpGmPk/90LZcGYv6+oTK4/0XOGN6AusjXA8hiUCIYEkM0Py6Xy+gWalrHUJ2d9t5s1gxu7IwhUBcPJxj83Jc3LCSGb3UZXxSBgpXeQ4VaUAbXew2uE4ZHIFnyVQLibMp+jYlhrrrll5ZHtbDTSgb37oIhNLTzeBuUrbJxbGYoJjaoAHaaxggvBlf+LDYYrql4KXi+EmcrYxiXtTsMSGGnyV1fisE9Km1ZrDCE3gWXnA352jKGQgxSgminCcD88rqBpqWPFYY/opW2KDFpyhn+GBtDFnkAqhH+HtyfUNM40w5DceGBSYuVrdFyhrKYKBi+BIlqhL9drZU8uBYZBsCXWP+sJMHTgOHeOE3ZYxA1RvjbaJqoM9QeQyC/6AoyVOPd5QyX5v6s+ULcKD0e+fv3Uz1BJwyha9GQ4aakAy3GN1kLFvFENchhlyGIY2QqvgPDkjHMxZb0h7c/8bM1NfC0xfBgi2GJulBR+IR7TQM2uwzFMeywDmv7VoJffy/rPmyJIbjhqossVUxRIwo7TdP3zT5DUdK014ebssEQ3/sdXztWtDd3oQ/b2zTnmkMI7LRbyRK0yFC0aVrbpbuacgZ7ZjtNcaRd2KU/oiFem+Gu9hwNnkJG2YzKPKy7pDdc+Bbt/MOtYpB5pgbYLxtuItuo2N+48fFl/7CBj48ui/V6lSxvqdpvky3mBkvsz4ZT7DRyXqhRDLKUsNExREfpKjFUn0jqoUGcxkP5gVTM14xWHvJRRukN7IX6zSiZoUd8AeyqY+iJF/lc3NiS4zQNYm0leCQ0KiuteJIcqXkGORSG8u9mWoYSkNgzAMbacu5N4qVG+Je/H+i8Wt2Lo+d6cMJQjpfaiHkHb3vvZlyMAEWQwwlDOea9lGZtG4ag5luNLikoNqPcMJT3LaBzgVsxxIIMVsO/EhhY7U4YyntPnfcPsdzepdR7KDajXDFU9g+77gEHvpIKpGzDFPDF9FUXDJU94I77+A/FLcPkxYPNKHcM1X38LrkYgSElL1atuvyBSuWjC4ZqLkb7fBrErsYE4JNq4GjyTF0wVPNpWuZEYcLuZamaSrhblzTkgqGaExWb89pOFGlBfObPoop8aXHLQt9/eEb0D3g/6I9hxVU+/HbCgD1fEXgXUm5iNJ1rsLvtl3XS02Ngw4H9CojbbwUu+VW7Wlc9AXIT34Enc35pV7x3lzSpYa6gyy815wh3xnP7l/XYWFKXI+wuz/tpw/Eeu6Ro87yhVWO/NG/GvD57iMBc/SJ2CJxg6/UWmXvWayEVrLcoRKzTmpl+YaiZcVv31CsMdU9C7dqntL/Sw1C79g/UH26/ZZoKk1Swor6+DvgfqOX+/nr87++p8A/0xfj+3iZCT8iv7E/zD/QY+v4+UV/Q6wsQ0PX6+gf6tX1/zz1Bm3x430Rq6CX89b0v/4H+pUKy4Qf3oFW2sgt8bh9h6MKX9RH+/l7Q/0A/70/tyQ7naMWZI9/fV//7z0b4B863kM4o+QRvXzinsY5r+/XnzIgao8agD4wWZwV98nlPNeP10pld47ZPW53ZJZ27Roc8h7sK+5av+qFn5wX1d+il8w/pWF1F6fzDunM0h3iQ7GilTfszLOUF/BnnkDY8xlA6S3aMNni3s2Q/4DzgU8fzgKXjZEd4prOYLt/GDfr6c7mVs9VHRdHK2eqytBkTRWmKtlZnCynfno5F3JykkpX2RzInUjK6Pw6lMZMK5PQbTfWwkSiSMah+uakG75RYITdZ0fdZ7RNKywLeMUtNrprA/rCexlYucGednbu9VPuir5voC0rXEHbpftOLXN5jaJjbB5S6PxsE8+8m3Ralw4SnVqnSleli585KBRMe5ET5SKlqtLdg1LZV9Np3NDy+KpWpXaUohKwXs5nacyrxkih9GpnVBMOV0oUEsx6HMZ4pfW0wsbxHrekNhHqLM0ZMfbgD0+Oqtkvw0z7Uf3JWa8MNh0l0hKaRI2Yz14mai7um8VLJiQWdoHRazWcLm7tcjvGOq4W6Dg91WSsq97Ecb8443qimEJk4PZjnpOvVRZgTjvGNaj4o5g3jok2x1Db2QHxq25BbzZmupD9wn1sQKz2f/ziysCIHohGOV836y0DDPvzTSN9VLqD4ZmeBLC4e1XadCLo7gzXfINT3oMGEh1VF+pWIJyFX+6E/bt/PAP5hiQzt6DBh16j9eywmV2Zq/YlQv5bwnJt6kAaEH6rPgtJgezlwY2fTgPdeIbEKzU0es5H0r/smLLf7GaX6yfm4IQuHcLo3aVkvoYBQdp5G26opG2+j6YFRc1vaDDS1KaebYOKVNy/DiFCODqdbtEnWogiKF8lmcjuFiFNS1tw9j+55Q1a1RhUc8zfMeBKfMZ5ZYOkhR5pZepwxn2TcKhuD+XjotKxJWtF0FXLN/sOPf+v+gqZjqEo+HlQH1QoQOwy1/mQkJ82hJR2RyePTmHLp4+jMygVGM3qInfttp1EHyQ5RKyRxdp/dmIYPYDNFOpe1ERBD01HXIW93KatQcCWDR1i6G28W3RvryW/QnGXGDt2jzylAXk2mZ0braPSHRZAbeJOxZyNrsI3mIcptF6Qd0JxaZuugcB5tRyc3GyBOlvvdb5gSzhmlNG+1nP3LOUnD+26/TD6Zm4x4sV6tkiRZrdaLHnn9D7d/0INhMmYiAAAAAElFTkSuQmCC",
+          "maxHeight": 70,
+          "blockClass": "phone__third-slider-images--1"
+        }
+      },
+      "image#phone__third-slider-images--5":{
+        "props":{
+          "src": "data:image/png;base64,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",
+          "maxHeight": 70,
+          "blockClass": "phone__third-slider-images--1"
+        }
+      },
+      "image#phone__third-slider-images--6":{
+        "props":{
+          "src": "https://logos-marcas.com/wp-content/uploads/2020/07/Asus-Logo.png",
+          "maxHeight": 70,
+          "blockClass": "phone__third-slider-images--1"
+        }
+      },
+      "image#phone__third-slider-images--7":{
+        "props":{
+          "src": "data:image/png;base64,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",
+          "maxHeight": 70,
+          "blockClass": "phone__third-slider-images--1"
+        }
+      },
+
+      /*slider de lo ultimo en impresistem*/
+      "responsive-layout.phone#flex-layout.row--home__third-slider-images":{
+        "children":[
+          "flex-layout.row#phone__third-slider-images"
+        ]
+      },
+      "flex-layout.row#phone__third-slider-images":{
+        "props":{
+          "blockClass": "phone__collage--imagenes"
+        },
+        "children":[
+          "slider-layout#phone__four-slider-images"
+        ]
+      },
+      "slider-layout#phone__four-slider-images": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 6,
+            "tablet": 2,
+            "phone": 2
+          },
+          "infinite": true,
+          "showNavigationArrows": "always",
+          "blockClass": "carousel"
+        },
+        "children":[
+          "flex-layout.row#phone--first--img--lo--ultimo",
+          "flex-layout.row#phone--second--img--lo--ultimo",
+          "flex-layout.row#phone--third--img--lo--ultimo",
+          "flex-layout.row#phone--four--img--lo--ultimo",
+          "flex-layout.row#phone--five--img--lo--ultimo",
+          "flex-layout.row#phone--six--img--lo--ultimo"
+        ]
+      },
+      "flex-layout.row#phone--first--img--lo--ultimo":{
+        "props":{
+          "preventVerticalStretch":true
+        },
+        "children":[
+          "image#phone--first--img--lo--ultimo",
+          "rich-text#phone--first--img--lo--ultimo"
+        ]
+      },
+      "rich-text#phone--first--img--lo--ultimo":{
+        "props":{
+          "text":"Home office para el 2022"
+        }
+      },
+      "image#phone--first--img--lo--ultimo":{
+        "props":{
+          "blockClass":"phone--first--img--lo--ultimo",
+          "src": "assets/img/img13.png"
+        }
+      },
+      "flex-layout.row#phone--second--img--lo--ultimo":{
+        "props":{
+          "preventVerticalStretch":true
+        },
+        "children":[
+          "image#phone--second--img--lo--ultimo",
+          "rich-text#phone--second--img--lo--ultimo"
+        ]
+      },
+      "rich-text#phone--second--img--lo--ultimo":{
+        "props":{
+          "text":"Practicas de las grandes empresas"
+        }
+      },
+      "image#phone--second--img--lo--ultimo":{
+        "props":{
+          "blockClass":"phone--second--img--lo--ultimo",
+          "src": "assets/img/img14.png"
+        }
+      },
+      "flex-layout.row#phone--third--img--lo--ultimo":{
+        "props":{
+          "preventVerticalStretch":true
+        },
+        "children":[
+          "image#phone--third--img--lo--ultimo",
+          "rich-text#phone--third--img--lo--ultimo"
+        ]
+      },
+      "rich-text#phone--third--img--lo--ultimo":{
+        "props":{
+          "text":"Gaming controlado"
+        }
+      },
+      "image#phone--third--img--lo--ultimo":{
+        "props":{
+          "blockClass":"phone--third--img--lo--ultimo",
+          "src": "assets/img/img15.png"
+        }
+      },
+      "flex-layout.row#phone--four--img--lo--ultimo":{
+        "props":{
+          "preventVerticalStretch":true
+        },
+        "children":[
+          "image#phone--four--img--lo--ultimo",
+          "rich-text#phone--four--img--lo--ultimo"
+        ]
+      },
+      "rich-text#phone--four--img--lo--ultimo":{
+        "props":{
+          "text":"Conectado desde cualquier parte del mundo"
+        }
+      },
+      "image#phone--four--img--lo--ultimo":{
+        "props":{
+          "blockClass":"phone--four--img--lo--ultimo",
+          "src": "assets/img/img16.png"
+        }
+      },
+      "flex-layout.row#phone--five--img--lo--ultimo":{
+        "props":{
+          "preventVerticalStretch":true
+        },
+        "children":[
+          "image#phone--five--img--lo--ultimo",
+          "rich-text#phone--five--img--lo--ultimo"
+        ]
+      },
+      "rich-text#phone--five--img--lo--ultimo":{
+        "props":{
+          "text":"Podcast y streaming"
+        }
+      },
+      "image#phone--five--img--lo--ultimo":{
+        "props":{
+          "blockClass":"phone--five--img--lo--ultimo",
+          "src": "assets/img/img17.png"
+        }
+      },
+      "flex-layout.row#phone--six--img--lo--ultimo":{
+        "props":{
+          "preventVerticalStretch":true
+        },
+        "children":[
+          "image#phone--six--img--lo--ultimo",
+          "rich-text#phone--six--img--lo--ultimo"
+        ]
+      },
+      "rich-text#phone--six--img--lo--ultimo":{
+        "props":{
+          "text":"Gaming controlado"
+        }
+      },
+      "image#phone--six--img--lo--ultimo":{
+        "props":{
+          "blockClass":"phone--six--img--lo--ultimo",
+          "src": "assets/img/img18.png"
+        }
+      }
+
+}

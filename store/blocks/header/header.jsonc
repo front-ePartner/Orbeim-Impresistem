@@ -1,143 +1,67 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
-  },
-  "header-layout.desktop": {
-    "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
     ]
   },
 
-  "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
+  //======================================== Desktop
+  "flex-layout.row#header-top_desktop": {
     "props": {
-      "fullWidth": true
-    }
-  },
-
-  "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
-    "props": {
-      "fullWidth": "true"
-    }
-  },
-  "notification.bar#home": {
-    "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
-    }
-  },
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "blockClass": ["Header-top"]
     },
     "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
+      "flex-layout.col#header-top_1",
+      "flex-layout.col#header-top_2",
+      "flex-layout.col#header-top_3"
     ]
   },
-  "flex-layout.col#spacer": {
+
+  //======================================== Tablet & Mobile
+  "flex-layout.row#header-top_tablet_mobile": {
     "props": {
-      "width": "grow"
-    }
-  },
-  "sticky-layout#4-desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#4-desktop"]
-  },
-  "flex-layout.row#4-desktop": {
-    "props": {
-      "blockClass": "main-header",
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "blockClass": ["Header-top", "Header-top-tablet"]
     },
     "children": [
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#header-top_1",
+      "flex-layout.col#header-top_2"
     ]
   },
-  "flex-layout.col#logo-desktop": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["logo#desktop"]
+
+  //======================================== Containers
+  "flex-layout.col#header-top_1":{
+    "children":[
+      "rich-text#top-text"
+    ]
   },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+  "flex-layout.col#header-top_2":{
+    "children":[
+      "rich-text#top-text1"
+    ]
   },
-  "logo#desktop": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
-    }
-  },
-  "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
-  },
-  "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
-  },
-  "flex-layout.row#1-mobile": {
-    "children": [
-      "drawer",
-      "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
-    "props": {
-      "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
-    }
-  },
-  "drawer": {
-    "children": ["menu#drawer"]
+  "flex-layout.col#header-top_3":{
+    "children":[]
   },
 
-  "menu#drawer": {
-    "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
-    ],
+  // * Static message
+ "rich-text#top-text": {
+   "props": {
+     "blockClass": ["Header-top-text"],
+     "text": "**Trabaje con nosotros** | Politica de tratamiento de datos"
+   }
+ },
+  // * Static message
+  "rich-text#top-text1": {
     "props": {
-      "orientation": "vertical"
-    }
-  },
-
-  "logo#mobile": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "70"
+      "blockClass": ["Header-top-text"],
+      "text": "10% DCTO en articulos Acer | CLICK AQUI*"
     }
   }
 }

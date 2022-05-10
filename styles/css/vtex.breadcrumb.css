@@ -1,0 +1,43 @@
+@media (max-width: 600px) {
+  .container--filtroseleccionado {
+      margin: 0;
+      flex-wrap: wrap;
+  }
+  .link--filtroseleccionado {
+      background: #FFC533;
+      padding: 5px 10px;
+      display: flex;
+      border-radius: 5px;
+      align-items: center;
+      border: 1px solid transparent;
+  font-size: 12px;text-decoration: none;color: black;}
+
+  .link--filtroseleccionado::after {
+      content: ">";
+      padding: 0 0 3px 15px;
+      display: flex;
+      align-items: center;
+      color: #0616c4;
+  }
+  .arrow--filtroseleccionado--1::before {
+    display: none;
+  }
+  .container--filtroseleccionado::before {
+    content: "Filtro Seleccionado";
+    width: 100%;
+    border-bottom: 1px solid #c4c4c4;
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+  .container--filtroseleccionado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .link--filtroseleccionado::before {
+    text-decoration: none;
+  }
+  .link--filtroseleccionado.homeLink.homeLink--filtroseleccionado {
+    display: none;
+  }
+}

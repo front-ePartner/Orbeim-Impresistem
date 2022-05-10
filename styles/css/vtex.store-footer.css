@@ -9,3 +9,24 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+
+
+/*---------------------------------------*/
+/* footer celular                        */
+/*---------------------------------------*/
+
+.footerLayout--footer--mobile{
+  /*background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/36259hd.png");*/
+  background-color: #001e49;
+}
+
+.footerLayout--footer--desktop{
+  /*background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/36259hd.png");*/
+  background-color: #001e49; /*Se agrega el Background al Footer*/
+  background-image: url('https://epartner.vtexassets.com/assets/vtex/assets-builder/vtex.store-theme/4.4.2/img/shape-bg.png');
+  background-size: 79%;
+  background-repeat: no-repeat;
+  background-position: 160% 63%;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/

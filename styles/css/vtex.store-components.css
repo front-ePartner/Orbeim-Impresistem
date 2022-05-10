@@ -1,3 +1,207 @@
+/*_   _ _____    _    ____  _____ ____
+| | | | ____|  / \  |  _ \| ____|  _ \
+| |_| |  _|   / _ \ | | | |  _| | |_) |
+|  _  | |___ / ___ \| |_| | |___|  _ <
+|_| |_|_____/_/   \_\____/|_____|_| \_\    */
+.container {
+  padding: 0px 5%;
+}
+.autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
+  color: black;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  border-color: #d3d3d3;
+  border-radius: 8px;
+  width: 40rem !important;
+  font-family: "TT-Norms";
+  font-style: normal;
+}
+.autoCompleteOuterContainer :global(.vtex-input__suffix) {
+  background-color: #001e49;
+}
+
+.autoCompleteOuterContainer :global(.vtex-input__suffix)::before {
+  content: "Buscar";
+  color: #ffffff;
+  font-family: "TT-Norms";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 13px;
+  letter-spacing: 0.05em;
+  padding: 0.5rem;
+}
+
+.searchBarIcon--search {
+  display: block;
+  color: #d3d3d3;
+  opacity: 0;
+  position: absolute;
+  width: 6rem;
+  margin-left: -5rem;
+  height: 2rem;
+}
+.searchBarContainer {
+  max-width: none;
+  display: flex;
+  justify-content: center;
+}
+.autoCompleteOuterContainer :global(.vtex-input) {
+  display: flex;
+  justify-content: center;
+}
+
+.infoCardTextContainer--level-card {
+  position: absolute;
+}
+
+.infoCardTextContainer--level-card {
+  position: absolute;
+}
+
+.infoCardContainer--level-card {
+  width: auto !important;
+  padding: 0;
+  margin: 0;
+}
+
+.infoCardImage--level-card {
+  width: 100%;
+}
+
+.vtex-flex-layout-0-x-flexRowContent--flex-level-1-card1 {
+  width: 49rem;
+}
+
+.pr0.items-stretch.vtex-flex-layout-0-x-stretchChildrenWidth.flex {
+  width: auto !important;
+}
+
+.infoCardImageContainer--level-card {
+  width: 16rem;
+  margin: 0 2rem;
+}
+.infoCardTextContainer--level-card {
+  position: absolute;
+  width: 16rem;
+  height: 23rem;
+  left: 2rem;
+}
+.infoCardCallActionContainer--level-card :global(.vtex-button) {
+  width: 16rem !important;
+  background: transparent;
+  border: none;
+  height: 22.5rem;
+  margin-top: -1.5rem;
+}
+@media (max-width: 600px) {
+  .searchBarInnerContainer--search-bar-mobil {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .searchBarIcon--search {
+    width: 1rem;
+    position: static;
+    margin: 0;
+    left: 0;
+    opacity: 1;
+    color: #4f6060;
+    margin-top: 3px;
+  }
+
+  .autoCompleteOuterContainer :global(.vtex-input__suffix) {
+    background: transparent;
+  }
+
+  .autoCompleteOuterContainer .vtex-input {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .searchBarContainer .vtex-input {
+    box-shadow: none;
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .-searchBarInnerContainer--search-bar-mobil {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+  }
+  .autoCompleteOuterContainer :global(.vtex-input__suffix)::before {
+    display: none;
+  }
+
+  .infoCardContainer--level-card {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .infoCardTextContainer--level-card {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    top: 1rem;
+  }
+
+  .infoCardCallActionContainer--level-card {
+    width: 100%;
+    left: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .infoCardImageContainer--level-card {
+    width: 100%;
+    padding: 1rem 10px;
+  }
+  .infoCardCallActionContainer--level-card :global(.vtex-button) {
+    width: auto;
+    height: auto;
+  }
+  .searchBarContainer {
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    left: 0;
+    height: auto;
+    width: 100% !important;
+  }
+  .logoImage {
+    width: 120px;
+  }
+  .imageElement--Search__Image {
+    width: 1.5rem;
+  }
+
+  
+}
+/*----------------------------------------------------------------------------------*/
+
+.imageElement--image-accordion {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+}
 .notificationBarContainer {
   background-color: #e6f1e6;
   color: #03034e;
@@ -110,4 +314,394 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+/*---------------------------------*/
+/* logo impresistem       header   */
+/*---------------------------------*/
+
+.logoImage--logo--impresistem {
+  margin-left: 26%;
+  margin-right: 156px;
+  margin-top: 10px;
+  width: 8rem;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.searchBarInnerContainer--search-bar {
+  margin-top: 10px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><*/
+
+/*-------------------------------*/
+/* menu header                   */
+/*-------------------------------*/
+
+.imageElement--img {
+  margin-left: 28%;
+}
+
+.imageElement--arrow {
+  margin-left: 28%;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*-------------------------------*/
+/* slider primera parte home     */
+/*-------------------------------*/
+
+.infoCardContainer {
+  transform: scale(1) !important;
+}
+
+.infoCardContainer--home--first--image--first--layout--firs--slayout {
+  width: 100%;
+  height: 500px;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*--------------------------------*/
+/*     boton ir a laptos          */
+/*--------------------------------*/
+
+.infoCardContainer--info-card-home.items {
+  background: white;
+}
+
+.infoCardTextContainer--info-card-home {
+  margin-left: 538px;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*-------------------------------*/
+/* primer collage home           */
+/*-------------------------------*/
+
+.imageElement--home__first--image---first--collage {
+  width: 100%;
+  height: 100%;
+}
+
+.imageElement--home__four--image---first--collage {
+  height: 100%;
+}
+
+/*<>>>>>>>>>>>>>>>>>>>>>>>>>>>>><*/
+
+/*-------------------------------*/
+/* segundo collage home          */
+/*-------------------------------*/
+
+/*imagenes de la seccion gamer*/
+.imageElement--home__first--image---second--collage,
+.imageElement--home__second--image---second--collage,
+.imageElement--home__third--image---second--collage {
+  width: 100%;
+  height: 100%;
+}
+
+.imageElement--home__fourt--image---second--collage {
+  width: 100%;
+  height: 100%;
+}
+
+.imageElement--home__five--image---second--collage {
+  height: 100%;
+}
+
+/*-------------------------------*/
+
+/*-------------------------------*/
+/*   tercer collage home         */
+/*-------------------------------*/
+
+.imageElement--home__first--image---third--collage {
+  width: 98%;
+  height: 100%;
+}
+
+.imageElement--home__second--image---third--collage {
+  width: 100%;
+  height: 100%;
+}
+
+/*<>>>>>>>>>>>>>>>>>>>>>>>>><<>*/
+
+/*-------------------------------*/
+/*   cuarto collage home         */
+/*-------------------------------*/
+.imageElement--first--img--lo--ultimo,
+.imageElement--second--img--lo--ultimo,
+.imageElement--third--img--lo--ultimo,
+.imageElement--four--img--lo--ultimo,
+.imageElement--five--img--lo--ultimo,
+.imageElement--six--img--lo--ultimo {
+  width: 95%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+/*Margenes de seccion de 6 imagenes*/
+
+/*<>>>>>>>>>>>>>>>>>>>>>>>>><<>*/
+
+/*------------------------------*/
+/*  parte footer desktop        */
+/*------------------------------*/
+
+.imageElement--logo--siguenos--instagram {
+  margin-left: 30%;
+}
+
+.imageElement--logo--medios--de--pago--visa {
+  margin-left: 24%;
+}
+
+.imageElement--logo--medios--de--pago--mastercar {
+  margin-left: 48%;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>><>*/
+
+/* parte mobil                 */
+/*-----------------------------*/
+/* primer collage              */
+/*-----------------------------*/
+
+.imageElement--phone__second--image---first--collage {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  height: 263px;
+}
+
+.imageElement--phone__second--image---first--collage--2 {
+  width: 50%;
+  height: 263px;
+  position: absolute;
+  left: 50%;
+}
+/*<>>>>>>>>>>>>>>>>>>>>>>>>>><<*/
+
+/*----------------------------*/
+/* second collage phone       */
+/*----------------------------*/
+
+.imageElement--phone__first--image---second--collage {
+  height: 173px;
+  margin-left: -59%;
+}
+
+.imageElement--phone__second--image---second--collage {
+  width: 146px;
+  position: absolute;
+  margin-left: -59%;
+  border: 8px solid #ffffff;
+}
+
+.imageElement--phone__third--image---second--collage {
+  position: absolute;
+  top: 0px;
+  left: 43%;
+  width: 148px;
+  border: 8px solid #ffffff;
+}
+/*<<<>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*----------------------------*/
+/* footer menu desktop          */
+/*----------------------------*/
+
+.imageElement--phone--facebook {
+  margin-left: 42%;
+}
+
+.imageElement--phone--instagram {
+  position: relative;
+  top: -35px;
+  left: 53%;
+}
+
+.imageElement--phone--payu {
+  margin-left: 4%;
+}
+
+.imageElement--phone--visa {
+  position: relative;
+  top: -25px;
+  left: 18%;
+}
+
+.imageElement--medios--de--pago {
+  margin-bottom: 26px;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*---------------------------*/
+/* footer menu phone         */
+/*---------------------------*/
+
+.imageElement--phone--medios--de--pago--image {
+  margin-left: 22px;
+}
+
+.imageElement--desarrollado--por--logo {
+  margin-left: -17px;
+}
+
+.imageElement--image--icon-angle--down {
+  position: absolute;
+  top: 8px;
+  left: 360%;
+}
+.imageElement--image--icon-angle--down2 {
+  position: absolute;
+  top: 8px;
+  left: 464%;
+}
+.imageElement--image--icon-angle--down3 {
+  position: absolute;
+  top: 8px;
+  left: 1218%;
+}
+.imageElement--image--icon-angle--down4 {
+  position: absolute;
+  top: 8px;
+  left: 442%;
+}
+
+.imageElement--image--icon-angle--up {
+  position: absolute;
+  top: 8px;
+  left: 360%;
+}
+
+.imageElement--image--icon-angle--up2 {
+  position: absolute;
+  top: 8px;
+  left: 464%;
+}
+.imageElement--image--icon-angle--up3 {
+  position: absolute;
+  top: 8px;
+  left: 1218%;
+}
+.imageElement--image--icon-angle--up4 {
+  position: absolute;
+  top: 8px;
+  left: 442%;
+}
+/*hamburguesa*/
+
+.imageElement--arrow--phone {
+  position: absolute;
+  top: 3px;
+  left: 93%;
+}
+
+.imageElement--home__header--columna-1--flech--imagen {
+  position: absolute;
+  top: 0px;
+  left: 1207%;
+}
+
+.imageElement--imagen--gamer--titulo {
+  position: absolute;
+  left: 15%;
+  top: -43%;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*---------------------------*/
+/* vitrina phone             */
+/*---------------------------*/
+
+.imageElement--shopping--cart {
+  margin-top: 24%;
+  margin-left: 24%;
+}
+
+/*--------------------------*/
+
+/*Fondo de contenedor de boton*/
+.infoCardContainer.infoCardContainer--info-card-home {
+  background-color: white;
+}
+
+/*No mostrar texto "LAPTOP SALE"*/
+.infoCardHeadline.infoCardHeadline--home--first--image--first--layout--firs--slayout {
+  display: none;
+}
+
+/*seccion imagenes en acordeon*/
+.imageElement--image-slider-nuestras-marcas {
+  position: relative;
+  width: 230px;
+  height: 230px;
+}
+
+/*Cambiando estilo de boton de slider de manera independiente*/
+.infoCardCallActionContainer :global(.vtex-button) {
+  background: none;
+  border-color: #ffc533;
+  color: #ffc533;
+}
+
+/*Acomodar a lado izquierdo el flag de descuento*/
+.discountInsideContainer {
+  position: absolute;
+  top: 11%;
+  left: 0px;
+  width: 30%;
+  color: black;
+  font-weight: 900;
+}
+.discountContainer {
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+/*Cambiando estilo de boton "ir a laptops"*/
+.infoCardCallActionContainer--ir-a-laptops :global(.vtex-button) {
+  color: white;
+  background-color: #001e49;
+  border-color: #001e49;
+  height: 30px;
+  font-size: 12px;
+  width: 183%;
+  right: 50%;
+  margin-bottom: 50px;
+}
+
+/*Estilos de los logos de la seccion 8*/
+.imageElement--img-samsumg-logo,
+.imageElement--img-apple-logo {
+  position: relative;
+  top: 100%;
+}
+
+.imageElement--img-closePopUp {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+/* About Us */
+.imageElement--imgSmartIcon_1,
+.imageElement--imgSmartIcon_2,
+.imageElement--imgSmartIcon_3 {
+  position: absolute;
+  top: 19%;
+  left: 0;
+  right: 0;
+  filter: invert(1);
+  margin: auto;
+}
+.imageElement--logoFacebookAB,
+.imageElement--logoInstagramAB {
+  width: 35px;
 }

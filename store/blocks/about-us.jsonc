@@ -1,0 +1,633 @@
+{
+  "store.custom#about-us": {
+    "blocks": [
+      "flex-layout.row#about-us"
+    ]
+  },
+  
+  // ========================================================== Maquetacion Basica
+  "flex-layout.row#about-us": {
+    "children": [
+      "flex-layout.col#mediaQueries"
+    ]
+  },
+  "flex-layout.col#mediaQueries": {
+    "children": [
+      "responsive-layout.desktop#maqDesktop",
+      "responsive-layout.tablet#maqTablet",
+      "responsive-layout.phone#maqPhone"
+    ]
+  },
+
+  // ========================================================== Estructura por MediaQueries
+  "responsive-layout.desktop#maqDesktop":{
+    "children": [
+      //"image#imgBanner",
+      "flex-layout.row#bannerContent",
+      "flex-layout.row#cardWelcomeDesktop",
+      "flex-layout.row#separator1A",
+      "flex-layout.row#cardSmartInfoDesktop",
+      "flex-layout.row#separator2A",
+      "flex-layout.row#cardCreativeDesktop",
+      "flex-layout.row#exploreProducts"
+    ]
+  },
+  "responsive-layout.tablet#maqTablet":{
+    "children": [
+      "flex-layout.row#bannerContent",
+      "flex-layout.row#cardWelcomeTablet",
+      "flex-layout.row#separator1A",
+      "flex-layout.row#cardSmartInfoTablet",
+      "flex-layout.row#separator2A",
+      "flex-layout.row#cardCreativeTablet",
+      "flex-layout.row#exploreProducts"
+    ]
+  },
+  "responsive-layout.phone#maqPhone":{
+    "children": [
+      "flex-layout.row#bannerContent",
+      "flex-layout.row#cardWelcomeTablet",
+      "flex-layout.row#separator1A",
+      "flex-layout.row#cardSmartInfoTablet",
+      "flex-layout.row#separator2A",
+      "flex-layout.row#cardCreativeTablet",
+      "flex-layout.row#exploreProducts"
+    ]
+  },
+
+  // ========================================================== Estructura Escritorio
+  //Banner
+  "flex-layout.row#bannerContent":{
+    "children":[
+      "flex-layout.col#bannerContent"
+    ]
+  },
+  "flex-layout.col#bannerContent":{
+    "props":{
+      "blockClass":"bannerContent"
+    },
+    "children":[
+      "image#imgBanner",
+      "flex-layout.row#bannerText"
+    ]
+  },
+  "flex-layout.row#bannerText":{
+    "props":{
+      "blockClass":"bannerText"
+    },
+    "children":[
+      "flex-layout.col#bannerText"
+    ]
+  },
+  "flex-layout.col#bannerText":{
+    "props":{
+      "blockClass":"bannerText"
+    },
+    "children":[
+      "rich-text#partnerIntegral",
+      "rich-text#solucionesTecnologicas"
+    ]
+  },
+
+  // Seccion Tarjeta de Bienvenida
+  "flex-layout.row#cardWelcomeDesktop":{
+    "props":{
+      "blockClass":"cardWelcomeDesktop"
+    },
+    "children":[
+      "flex-layout.col#cardWelcomeDesktop"
+    ]
+  },
+  "flex-layout.col#cardWelcomeDesktop":{
+    "props":{
+      "blockClass":"cardWelcomeDesktop"
+    },
+    "children":[
+      "rich-text#titleAboutUs",
+      "rich-text#paragraph_01"
+    ]
+  },
+  // Seccion Tarjeta Smart
+  "flex-layout.row#cardSmartInfoDesktop":{
+    "props":{
+      "blockClass":"cardSmartInfoDesktop"
+    },
+    "children":[
+      "flex-layout.col#cardSmartInfoDesktop"
+    ]
+  },
+  "flex-layout.col#cardSmartInfoDesktop":{
+    "props":{
+      "blockClass":"cardSmartInfoDesktop"
+    },
+    "children":[
+      "flex-layout.row#cardSmartContainerDesktop"
+    ]
+  },
+  "flex-layout.row#cardSmartContainerDesktop":{
+    "children":[
+      "flex-layout.col#cardSmartDesktop_1",
+      "flex-layout.col#cardSmartDesktop_2",
+      "flex-layout.col#cardSmartDesktop_3"
+    ]
+  },
+  "flex-layout.col#cardSmartDesktop_1":{
+    "props":{
+      "width":"33.333%",
+      "blockClass": "cardSmartDesktop_1"
+    },
+    "children":[
+      "flex-layout.row#bannerCardSmart_1",
+      "rich-text#paragraphSmart_1"
+    ]
+  },
+  "flex-layout.col#cardSmartDesktop_2":{
+    "props":{
+      "width":"33.333%",
+      "blockClass": "cardSmartDesktop_2"
+    },
+    "children":[
+      "flex-layout.row#bannerCardSmart_2",
+      "rich-text#paragraphSmart_2"
+    ]
+  },
+  "flex-layout.col#cardSmartDesktop_3":{
+    "props":{
+      "width":"33.333%",
+      "blockClass": "cardSmartDesktop_3"
+    },
+    "children":[
+      "flex-layout.row#bannerCardSmart_3",
+      "rich-text#paragraphSmart_3"
+    ]
+  },
+  // Seccion Tarjeta Creative
+  "flex-layout.row#cardCreativeDesktop":{
+    "children":[
+      "flex-layout.col#cardCreativeDesktop"
+    ]
+  },
+  "flex-layout.col#cardCreativeDesktop":{
+    "children":[
+      "flex-layout.row#containerCreativeDesktop"
+    ]
+  },
+
+  "flex-layout.row#containerCreativeDesktop":{
+    "props":{
+      "blockClass":"containerCreativeDesktop"
+    },
+    "children":[
+      "flex-layout.col#creativeDesktop_1",
+      "flex-layout.col#creativeDesktop_2"
+    ]
+  },
+  "flex-layout.col#creativeDesktop_1":{
+    "children":[
+      "image#creativeImgBanner"
+    ]
+  },
+  "flex-layout.col#creativeDesktop_2":{
+    "props":{
+      "blockClass":"creativeDesktop_2"
+    },
+    "children":[
+      "flex-layout.row#cardCreative"
+    ]
+  },
+  "flex-layout.row#cardCreative":{
+    "props":{
+      "blockClass":"cardCreative"
+    },
+    "children":[
+      "flex-layout.col#cardCreative"
+    ]
+  },
+  "flex-layout.col#cardCreative":{
+    "children":[
+      "rich-text#titleCreative",
+      "rich-text#descriptionCreative" 
+    ]
+  },
+  // Seccion Explorar Productos
+  "flex-layout.row#exploreProducts":{
+    "children":[
+      "flex-layout.col#exploreProducts"
+    ]
+  },
+  "flex-layout.col#exploreProducts":{
+    "children":[
+      "flex-layout.row#exploreProductsNetwork",
+      "flex-layout.row#exploreProductsButton"
+    ]
+  },
+  "flex-layout.row#exploreProductsNetwork":{
+    "children":[
+      "flex-layout.col#exploreProductsNetwork_1",
+      "flex-layout.col#exploreProductsNetwork_2"
+    ]
+  },
+  "flex-layout.col#exploreProductsNetwork_1":{
+    "props":{
+      "blockClass":"exploreProductsNetwork_1"
+    },
+    "children":[
+      "image#logoFacebookAB"
+    ]
+  },
+  "flex-layout.col#exploreProductsNetwork_2":{
+    "props":{
+      "blockClass":"exploreProductsNetwork_2"
+    },
+    "children":[
+      "image#logoInstagramAB"
+    ]
+  },
+  "flex-layout.row#exploreProductsButton":{
+    "children":[
+      "flex-layout.col#exploreProductsButton"
+    ]
+  },
+  "flex-layout.col#exploreProductsButton":{
+    "props":{
+      "blockClass":"exploreProductsButton"
+    },
+    "children":[
+      "link#exploreProducts"
+    ]
+  },
+
+  // ========================================================== Estructura Tablet
+  // Seccion Tarjeta de Bienvenida
+  "flex-layout.row#cardWelcomeTablet":{
+    "props":{
+      "blockClass":"cardWelcomeTablet"
+    },
+    "children":[
+      "flex-layout.col#cardWelcomeTablet"
+    ]
+  },
+  "flex-layout.col#cardWelcomeTablet":{
+    "props":{
+      "blockClass":"cardWelcomeTablet"
+    },
+    "children":[
+      "rich-text#titleAboutUs",
+      "rich-text#paragraph_01"
+    ]
+  },
+  // Seccion Tarjeta Smart
+  "flex-layout.row#cardSmartInfoTablet":{
+    "props":{
+      "blockClass":"cardSmartInfoTablet"
+    },
+    "children":[
+      "flex-layout.col#cardSmartInfoTablet"
+    ]
+  },
+  "flex-layout.col#cardSmartInfoTablet":{
+    "props":{
+      "blockClass":"cardSmartInfoTablet"
+    },
+    "children":[
+      "flex-layout.row#cardSmartTablet_1",
+      "flex-layout.row#cardSmartTablet_2",
+      "flex-layout.row#cardSmartTablet_3"
+    ]
+  },
+  "flex-layout.row#cardSmartTablet_1":{
+    "children":[
+      "flex-layout.col#cardSmartTablet_1"
+    ]
+  },
+  "flex-layout.row#cardSmartTablet_2":{
+    "children":[
+      "flex-layout.col#cardSmartTablet_2"
+    ]
+  },
+  "flex-layout.row#cardSmartTablet_3":{
+    "children":[
+      "flex-layout.col#cardSmartTablet_3"
+    ]
+  },
+  "flex-layout.col#cardSmartTablet_1":{
+    "props":{
+      "blockClass": "cardSmartTablet_1"
+    },
+    "children":[
+      "flex-layout.row#bannerCardSmart_1",
+      "rich-text#paragraphSmart_1"
+    ]
+  },
+  "flex-layout.col#cardSmartTablet_2":{
+    "props":{
+      "blockClass": "cardSmartTablet_2"
+    },
+    "children":[
+      "flex-layout.row#bannerCardSmart_2",
+      "rich-text#paragraphSmart_2"
+    ]
+  },
+  "flex-layout.col#cardSmartTablet_3":{
+    "props":{
+      "blockClass": "cardSmartTablet_3"
+    },
+    "children":[
+      "flex-layout.row#bannerCardSmart_3",
+      "rich-text#paragraphSmart_3"
+    ]
+  },
+  // Seccion Tarjeta Creative
+  "flex-layout.row#cardCreativeTablet":{
+    "children":[
+      "flex-layout.col#cardCreativeTablet"
+    ]
+  },
+  "flex-layout.col#cardCreativeTablet":{
+    "children":[
+      "image#creativeImgBanner",
+      "flex-layout.row#containerCreativeTablet"
+    ]
+  },
+  "flex-layout.row#containerCreativeTablet":{
+    "props":{
+      "blockClass":"containerCreativeTablet"
+    },
+    "children":[
+      "flex-layout.col#containerCreativeTablet"
+    ]
+  },
+  "flex-layout.col#containerCreativeTablet":{
+    "props":{
+      "blockClass":"containerCreativeTablet"
+    },
+    "children":[
+      "rich-text#titleCreative",
+      "rich-text#descriptionCreative" 
+    ]
+  },
+  
+
+  // ========================================================== Componentes Reciclables
+  // Imagenes
+  "image#imgBanner":{
+    "props":{
+      "blockClass": "img-banner-aboutUs",
+      "src": "assets/img/about-us/img-banner.png"
+    }
+  },
+  "image#imgSmart_1":{
+    "props":{
+      "blockClass":"imgSmart_1",
+      "src":"assets/img/about-us/img-smart_1.png"
+    }
+  },
+  "image#imgSmart_2":{
+    "props":{
+      "blockClass":"imgSmart_2",
+      "src":"assets/img/about-us/img-smart_2.png"
+    }
+  },
+  "image#imgSmart_3":{
+    "props":{
+      "blockClass":"imgSmart_3",
+      "src":"assets/img/about-us/img-smart_3.png"
+    }
+  },
+  "image#imgSmartIcon_1":{
+    "props":{
+      "blockClass":"imgSmartIcon_1",
+      "src":"assets/img/about-us/computacion.png"
+    }
+  },
+  "image#imgSmartIcon_2":{
+    "props":{
+      "blockClass":"imgSmartIcon_2",
+      "src":"assets/img/about-us/gamer.png"
+    }
+  },
+  "image#imgSmartIcon_3":{
+    "props":{
+      "blockClass":"imgSmartIcon_3",
+      "src":"assets/img/about-us/smart-consumer.png"
+    }
+  },
+  "image#creativeImgBanner":{
+    "props":{
+      "blockClass":"creativeImgBanner",
+      "src":"assets/img/about-us/creative.png"
+    }
+  },
+  "image#logoFacebookAB":{
+    "props":{
+      "blockClass":"logoFacebookAB",
+      "src":"assets/img/about-us/facebook.png",
+      "link": {
+        "newTab": true,
+        "url": "https://www.facebook.com/"
+      }
+    }
+  },
+  "image#logoInstagramAB":{
+    "props":{
+      "blockClass":"logoInstagramAB",
+      "src":"assets/img/about-us/instagram.png",
+      "link": {
+        "newTab": true,
+        "url": "https://www.instagram.com"
+      }
+    }
+  },
+
+  // Contenedores
+  "flex-layout.row#bannerCardSmart_1":{
+    "props":{
+      "blockClass":"bannerCardSmart_1"
+    },
+    "children":[
+      "flex-layout.col#bannerCardSmart_1"
+    ]
+  },
+  "flex-layout.col#bannerCardSmart_1":{
+    "props":{
+      "blockClass":"bannerCardSmart_1"
+    },
+    "children":[
+      "image#imgSmart_1",
+      "image#imgSmartIcon_1",
+      "rich-text#paragraphSmart_1B"
+    ]
+  },
+  "flex-layout.row#bannerCardSmart_2":{
+    "props":{
+      "blockClass":"bannerCardSmart_2"
+    },
+    "children":[
+      "flex-layout.col#bannerCardSmart_2"
+    ]
+  },
+  "flex-layout.col#bannerCardSmart_2":{
+    "props":{
+      "blockClass":"bannerCardSmart_2"
+    },
+    "children":[
+      "image#imgSmart_2",
+      "image#imgSmartIcon_2",
+      "rich-text#paragraphSmart_2B"
+    ]
+  },
+  "flex-layout.row#bannerCardSmart_3":{
+    "props":{
+      "blockClass":"bannerCardSmart_3"
+    },
+    "children":[
+      "flex-layout.col#bannerCardSmart_3"
+    ]
+  },
+  "flex-layout.col#bannerCardSmart_3":{
+    "props":{
+      "blockClass":"bannerCardSmart_3"
+    },
+    "children":[
+      "image#imgSmart_3",
+      "image#imgSmartIcon_3",
+      "rich-text#paragraphSmart_3B"
+    ]
+  },
+
+  //Separador
+  "flex-layout.row#separator1A":{
+    "children":[
+      "flex-layout.col#separator1A"
+    ]
+  },
+  "flex-layout.col#separator1A":{
+    "props":{
+      "blockClass":"separator1A"
+    }
+  },
+  "flex-layout.row#separator2A":{
+    "children":[
+      "flex-layout.col#separator2A"
+    ]
+  },
+  "flex-layout.col#separator2A":{
+    "props":{
+      "blockClass":"separator2A"
+    }
+  },
+
+  // Botones
+  "link#exploreProducts": {
+    "props": {
+      "buttonProps": {
+        "variant": "primary"
+      },
+      "displayMode": "button",
+      "label": "EXPLORAR PRODUCTOS",
+      "href": "www.google.com"
+    }
+  },
+
+  // Textos
+  "rich-text#partnerIntegral": {
+    "props": {
+      "blockClass": "partnerIntegral",
+      "text": "Partner integral en",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-4"
+    }
+  },
+  "rich-text#solucionesTecnologicas": {
+    "props": {
+      "blockClass": "solucionesTecnologicas",
+      "text": "SOLUCIONES\nTECNOLOGICAS",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-1"
+    }
+  },
+  "rich-text#titleAboutUs": {
+    "props": {
+      "text": "QUIENES SOMOS",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#paragraph_01": {
+    "props": {
+      "text": "Somos mayoristas de tecnología con un amplio portafolio de productos, soluciones y servicios tecnológicos que cubren las necesidades de la industria en los segmentos corporativo, valor y consumo.\n \nNuestra trayectoria en el mercado, desde 1.990, nos permite en la actualidad distribuir más de 40 marcas con reconocimiento a nivel internacional y contar con más de 6.000 canales de distribución en todo el país.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-7"
+    }
+  },
+  "rich-text#paragraphSmart_1": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-7"
+    }
+  },
+  "rich-text#paragraphSmart_2": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-7"
+    }
+  },
+  "rich-text#paragraphSmart_3": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-7"
+    }
+  },
+  "rich-text#paragraphSmart_1B":{
+    "props": {
+      "blockClass":"paragraphSmart_1B",
+      "text": "Smart Consumer",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-7"
+    }
+  },
+  "rich-text#paragraphSmart_2B":{
+    "props": {
+      "blockClass":"paragraphSmart_2B",
+      "text": "Smart Solutions",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-7"
+    }
+  },
+  "rich-text#paragraphSmart_3B":{
+    "props": {
+      "blockClass":"paragraphSmart_3B",
+      "text": "Smart E-Busness",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-7"
+    }
+  },
+  "rich-text#titleCreative": {
+    "props": {
+      "text": "TEXTO CREATIVO",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
+    }
+  },
+  "rich-text#descriptionCreative": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-7"
+    }
+  }
+  
+}

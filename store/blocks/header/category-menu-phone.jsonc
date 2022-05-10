@@ -1,0 +1,397 @@
+{
+  // Contenido Columnas menu phone
+  "flex-layout.col#PrimeraCol1--header": {
+    "props":{
+      "blockClass":"header--titulos--opciones"
+    },
+    "children": [
+      "disclosure-layout#simple--header"
+    ]
+  },
+  "flex-layout.col#PrimeraCol2--header":{
+    "props":{
+      "blockClass":"header--titulos--opciones"
+    },
+    "children": [
+      "disclosure-layout#simple2--header"
+    ]
+  },
+  "flex-layout.col#PrimeraCol3--header":{
+    "props":{
+      "blockClass":"header--titulos--opciones"
+    },
+    "children": [
+      "disclosure-layout#simple3--header"
+    ]
+  },
+  "flex-layout.col#PrimeraCol4--header":{
+    "props":{
+      "blockClass":"header--titulos--opciones"
+    },
+    "children": [
+      "disclosure-layout#simple4--header"
+    ]
+  },
+
+  
+  // Cierre contenido
+ 
+
+  /*----------------------------------------------------------------------------*/
+  /*                         Comienzo de Columna 1                             */
+  /*--------------------------------------------------------------------------*/
+
+  "disclosure-layout#simple--header":{
+    "props":{
+        "blockClass":"disclosure--layout--simple--header"
+    },
+    "children": ["disclosure-trigger#simple--header", "disclosure-content#simple--header"]
+  },
+  "disclosure-trigger#simple--header": {
+    "props":{
+        "blockClass":"disclosure--trigger--simple--header"
+    },
+    "children": ["flex-layout.row#home__header--columna-1"]
+  },
+  "flex-layout.row#home__header--columna-1":{
+    "props":{
+        "blockClass":"home__header--columna-1"
+    },
+    "children": [
+        "image#home__header--columna-1--imagen",
+        "flex-layout.col#home__header--columna-1--tileFCol",
+        "image#home__header--columna-1--flech--imagen"
+    ]
+  },
+  "image#home__header--columna-1--imagen":{
+    "props": {
+      "src": "assets/Assets-IMPRESISTEM-iconos/smartconsumer.png",
+      "maxHeight": 24
+    }
+  },
+  "image#home__header--columna-1--flech--imagen":{
+    "props": {
+      "src": "assets/iconosMenu/flecha--senala--derecha.png",
+      "maxHeight": 24,
+      "blockClass":"home__header--columna-1--flech--imagen"
+    }
+  },
+  "flex-layout.col#home__header--columna-1--tileFCol":{
+    "children": ["rich-text#tileFCol--header"]
+  },
+  "disclosure-content#simple--header": {
+    "children": [
+      "menu#drawer"]
+  },
+  "rich-text#tileFCol--header": {
+    "props": {
+      "blockClass": "TituloCont--header--1",
+      "text": "##### Smart Consumer"
+    }
+  },
+ 
+  /* >>>>>>>>>>>>Cierre de  Columna 1*/
+  /*----------------------------------------------------------------------------*/
+  /*                         Comienzo de Columna 2                             */
+  /*--------------------------------------------------------------------------*/
+
+  "disclosure-layout#simple2--header":{
+    "props":{
+        "blockClass":"disclosure--layout--simple--header"
+    },
+    "children": ["disclosure-trigger#simple--header2", "disclosure-content#simple--header"]
+  },
+  "disclosure-trigger#simple--header2": {
+    "props":{
+        "blockClass":"disclosure--trigger--simple--header2"
+    },
+    "children": ["flex-layout.row#home__header--columna-2"]
+  },
+  "flex-layout.row#home__header--columna-2":{
+    "props":{
+        "blockClass":"home__header--columna-2"
+    },
+    "children": [
+        "flex-layout.col#home__header--columna-2--tileFCol"
+    ]
+  },
+  "flex-layout.col#home__header--columna-2--tileFCol":{
+    "children": ["rich-text#tileFCol--header2"]
+  },
+  "rich-text#tileFCol--header2": {
+    "props": {
+      "blockClass": "TituloCont--header",
+      "text": "##### Smart Solution"
+    }
+  },
+ 
+  /* >>>>>>>>>>>>Cierre de  Columna 2*/
+  /*----------------------------------------------------------------------------*/
+  /*                         Comienzo de Columna 3                             */
+  /*--------------------------------------------------------------------------*/
+
+  "disclosure-layout#simple3--header":{
+    "props":{
+        "blockClass":"disclosure--layout--simple3--header"
+    },
+    "children": ["disclosure-trigger#simple--header3", "disclosure-content#simple--header"]
+  },
+  "disclosure-trigger#simple--header3": {
+    "props":{
+        "blockClass":"disclosure--trigger--simple--header3"
+    },
+    "children": ["flex-layout.row#home__header--columna-3"]
+  },
+  "flex-layout.row#home__header--columna-3":{
+    "props":{
+        "blockClass":"home__header--columna-3"
+    },
+    "children": [
+        "flex-layout.col#home__header--columna-3--tileFCol"
+    ]
+  },
+  "flex-layout.col#home__header--columna-3--tileFCol":{
+    "children": ["rich-text#tileFCol--header3"]
+  },
+  "rich-text#tileFCol--header3": {
+    "props": {
+      "blockClass": "TituloCont--header",
+      "text": "##### Blog"
+    }
+  },
+  /* >>>>>>>>>>>>Cierre de  Columna 3*/
+  /*----------------------------------------------------------------------------*/
+  /*                         Comienzo de Columna 4                             */
+  /*--------------------------------------------------------------------------*/
+
+  "disclosure-layout#simple4--header":{
+    "props":{
+        "blockClass":"disclosure--layout--simple4--header"
+    },
+    "children": ["disclosure-trigger#simple--header4", "disclosure-content#simple--header"]
+  },
+  "disclosure-trigger#simple--header4": {
+    "props":{
+        "blockClass":"disclosure--trigger--simple--header4"
+    },
+    "children": ["flex-layout.row#home__header--columna-4"]
+  },
+  "flex-layout.row#home__header--columna-4":{
+    "props":{
+        "blockClass":"home__header--columna-4"
+    },
+    "children": [
+        "flex-layout.col#home__header--columna-4--tileFCol"
+    ]
+  },
+  "flex-layout.col#home__header--columna-4--tileFCol":{
+    "children": ["rich-text#tileFCol--header4"]
+  },
+  "rich-text#tileFCol--header4": {
+    "props": {
+      "blockClass": "TituloCont--header",
+      "text": "##### Nosotros"
+    }
+  },
+  /* >>>>>>>>>>>>Cierre de  Columna 4*/
+
+
+
+
+
+    /*titulos para abrir el menu*/
+  "menu#drawer": {
+    "children": [
+      "flex-layout.row#menu--Accesorios--title",
+      "flex-layout.row#menu--Storage--title",
+      "flex-layout.row#menu--Gamer--title"
+    ],
+    "props": {
+      "blockClass":"menu--phone--desplegable",
+      "orientation": "vertical"
+    }
+  },
+
+  /*titulo accesorios*/
+  "flex-layout.row#menu--Accesorios--title":{
+    "children":[
+     "drawer#menu--Accesorios"
+    ]
+  },
+  "drawer#menu--Accesorios": {
+    "props":{
+      "blockClass":"menu--Accesorios--hamburguesa"
+    },
+    "children": ["menu#drawer--Accesorios"],
+    "blocks": ["drawer-trigger#accesorios"]
+  },
+  "drawer-trigger#accesorios": {
+    "props":{
+      "blockClass":"trigger--accesorios"
+    },
+    "children": [
+      "image#Accesories--phone",
+      "rich-text#menu--Accesorios--title",
+      "image#arrow--Accesories--phone"]
+  },
+  "image#Accesories--phone":{
+    "props":{
+      "blockClass": "img--phone",
+      "src": "https://cdn-icons-png.flaticon.com/512/689/689392.png",
+      "maxHeight": 24
+    }
+  },
+  "image#arrow--Accesories--phone":{
+    "props":{
+      "blockClass": "arrow--phone",
+      "src": "https://raw.githubusercontent.com/vtex-apps/store-icons/master/docs/nav-caret--right.svg",
+      "maxHeight": 24
+    }
+  },
+  "rich-text#menu--Accesorios--title":{
+    "props":{
+      "text":"Accesorios",
+      "blockClass":"titulo--menu--phone"
+    }
+  },
+
+  /*titulo Storage*/
+  "flex-layout.row#menu--Storage--title":{
+    "children":[
+      "drawer#menu--Storage"
+    ]
+  },
+  "drawer#menu--Storage": {
+    "props":{
+      "blockClass":"menu--Storage--hamburguesa"
+    },
+    "children": ["menu#drawer--Storage"],
+    "blocks": ["drawer-trigger#Storage"]
+  },
+  "drawer-trigger#Storage": {
+    "props":{
+      "blockClass":"trigger--Storage"
+    },
+    "children": ["image#Storage--phone","rich-text#menu--Storage--title","image#arrow--Storage--phone"]
+  },
+  "image#Storage--phone":{
+    "props":{
+      "blockClass": "img--phone",
+      "src": "assets/iconosMenu/ssd.png",
+      "maxHeight": 24
+    }
+  },
+  "image#arrow--Storage--phone":{
+    "props":{
+      "blockClass": "arrow--phone",
+      "src": "https://raw.githubusercontent.com/vtex-apps/store-icons/master/docs/nav-caret--right.svg",
+      "maxHeight": 24
+    }
+  },
+  "rich-text#menu--Storage--title":{
+    "props":{
+      "blockClass":"titulo--menu--phone",
+      "text":"Storage"
+    }
+  },
+
+  /*titulo Gamer*/
+  "flex-layout.row#menu--Gamer--title":{
+    "children":[
+      "drawer#menu--Gamer"
+    ]
+  },
+  "drawer#menu--Gamer": {
+    "props":{
+      "blockClass":"menu--Gamer--hamburguesa"
+    },
+    "children": ["flex-layout.col#menu--Gamer--contenido"],
+    "blocks": ["drawer-trigger#Gamer"]
+  },
+  "flex-layout.col#menu--Gamer--contenido":{
+    "props":{
+      "blockClass":"menu--Gamer--contenido"
+    },
+    "children": [
+      "image#imagen--gamer--titulo",
+      "rich-text#texto--gamer--titulo",
+      "flex-layout.col#opciones--menu--espacio",
+      "menu#drawer--Gamer"
+      
+    ]
+  },
+  "drawer-trigger#Gamer": {
+    "props":{
+      "blockClass":"trigger--Gamer"
+    },
+    "children": ["image#Gamer--phone","rich-text#menu--Gamer--title","image#arrow--Gamer--phone"]
+  },
+  "image#Gamer--phone":{
+    "props":{
+      "blockClass": "img--phone",
+      "src": "assets/iconosMenu/consola.png",
+      "maxHeight": 24
+    }
+  },
+  "image#arrow--Gamer--phone":{
+    "props":{
+      "blockClass": "arrow--phone",
+      "src": "https://raw.githubusercontent.com/vtex-apps/store-icons/master/docs/nav-caret--right.svg",
+      "maxHeight": 24
+    }
+  },
+  "rich-text#menu--Gamer--title":{
+    "props":{
+      "blockClass":"titulo--menu--phone",
+      "text":"Gamer"
+    }
+  },
+ 
+  /*contenido menu accesorios*/
+  "menu#drawer--Accesorios": {
+    "children": [
+      "menu-item#submenu--Accesories--item1",
+      "menu-item#submenu--Accesories--item2",
+      "menu-item#submenu--Accesories--item3",
+      "menu-item#submenu--Accesories--item4"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  /*contenido menu Storage*/
+  "menu#drawer--Storage": {
+    "children": [
+      "menu-item#submenu--Storage--item1"
+    ],
+    "props": {
+      "blockClass":"contenido--storage",
+      "orientation": "vertical"
+    }
+  },
+
+
+  /*contenido menu Gamer*/
+  "image#imagen--gamer--titulo":{
+    "props": {
+      "src": "assets/Assets-IMPRESISTEM-iconos/gamer.png",
+      "maxHeight": 24,
+      "blockClass":"imagen--gamer--titulo"
+    }
+  },
+  "rich-text#texto--gamer--titulo":{
+    "props":{
+      "blockClass":"texto--gamer--titulo",
+      "text":"Gamer"
+    }
+  },
+  "menu#drawer--Gamer": {
+    "children": [
+      "menu-item#submenu--Gamer--item1"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  }
+  
+}

@@ -1,0 +1,39 @@
+/*_   _ _____    _    ____  _____ ____  
+| | | | ____|  / \  |  _ \| ____|  _ \   
+| |_| |  _|   / _ \ | | | |  _| | |_) |  
+|  _  | |___ / ___ \| |_| | |___|  _ <    
+|_| |_|_____/_/   \_\____/|_____|_| \_\    */
+
+.minicartWrapperContainer--mini-cart-icono {
+  position: static;
+  float: none;
+}
+.cartIcon--mini-cart-icono {
+  opacity: 0;
+}
+
+.minicartContainer :global(.vtex-button) {
+  width: 25px;
+  height: 34px;
+  background-image: url(https://orbeim.vtexcommercestable.com.br/arquivos/carrito.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.overlay--mini-cart-icono {
+  margin-top: 7rem;
+}
+@media (max-width: 600px) {
+  .openIconContainer--mini-cart-icono::before {
+    content: "|";
+    margin: 0 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: black;
+  }
+  .openIconContainer--mini-cart-icono {
+    display: flex;
+  }
+}
+/*----------------------------------------------------------------------------------*/

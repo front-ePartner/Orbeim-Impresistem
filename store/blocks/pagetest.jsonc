@@ -1,0 +1,246 @@
+{
+  "store.custom#pagetest":{ //==================== Maquetacion Principal
+    "blocks":[
+      "flex-layout.row#containerMainTitle",
+      "flex-layout.row#containerMenuTab",
+      "modal-trigger#modal_2"
+    ]
+  },
+
+  //=============================== ROWS / FILAS y CONTENEDORES
+  "flex-layout.row#containerMenuTab": {
+    "title": "Contenedor del Menu Pestañas",
+    "children": [
+      "flex-layout.col#containerMenuTab"
+    ]
+  },
+  "flex-layout.row#containerMainTitle":{
+    "title": "Contenedor del Titulo Principal",
+    "children": [
+      "flex-layout.col#containerMainTitle"
+    ]
+  },
+  "flex-layout.row#media-queries": {
+    "title": "Contenedor Responsive",
+    "children": [
+      "flex-layout.col#media-queries"
+    ]
+  },
+  "flex-layout.row#modales": {
+    "title": "Contenedor Modales",
+    "children": [
+      "flex-layout.col#modales"
+    ]
+  },
+
+  //=============================== COLS / COLUMNAS
+  "flex-layout.col#containerMenuTab": {
+    "children": [
+      "tab-layout#menuTab"
+    ]
+  },
+  "flex-layout.col#containerMainTitle":{
+    "children": [
+      "rich-text#mainTitle"
+    ]
+  },
+  "flex-layout.col#media-queries": {
+    "children": [
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone"
+    ]
+  },
+  "flex-layout.col#modales": {
+    "children": [
+      "modal-trigger#modal_1"
+    ]
+  },
+
+  //=============================== Media Queries // RESPONSIVE
+  "responsive-layout.desktop": {
+    "title": "Contenedor Escritorio",
+    "children": ["rich-text#desktop"]
+  },
+  "responsive-layout.tablet": {
+    "title": "Contenedor Tablet",
+    "children": ["rich-text#tablet"]
+  },
+  "responsive-layout.phone": {
+    "title": "Contenedor Telefono",
+    "children": ["rich-text#phone"]
+  },
+
+  //=============================== PESTAÑAS Y MENUS
+  "tab-layout#menuTab": {
+    "children": [
+      "tab-list#tabButtons",
+      "tab-content#tabContent"
+    ],
+    "props": {
+      "defaultActiveTabId": "tab1"
+    }
+  },
+  //--------------- Buttons & Contents
+  "tab-list#tabButtons": {
+    "children": [
+      "tab-list.item#tabButton1",
+      "tab-list.item#tabButton2",
+      "tab-list.item#tabButton3"
+    ]
+  },
+  "tab-content#tabContent": {
+    "children": [
+      "tab-content.item#tabContent1",
+      "tab-content.item#tabContent2",
+      "tab-content.item#tabContent3"
+    ]
+  },
+  //--------------- Buttons
+  "tab-list.item#tabButton1": {
+    "props": {
+      "tabId": "tab1",
+      "label": "Presentacion",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#tabButton2": {
+    "props": {
+      "tabId": "tab2",
+      "label": "Media Queries"
+    }
+  },
+  "tab-list.item#tabButton3": {
+    "props": {
+      "tabId": "tab3",
+      "label": "Modales"
+    }
+  },
+  //--------------- Contents
+  "tab-content.item#tabContent1": {
+    "children": [
+      "rich-text#forTab"
+    ],
+    "props": {
+      "tabId": "tab1"
+    }
+  },
+  "tab-content.item#tabContent2": {
+    "children": [
+      "flex-layout.row#media-queries"
+    ],
+    "props": {
+      "tabId": "tab2"
+    }
+  },
+  "tab-content.item#tabContent3": {
+    "children": [
+      "flex-layout.row#modales"
+    ],
+    "props": {
+      "tabId": "tab3"
+    }
+  },
+
+  //=============================== TEXTO ENRIQUECIDO
+  "rich-text#mainTitle":{
+    "title": "Titulo Principal",
+    "props":{
+      "text": "Pagina de prueba para practicar Vtex IO!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "rich-text#forTab": {
+    "title": "Texto Pestaña",
+    "props": {
+      "text": "Aqui se deberia ver el contenido de la pestaña.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2"
+    }
+  },
+  "rich-text#desktop": {
+    "title": "Texto Escritorio",
+    "props": {
+      "text": "Media Querie vista desde un escritorio.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2"
+    }
+  },
+  "rich-text#tablet": {
+    "title": "Texto Tablet",
+    "props": {
+      "text": "Media Querie vista desde una tablet.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2"
+    }
+  },
+  "rich-text#phone": {
+    "title": "Texto Celular",
+    "props": {
+      "text": "Media Querie vista desde un celular.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2"
+    }
+  },
+  "rich-text#modal_1": {
+    "title": "Texto Abrir Modal",
+    "props": {
+      "text": "Abrir Modal",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2"
+    }
+  },
+  "rich-text#modal-content": {
+    "title": "Texto Contenido Modal",
+    "props": {
+      "text": "Texto para el contenido del modal!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2"
+    }
+  },
+  "rich-text#modal-content_2": {
+    "title": "Texto Contenido Modal",
+    "props": {
+      "text": "Texto para el contenido del modal AUTOMATICO!!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2"
+    }
+  },
+
+  //=============================== MODALES
+  "modal-trigger#modal_1": {
+    "children": [
+      "rich-text#modal_1",
+      "modal-layout#modal_1"
+    ]
+  },
+  "modal-layout#modal_1": {
+    "children": [
+      "rich-text#modal-content"
+    ]
+  },
+
+  "modal-trigger#modal_2": {
+    "props": {
+      "trigger": "event",
+      "customPixelEventName": "pageView"
+    },
+    "children":[
+      "modal-layout#modal_2"
+    ]
+  },
+  "modal-layout#modal_2": {
+    "children": [
+      "rich-text#modal-content_2"
+    ]
+  }
+}

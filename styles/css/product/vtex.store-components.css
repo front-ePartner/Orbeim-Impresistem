@@ -1,0 +1,19 @@
+.productDescriptionTitle {
+    font-size: 15px;
+    font-weight: bold;
+    color: #001E49;
+}
+.productDescriptionText .content {
+    font-size: 14px;
+    line-height: 20px;
+}
+/* estilos de los thumbs */
+.productImagesThumbActive .thumbImg {
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    width: 98%;
+    opacity: 1;
+}
+.thumbImg {
+    opacity: 0.6;
+}

@@ -1,0 +1,93 @@
+/* Estilos del boton del carrito de compras de las vitrinas*/
+.buttonText--botonvitrina {
+  font-size: 0;
+}
+.buttonText--botonvitrina {
+  font-size: 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonText--botonvitrina::after {
+  background: none;
+}
+.buttonText--botonvitrina {
+  border-color: #2a2a2a;
+  background-color: white;
+  background-image: url('https://orbeim.vteximg.com.br/arquivos/carritoImpre.png');
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 37px;
+  background-size: 63%;
+  background-position: 7px 7px;
+  border-radius: 7px;
+  border: 1px #2a2a2a solid;
+}
+.buttonText--botonvitrina:hover {
+  background-color: #001e49;
+  background-image: url('https://orbeim.vteximg.com.br/arquivos/carritoImpreBlanco.png');
+  background-repeat: no-repeat;
+}
+.buttonText--botonvitrina:hover::after {
+  background: none;
+
+}
+@media screen and (max-width: 700px) {
+  .buttonText--botonvitrina {
+    width: 40px;
+    height: 40px;
+  }
+  .buttonText::after {
+    right: 10% !important;
+  }
+  .buttonText--botonvitrina::after {
+    display: none;
+  }
+
+  /*Estilos botón agregar a carrito de compras en mobile*/
+  .buttonText--botonvitrina {
+    border-color: #2a2a2a;
+    background-color: #001e49;
+    background-image: url('https://orbeim.vteximg.com.br/arquivos/carritoImpreBlanco.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 7px 7px;
+    border-radius: 5px;
+    border: 1px #2a2a2a solid;
+  }
+}
+
+/*Cambio de color de boton en category*/
+.fondoBotonCategory :global(.vtex-product-summary-2-x-element) {
+  background-color: #001e49;
+}
+/*----------------------------------*/
+
+
+.buttonDataContainer.buttonDataContainer--botonCategoria{
+  border-color: #2a2a2a;
+  background-color: white;
+  background-image: url(https://orbeim.vteximg.com.br/arquivos/carritoImpre.png);
+  background-repeat: no-repeat;
+  width: 37px;
+  height: 37px;
+  margin-left: 30px;
+  background-size: 63%;
+  background-position: 7px 7px;
+  border-radius: 7px;
+  border: 1px #2a2a2a solid;
+}
+.buttonDataContainer--botonvitrina.buttonDataContainer--botonCategoria {
+  margin-left: 0px;
+}
+.buttonDataContainer.buttonDataContainer--botonvitrina.buttonDataContainer--botonCategoria {
+  margin-left: 0px;
+  border: none;
+}
+.buttonText.buttonText--botonvitrina.buttonText--botonCategoria {
+  height: auto;
+  margin-left: 0px;
+}
+

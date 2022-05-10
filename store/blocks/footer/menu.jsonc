@@ -1,0 +1,696 @@
+{
+  "vtex.menu@2.x:menu#sobre--nosotros": {
+    "props": {
+      "blockClass":"sobre--nosotros",
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#SOBRE--NOSOTROS",
+      "menu-item#quienes--somos",
+      "menu-item#nuestras--sedes--1",
+      "menu-item#aviso--legal",
+      "menu-item#donde--consignar",
+      "menu-item#certificacion--comercial",
+      "menu-item#politicas--de--tratamiento--de--datos"
+    ]
+  },
+  "menu-item#SOBRE--NOSOTROS":{
+    "props": {
+      "blockClass": "titulos",
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "SOBRE NOSOTROS",
+        "text": "SOBRE NOSOTROS"
+      }
+    }
+  },
+  //
+  "menu-item#quienes--somos": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://imang--orbeim.myvtex.com/about-us",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "Quiénes somos"
+      }
+    }
+  },
+  "menu-item#nuestras--sedes--1": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-black-friday",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "BlackFriday",
+        "text": "nuestras SEDES"
+      }
+    }
+  },
+  "menu-item#aviso--legal": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-sale",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sale",
+        "text": "Aviso legal"
+      }
+    }
+  },
+  "menu-item#donde--consignar": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-personalization",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Personalization",
+        "text": "Donde consignar"
+      }
+    }
+  },
+  "menu-item#certificacion--comercial": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-personalization",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Personalization",
+        "text": "Certificación comercial"
+      }
+    }
+  },
+  "menu-item#politicas--de--tratamiento--de--datos": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-personalization",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Personalization",
+        "text": "Políticas de tratamiento  \n de datos"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#productos": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#PRODUCTOS",
+      "menu-item#laptops--y--ultrabooks",
+      "menu-item#pc--de--escritorio",
+      "menu-item#tablets",
+      "menu-item#politicas--servidores--y--almacenamiento",
+      "menu-item#perifericos",
+      "menu-item#seguridad"
+    ]
+  },
+  "menu-item#PRODUCTOS":{
+    "props": {
+      "blockClass": "titulos",
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "PRODUCTOS",
+        "text": "PRODUCTOS"
+      }
+    }
+  },
+  "menu-item#laptops--y--ultrabooks": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-smartphones",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/smartphones",
+        "noFollow": true,
+        "tagTitle": "Smartphones",
+        "text": "Laptops y Ultrabooks"
+      }
+    }
+  },
+
+  "menu-item#pc--de--escritorio": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-videogames",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/videogames",
+        "noFollow": true,
+        "tagTitle": "Videogames",
+        "text": "PCs de escritorio"
+      }
+    }
+  },
+
+  "menu-item#tablets": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-tvs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/tvs",
+        "noFollow": true,
+        "tagTitle": "TVs",
+        "text": "Tablets"
+      }
+    }
+  },
+  "menu-item#politicas--servidores--y--almacenamiento": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-tvs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/tvs",
+        "noFollow": true,
+        "tagTitle": "TVs",
+        "text": "Politicas Servidores \n y almacenamientos"
+      }
+    }
+  },
+  "menu-item#perifericos": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-tvs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/tvs",
+        "noFollow": true,
+        "tagTitle": "TVs",
+        "text": "Perifericos"
+      }
+    }
+  },
+  "menu-item#seguridad": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-tvs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/tvs",
+        "noFollow": true,
+        "tagTitle": "TVs",
+        "text": "Seguridad"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#servicio--al--cliente": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#SERVICIO--AL--CLIENTE",
+      "menu-item#nuestras--sedes",
+      "menu-item#preguntas--frecuentes",
+      "menu-item#modalidades--de--credito",
+      "menu-item#politicas--de--garantia",
+      "menu-item#politicas--de--tratamiento--de--datos--2",
+      "menu-item#politicas--de--envios--y--devoluciones",
+      "menu-item#terminos--y--condiciones",
+      "menu-item#faq"
+    ]
+  },
+  "menu-item#SERVICIO--AL--CLIENTE":{
+    "props": {
+      "blockClass": "titulos",
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "SERVICIO AL CLIENTE",
+        "text": "SERVICIO AL CLIENTE"
+      }
+    }
+  },
+  "menu-item#nuestras--sedes": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-bags",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/d",
+        "noFollow": true,
+        "tagTitle": "Bags",
+        "text": "Nuestras SEDES"
+      }
+    }
+  },
+
+  "menu-item#preguntas--frecuentes": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-backpacks",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/backpacks",
+        "noFollow": true,
+        "tagTitle": "Backpacks",
+        "text": "Preguntas frecuentes"
+      }
+    }
+  },
+
+  "menu-item#modalidades--de--credito": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-necessaire",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/necessaire",
+        "noFollow": true,
+        "tagTitle": "Necessaire",
+        "text": "Modalidades de crédito"
+      }
+    }
+  },
+  "menu-item#politicas--de--garantia": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-necessaire",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/necessaire",
+        "noFollow": true,
+        "tagTitle": "Necessaire",
+        "text": "Politicas de garantia"
+      }
+    }
+  },
+  "menu-item#politicas--de--tratamiento--de--datos--2": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-necessaire",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/necessaire",
+        "noFollow": true,
+        "tagTitle": "Necessaire",
+        "text": "Politicas de tratamiento \n de datos"
+      }
+    }
+  },
+  "menu-item#politicas--de--envios--y--devoluciones": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-necessaire",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/necessaire",
+        "noFollow": true,
+        "tagTitle": "Necessaire",
+        "text": "Politicas de envios \n y devoluciones"
+      }
+    }
+  },
+  "menu-item#terminos--y--condiciones": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-necessaire",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/necessaire",
+        "noFollow": true,
+        "tagTitle": "Necessaire",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-necessaire",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/bags/necessaire",
+        "noFollow": true,
+        "tagTitle": "Necessaire",
+        "text": "FAQ"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#contactanos": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#CONTACTENOS",
+      "menu-item#correo",
+      "menu-item#telefono",
+      "menu-item#lugar",
+      "menu-item#horario"
+    ]
+  },
+  "menu-item#CONTACTENOS":{
+    "props": {
+      "blockClass": "titulos",
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "CONTACTENOS",
+        "text": "CONTACTENOS"
+      }
+    }
+  },
+  "menu-item#correo": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "co.atencuionalcliente@gmail.com"
+      }
+    }
+
+  },
+  "menu-item#telefono": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "+57 123 123 1234 Ext.1520"
+      }
+    }
+
+  },
+  "menu-item#lugar": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Direccion,Departamento,Ciudad"
+      }
+    }
+
+  },
+  "menu-item#horario": {
+    "props": {
+      "blockClass": "texto--menu",
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Lun-Vie 9am a 12pm y 2pm a 5pm"
+      }
+    }
+  }
+
+
+
+
+  //menu celular--no se utiliza---pero se deja temporalmente
+  /*
+  "vtex.menu@2.x:menu#phone":{
+    "props":{
+      "blockClass": "menu--phone"
+    },
+    "children":[
+      "menu-item#phone--sobre--nosotros",
+      "flex-layout.col#espacio--menu",
+      "menu-item#phone--informacion",
+      "flex-layout.col#espacio--menu",
+      "menu-item#phone--preguntas--frecuentes",
+      "flex-layout.col#espacio--menu",
+      "menu-item#phone--terminos--y--condiciones"
+    ]
+  },
+  "menu-item#phone--sobre--nosotros":{
+    "props": {
+      "blockClass": "texto--menu--phone--sobre--nosotros",
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "sobre nosotros"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu#phone--sobre--nosotros"
+    ]
+  },
+  "vtex.menu@2.x:submenu#phone--sobre--nosotros": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#phone--sobre--nosotros--info"
+    ]
+  },
+  "vtex.menu@2.x:menu#phone--sobre--nosotros--info": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#quienes--somos",
+      "menu-item#nuestras--sedes--1",
+      "menu-item#aviso--legal",
+      "menu-item#donde--consignar",
+      "menu-item#certificacion--comercial",
+      "menu-item#politicas--de--tratamiento--de--datos"
+    ]
+  },
+  "menu-item#phone--informacion":{
+    "props": {
+      "blockClass": "texto--menu--phone--informacion",
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "informacion"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu#phone--informacion"
+    ]
+  },
+  "vtex.menu@2.x:submenu#phone--informacion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#phone--informacion"
+    ]
+  },
+  "vtex.menu@2.x:menu#phone--informacion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#laptops--y--ultrabooks",
+      "menu-item#pc--de--escritorio",
+      "menu-item#tablets",
+      "menu-item#politicas--servidores--y--almacenamiento",
+      "menu-item#perifericos",
+      "menu-item#seguridad"
+    ]
+  },
+  "menu-item#phone--preguntas--frecuentes":{
+    "props": {
+      "blockClass": "texto--menu--phone--preguntas--frecuentes",
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "preguntas frecuentes"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu#phone--preguntas--frecuentes"
+    ]
+  },
+  "vtex.menu@2.x:submenu#phone--preguntas--frecuentes": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#phone--preguntas--frecuentes"
+    ]
+  },
+  "vtex.menu@2.x:menu#phone--preguntas--frecuentes": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#nuestras--sedes",
+      "menu-item#preguntas--frecuentes",
+      "menu-item#modalidades--de--credito",
+      "menu-item#politicas--de--garantia",
+      "menu-item#politicas--de--tratamiento--de--datos--2",
+      "menu-item#politicas--de--envios--y--devoluciones",
+      "menu-item#terminos--y--condiciones",
+      "menu-item#faq"
+    ]
+  },
+
+  "menu-item#phone--terminos--y--condiciones":{
+    "props": {
+      "blockClass": "texto--menu--phone--terminos--y--condiciones",
+      "id": "menu-item-news",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "News",
+        "text": "terminos y condiciones"
+      }
+    },
+    "blocks":[
+      "vtex.menu@2.x:submenu#phone--terminos--y--condiciones"
+    ]
+  },
+  "vtex.menu@2.x:submenu#phone--terminos--y--condiciones": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#phone--terminos--y--condiciones"
+    ]
+  },
+  "vtex.menu@2.x:menu#phone--terminos--y--condiciones": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#correo",
+      "menu-item#telefono",
+      "menu-item#lugar",
+      "menu-item#horario"
+    ]
+  },
+  */
+
+  }
