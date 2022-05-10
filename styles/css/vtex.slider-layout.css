@@ -69,3 +69,10 @@
 }
 /*-------------------------------------*/
 
+.paginationDot--isActive.paginationDot--carousel--marcas--isActive {background: black;width: 32px !important;border-radius: 6px;}
+
+
+@media (max-width: 700px) {
+.sliderTrack.sliderTrack--Mozaico-Cat.sliderTrack--slider {margin: 10px 0;}
+.slide.slide--Mozaico-Cat {margin: 2px;}
+}

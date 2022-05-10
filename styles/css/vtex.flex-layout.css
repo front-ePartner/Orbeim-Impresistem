@@ -788,4 +788,5 @@
 .flexCol.flexCol--buycolection.flexCol--shelf-vitrina {margin-left: 0;}
 .flexCol.flexCol--buycolection.flexCol--shelf-vitrina :global(.vtex-button__label) {padding: 0;}
 .flexRowContent--imageVitrina {align-items: center;height: 180px;overflow: hidden;}
+.flexRow.flexRow--productCountMobileRow :global(.vtex-store-components-3-x-container) {padding: 0 0%;}
 }

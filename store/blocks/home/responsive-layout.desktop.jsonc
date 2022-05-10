@@ -1086,7 +1086,7 @@
       "orderBy":"OrderByTopSaleDESC",
       "width": "100%",
       "blockClass": "depto-tab",
-      "paginationDotsVisibility": "desktopOnly",
+      "paginationDotsVisibility": "mobileOnly",
       "productList":{
         "maxItems": 10,
         "itemsPerPage": 4,

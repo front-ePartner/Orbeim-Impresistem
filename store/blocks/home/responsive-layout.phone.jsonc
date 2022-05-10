@@ -3,7 +3,8 @@
   /*titulo productos destacados*/
   "responsive-layout.phone#rich-text--title--productos--destacados":{
         "children":[
-            "rich-text#phone--title--productos--destacados"
+            "rich-text#phone--title--productos--destacados",
+            "flex-layout.row#Shelf-destacados"
         ]
     },
     "rich-text#phone--title--productos--destacados": {
@@ -55,8 +56,10 @@
         "blockClass": "carousel"
       },
       "children": [
-        "tab-list.item#tabs__list--laptos--phone",
-        "tab-list.item#tabs__list--impresoras--phone"
+        "tab-list.item#tabs__list--laptos",
+        "tab-list.item#tabs__list--impresoras",
+        "tab-list.item#tabs__list--celulares",
+        "tab-list.item#tabs__list--tablets"
       ]
     },
     "tab-list.item#tabs__list--laptos--phone":{
@@ -74,8 +77,10 @@
     },
     "tab-content#product__tab--content--phone":{
       "children":[
-        "shelf#Tabber-1",
-        "tab-content.item#tabs__content--impresoras--phone"
+        "tab-content.item#tabs__content--laptos",
+        "tab-content.item#tabs__content--impresoras",
+        "tab-content.item#tabs__content--celulares",
+        "tab-content.item#tabs__content--tablets"
       ]
     },
     "tab-content.item#tabs__content--laptos--phone":{
@@ -616,6 +621,140 @@
           "blockClass":"phone--six--img--lo--ultimo",
           "src": "assets/img/img18.png"
         }
-      }
+      },
 
+
+
+      //TODO LO QUE UN GAME NECESITA DE
+
+"responsive-layout.phone#Mozaico-Cat":{
+  "children":[
+    "flex-layout.row#Mozaico-Cat"
+  ]
+},
+   "flex-layout.row#Mozaico-Cat":{
+        "props":{
+          "preventVerticalStretch":true,
+          "blockClass":"Mozaico-Cat-Mobile"
+        },
+        "children":[
+          "rich-text#Titulo-1-Mozaico-Cat",
+          "rich-text#Texto-Mozaico-Cat",
+          "image#img-Mozaico-Cat",
+          "slider-layout#Mozaico-Cat",
+          "rich-text#Titulo-2-Mozaico-Cat",
+          "rich-text#Link-Mozaico-Cat"
+        ]
+},
+"rich-text#Titulo-1-Mozaico-Cat": {
+  "props": {
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "TODO LO QUE UN GAMER NECESITA",
+    "textColor": "c-on-emphasis",
+    "font": "t-heading-5",
+    "blockClass": "Mozaico-Cat-titulo"
+  }
+},
+"rich-text#Titulo-2-Mozaico-Cat": {
+  "props": {
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "DESCUBRE UN NUEVO MUNDO",
+    "textColor": "c-on-emphasis",
+    "font": "t-heading-5",
+    "blockClass": "Mozaico-Cat-titulo"
+  }
+},
+"rich-text#Texto-Mozaico-Cat": {
+  "props": {
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "Los mejores productos para que disfrutes tus juegos de la mejor manera",
+    "textColor": "c-on-emphasis",
+    "font": "t-heading-5",
+    "blockClass": "Mozaico-Cat-texto"
+  }
+},
+"rich-text#Link-Mozaico-Cat": {
+  "props": {
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "[CONOCER MÁS](/#)",
+    "textColor": "c-on-emphasis",
+    "font": "t-heading-5",
+    "blockClass": "Mozaico-Cat-link"
+  }
+},
+
+"image#img-Mozaico-Cat": {
+  "props": {
+    "src": "https://orbeim.vteximg.com.br/arquivos/240HZ-mobile.png",
+
+    "link": "#"
+  }
+},
+"slider-layout#Mozaico-Cat": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 2,
+      "tablet": 2,
+      "phone": 2
+    },
+    "infinite": true,
+    "showNavigationArrows": "always",
+    "showPaginationDots": "never",
+    "blockClass": ["Mozaico-Cat","slider"]
+  },
+  "children": ["info-card#controles", "info-card#Teclados", "info-card#Audifonos", "info-card#Pantallas"]
+},
+
+"info-card#controles": {
+  "props": {
+    "id": "Mozaico-Cat",
+    "isFullModeStyle": true,
+    "textPosition": "left",
+    "imageUrl": "https://orbeim.vtexassets.com/assets/vtex/assets-builder/vtex.store-theme/4.4.2/img/img5___46b9aad4a2c2464d697ce821e9db9856.png",
+    "callToActionText": "Controles",
+    "callToActionUrl": "/#",
+    "blockClass": ["Mozaico-Cat","banner-slider", "banner-controles"],
+    "textAlignment": "center"
+  }
+},
+"info-card#Teclados": {
+  "props": {
+    "id": "info-card-example",
+    "isFullModeStyle": true,
+    "textPosition": "left",
+    "imageUrl": "https://orbeim.vtexassets.com/assets/vtex/assets-builder/vtex.store-theme/4.4.2/img/img8___c2e3047e0ba1488d326f83940032b37c.png",
+    "callToActionText": "Teclados",
+    "callToActionUrl": "/#",
+    "blockClass":  ["Mozaico-Cat","banner-slider", "banner-teclados"],
+    "textAlignment": "center"
+  }
+},
+"info-card#Audifonos": {
+  "props": {
+    "id": "info-card-example",
+    "isFullModeStyle": true,
+    "textPosition": "left",
+    "imageUrl": "https://orbeim.vtexassets.com/assets/vtex/assets-builder/vtex.store-theme/4.4.2/img/img6___42399b7b7cfa18d99687dbbe2f780741.png",
+    "callToActionText": "Audifonos",
+    "callToActionUrl": "/#",
+    "blockClass":  ["Mozaico-Cat","banner-slider", "banner-audifonos"],
+    "textAlignment": "center"
+  }
+},
+"info-card#Pantallas": {
+  "props": {
+    "id": "info-card-example",
+    "isFullModeStyle": true,
+    "textPosition": "left",
+    "imageUrl": "https://orbeim.vtexassets.com/assets/vtex/assets-builder/vtex.store-theme/4.4.2/img/img6___42399b7b7cfa18d99687dbbe2f780741.png",
+    "callToActionText": "Pantallas",
+    "callToActionUrl": "/#",
+    "blockClass":  ["Mozaico-Cat","banner-slider", "banner-pantallas"],
+    "textAlignment": "center"
+  }
+}
 }

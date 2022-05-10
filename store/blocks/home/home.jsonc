@@ -17,14 +17,21 @@
 
       //Banners Categorias MOBILE
       "responsive-layout.phone#flex-layout.row-nuestras-marcas-b",
+      
 
 
+      //MOZAICO CATEGORIA MOBILE
+      "responsive-layout.phone#Mozaico-Cat",
+
+
+      //VITRINA DESTACADOS MOBILE
+      "responsive-layout.phone#rich-text--title--productos--destacados",
 
       "responsive-layout.phone#flex-layout.row--home__tercer-collage--imagenes",
       "responsive-layout.desktop#flex-layout.row--home__first--collage--imagenes",
       "responsive-layout.desktop#flex-layout.row--home__second--collage--imagenes",
-      "flex-layout.row#title--productos--destacados",
-      "flex-layout.row#Shelf-destacados",
+      //"flex-layout.row#title--productos--destacados",
+      //"flex-layout.row#Shelf-destacados",
       //"responsive-layout.desktop#flex-layout.row--home__second-slider-images",
       "responsive-layout.desktop#flex-layout.row--home__tercer-collage--imagenes",
       "responsive-layout.desktop#flex-layout.descubre-nuestros-productos",

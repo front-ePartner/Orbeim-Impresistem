@@ -508,3 +508,10 @@
   margin: 0;
   line-height: inherit;
 }
+
+@media (max-width: 700px) {
+.paragraph.paragraph--Mozaico-Cat-titulo {color: black;}
+.paragraph.paragraph--Mozaico-Cat-texto {color: #808080;}
+.link.link--Mozaico-Cat-link {color: #001E49;font-size: 12px;}
+.paragraph.paragraph--Mozaico-Cat-link {margin: 0 0 40px;}
+}

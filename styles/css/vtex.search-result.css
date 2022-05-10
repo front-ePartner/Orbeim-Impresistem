@@ -154,4 +154,7 @@
   background-color: transparent;
 }
 /*------------------------------------------*/
-
+@media (max-width: 700px) {
+.searchResultContainer {padding: 0;}
+.galleryItem.galleryItem--normal.galleryItem--grid {padding: 0;}
+}
