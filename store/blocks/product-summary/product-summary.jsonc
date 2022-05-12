@@ -7,8 +7,9 @@
       ]
     },
     "children": [
+   
       "vtex.product-highlights@2.x:product-highlights#collection",
-      "product-summary-brand",
+      //"product-summary-brand",
       "flex-layout.row#imageVitrina",
       "product-summary-name",
       "product-summary-description#vitrina",
@@ -133,7 +134,7 @@
     },
     "children": [
       "vtex.product-highlights@2.x:product-highlights#collection",
-      "product-summary-brand",
+      //"product-summary-brand",
       "flex-layout.row#imageVitrina",
       "product-summary-name",
       "product-summary-description#vitrina",
@@ -151,9 +152,9 @@
 
   "stack-layout#prodsum": {
     "children": [
-      "product-summary-image#shelf", // ? Image
-      "vtex.product-highlights@2.x:product-highlights#collection", // ? Flags
-      "modal-trigger#quickview" // ? Check quickview.jsonc
+     // "product-summary-image#shelf", // ? Image
+      "vtex.product-highlights@2.x:product-highlights#collection" // ? Flags
+     // "modal-trigger#quickview" // ? Check quickview.jsonc
     ]
   },
 

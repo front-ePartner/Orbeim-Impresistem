@@ -1,6 +1,22 @@
 {
     "responsive-layout.mobile#tabbers": {
         "children": [
+            "flex-layout.row#especificaciones-m"
+        ]
+    },
+    "flex-layout.row#especificaciones-m": {
+        "props": {
+          "blockClass": "especificaione-M"
+        },
+        "children": [
+            "flex-layout.col#especificaciones-m"
+        ]
+    },
+    "flex-layout.col#especificaciones-m": {
+        "props": {
+          "blockClass": "especificaione-M"
+        },
+        "children": [
             "disclosure-layout#especificaciones",
             "disclosure-layout#caracteristicas",
             "disclosure-layout#adicional"
@@ -11,7 +27,7 @@
         "children": ["disclosure-trigger#especificaciones", "disclosure-content#especificaciones"],
         "props": {
           "animated": true,
-          "blockClass":"especificaciones"
+          "blockClass":["especificaciones","espes1"]
         }
     },
     "disclosure-trigger#especificaciones": {
@@ -22,10 +38,10 @@
     },
     "disclosure-content#especificaciones": {
         "children": [
-            "product-specification-group#table"
+            "product-specifications#product"
         ],
         "props": {
-            "blockClass": "product1MMM"
+            "blockClass": ["product1MMM","espesc"]
         }
     },
     "rich-text#especificaciones": {
@@ -39,7 +55,7 @@
         "children": ["disclosure-trigger#caracteristicas", "disclosure-content#caracteristicas"],
         "props": {
             "animated": true,
-            "blockClass":"especificaciones"
+            "blockClass":["especificaciones","caracteristicas"]
         }
     },
     "disclosure-trigger#caracteristicas": {
@@ -50,7 +66,7 @@
     },
     "disclosure-content#caracteristicas": {
         "children": [
-            "product-specification-group#table"
+            "product-specifications#product"
         ],
         "props":{
             "blockClass": "Informacioncaracteristicas"
@@ -67,7 +83,7 @@
         "children": ["disclosure-trigger#adicional", "disclosure-content#adicional"],
         "props": {
             "animated": true,
-            "blockClass":"especificaciones"
+            "blockClass":["especificaciones","adicional"]
         }
     },
     "disclosure-trigger#adicional": {
@@ -78,7 +94,7 @@
     },
     "disclosure-content#adicional": {
         "children": [
-            "product-specification-group#table"
+            
         ],
         "props": {
             "tabId": "Informacionadicional",

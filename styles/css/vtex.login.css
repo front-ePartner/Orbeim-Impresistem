@@ -1,4 +1,5 @@
 @font-face{font-family:'TT-Norms';font-style:normal;font-weight:400;src: url(https://orbeim.vteximg.com.br/arquivos/TT-Norms-Regular.woff.css) format('woff')}
+@font-face{font-family:'TT-Norms-Bold';font-style:normal;font-weight:400;src: url(https://orbeim.vteximg.com.br/arquivos/tt-norms-bold.woff.css) format('woff')}
 
 .container :global(.vtex-button__label)::after {
   content: "Mi cuenta";
@@ -36,7 +37,7 @@
   margin-top: 7px;
 }
 
-
+/*
 :global(.vtex-button):hover :global(.vtex-button__label)::before {
   background-image: url(https://orbeim.vtexcommercestable.com.br/arquivos/usuario-hover-1.png) !important;
 }
@@ -47,6 +48,26 @@
 :global(.vtex-button):hover :global(.vtex-button__label)::after {
   color: white;
 }
+*/
+
+.profile {
+  opacity: 0;
+  width: 1px;
+  visibility: hidden;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--login) :global(.vtex-button ):hover{
+  background: transparent !important;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--login) :global(.vtex-button__label ){
+  padding: 0 !important;
+}
+.contentContainer {
+  margin: 0;
+}
+.box .content{
+  margin: 0;
+  padding: 0;
+}
 
 :global(.vtex-button):hover :global(.vtex-login-2-x-label)::before {
   color: white;
@@ -55,6 +76,39 @@
 .vtex-button {
   border-radius: 12rem;
   margin: 0 1rem;
+}
+.inputContainer :global(.vtex-styleguide-9-x-input){
+  font-family: 'TT-Norms';
+}
+:global(.vtex-my-account-1-x-userName) {
+  font-family: 'TT-Norms-Bold';
+  color:#001E49;
+  font-size: 25px;
+}
+:global(.vtex-account__page) :global(.vtex-pageHeader__container){
+  opacity: 0;
+  padding: 7px;
+}
+:global(.vtex-my-account-1-x-userGreeting){
+  font-size: 0%;
+}
+:global(.vtex-my-account-1-x-userGreeting)::before{
+  content: "Perfil";
+  font-family: 'TT-Norms-Bold';
+  font-size: 15px;
+  color: #808080;
+}
+:global(.vtex-my-account-1-x-menuLinks){
+  border: 1px solid #D3D3D3;
+  border-radius: 5px ;
+}
+:global(.vtex-account_menu-link ){
+  border-bottom: 1px solid #D3D3D3;
+  transition: 400ms all;
+  margin: 0;
+}
+:global(.vtex-account_menu-link ):hover{
+  background: #FFEDC2;
 }
 
 @media (max-width: 1050px) {
@@ -80,7 +134,7 @@
     width: 34px;
     height: 34px;
   }
-  :global(.vtex-button):hover {
+/*  :global(.vtex-button):hover {
     background: #001e49;
   }
   :global(.vtex-button):hover :global(.vtex-button__label)::after {
@@ -90,5 +144,5 @@
   :global(.vtex-button):hover :global(.vtex-login-2-x-label)::before {
     color: white;
   }
-
+*/
 }

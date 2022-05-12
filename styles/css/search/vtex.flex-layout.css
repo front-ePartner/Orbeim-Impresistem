@@ -83,10 +83,6 @@
 /* footer del phone                     */
 /*--------------------------------------*/
 
-.flexColChild--phone--desarrollado--por{
-  margin-left: 147px;
-  margin-bottom: 31px;
-}
 
 
 .flexColChild--phone--desarrollado--por :global(.vtex-rich-text-0-x-paragraph){
@@ -108,7 +104,7 @@
   background: rgb(214, 214, 214);
     height: 1px;
 }
-
+/*
 .flexRow--home__footer--columna-1{
   width: 424%;
 }
@@ -121,6 +117,8 @@
 .flexRow--home__footer--columna-4{
   width: 532%;
 }
+*/
+
 
 /*--------------------------------------*/
 

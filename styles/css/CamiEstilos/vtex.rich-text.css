@@ -1,0 +1,25 @@
+
+
+@media (max-width: 600px) {
+.paragraph.paragraph--partnerIntegral {font-size: 14px;}
+
+.paragraph.paragraph--solucionesTecnologicas {font-size: 32px;text-align: center;display: block;width: 100%;}
+}
+
+.paragraph.paragraph--textostilo {color: #2A2A2A;font-size: 13px;}
+
+.strong.strong--textostilo {margin: 24px 0 -13px 0;display: block;}
+
+.container.container--tituloF.container--selected {background: #FFEDC2;padding: 0 8%;}
+
+.paragraph.paragraph--tituloF {padding: 7px 0;margin: 0;;;;;;font-size: 15px;}
+
+.container.container--tituloF {padding: 0 7%;}
+
+.container.container--textoquien {padding: 0 5%;}
+
+.heading.heading--textoquien.headingLevel1.headingLevel1--textoquien {font-size: 30px;}
+
+.container.container--shelfTitle.container--categoriasTittleC404 {justify-content: initial;padding: 0 3%;}
+
+.heading--categoriasTittleC404.headingLevel2--categoriasTittleC404 {color: #2A2A2A;font-weight: 700;font-size: 30px;}

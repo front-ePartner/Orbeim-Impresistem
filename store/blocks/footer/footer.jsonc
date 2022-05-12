@@ -280,6 +280,7 @@
       "blockClass":"1-footer-mobile"
     },
     "children":[
+
       "flex-layout.col#PrimeraCol1",
       "flex-layout.col#PrimeraCol2",
       "flex-layout.col#PrimeraCol3",
@@ -394,6 +395,7 @@
   },
   "rich-text#phone--desarrollado--por":{
     "props":{
+      "blockClass":"medios--de--pago--phone",
       "text":"DESARROLLADO POR"
     }
   },

@@ -1,0 +1,13 @@
+.container--product .contentContainer {
+    padding: 0;
+}
+.container--product .listItem :global(.vtex-button){
+    border-bottom: 0;
+    border-width: 1px;
+}
+.container--product .listItem{
+    width: 25%;
+}
+.container--product{
+    margin-top: 50px;
+}

@@ -1,0 +1,101 @@
+/* menu desktop */
+.styledLinkContainer--subMenuItem__Tile {
+    margin: 0;
+    padding: 3px 12px 3px 80px;
+    border-bottom: 1px solid rgba(49,69,69,0.2);
+}
+.menuContainerNav--Menu__Group{
+    width: 100%;
+}
+.submenu--SubSubMenu__Group .menuContainerNav--Menu__Group{
+    width: auto;
+}
+.styledLinkContent--subsubMenuItem {
+    font-size: 12px;
+    transition: 400ms all;
+}
+.styledLinkContent--subsubMenuItem:hover {
+    color: #001E49;
+    font-family: 'TT-Norms-Bold';
+}
+.styledLinkContainer--subMenuItem__Tile {
+    position: relative;
+}
+.styledLinkContainer--subMenuItem__Tile::after {
+    content: "";
+    background: url(/arquivos/flecha-menuNoabierto.png) no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 5px;
+    height: 9px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+.styledLinkContainer--subMenuItem__Tile:hover::after {
+    content: "";
+    background: url(/arquivos/flecha-menuNoabierto.png) no-repeat;
+    transform: rotate(180deg);
+    background-size: 100%;
+}
+.styledLinkContent--MenuItem__Category {
+    font-size: 15px;
+    transition: 400ms all;
+}
+.styledLinkContainer--MenuItem {
+    margin: 0 10px;
+}
+.styledLinkContainer--MenuItem__Category{
+    margin-left: 4rem !important;
+}
+.styledLinkContent--MenuItem__Category:hover{
+    color: #001E49;
+    font-family: 'TT-Norms-Bold';
+}
+@media (max-width: 600px) {
+    .styledLinkContainer--subMenuItem__Tile {
+        padding: 3px 10px;   
+        border-bottom: 0;
+        
+    }
+    .styledLinkContent--subMenuItem__Tile{
+        font-family: 'TT-Norms-Bold';
+        font-size: 14px;
+    }
+    .styledLinkContent--llamadosgenerales {
+        padding: 18px 0;
+        font-size: 14px;
+        border-top: 1.74194px solid rgba(49, 69, 69, 0.2);
+        font-family: 'TT-Norms-Bold';
+        color: #808080;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .styledLinkContent--llamadosgenerales.styledLinkContent--mi-cuenta::before{
+        content: "";
+        background: url(/arquivos/useMobile.png) no-repeat;
+        background-size: 100%;
+        display: block;
+        width: 15px;
+        height: 18px;
+        margin-right: 10px;
+    }
+    .styledLinkContent--ofertas-Button::before{
+        content: "";
+        background: url(/arquivos/ofertasLogoimpre.png) no-repeat;
+        background-size: 100%;
+        display: block;
+        width: 14px;
+        height: 20px;
+        margin-right: 6px;
+    }
+    .styledLinkContent--ofertas-Button {
+        padding: 15px 0;
+        border: 2px solid #2A2A2A;
+        border-radius: 2px;
+        color: #2A2A2A;
+        justify-content: center;
+        font-family: 'TT-Norms-Bold';
+        margin-bottom: 20px;
+    }
+}

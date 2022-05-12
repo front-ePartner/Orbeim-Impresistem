@@ -17,7 +17,6 @@
 .layoutContainer--shelf {
   margin-top: 20px;
   margin-bottom: 20px;
-  max-width: 96rem;
 }
 
 .slide--shelf {
@@ -50,7 +49,7 @@
 
 .paginationDot.paginationDot--carousel.paginationDot--isActive.paginationDot--carousel--isActive {
   background-color: #fec236;
-  border-radius: 4px;
+  border-radius: 2px;
   padding: 0px 31px 4px;
 }
 
@@ -69,10 +68,35 @@
 }
 /*-------------------------------------*/
 
-.paginationDot--isActive.paginationDot--carousel--marcas--isActive {background: black;width: 32px !important;border-radius: 6px;}
+.paginationDot--isActive.paginationDot--carousel--marcas--isActive {background: black;width: 32px !important;border-radius: 2px;}
 
+.caretIcon {color: transparent;}
+.arrowLeft .caretIcon {background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-izquierda-blanca.png);background-position: center;background-size: 85%;background-repeat: no-repeat;filter: brightness(0.8);}
+.sliderRightArrow .caretIcon {background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-derecha-blanca.png);background-position: center;background-size: 85%;background-repeat: no-repeat;filter: brightness(0.8);}
+
+.sliderLeftArrow .caretIcon {color: transparent;background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-izquierda-blanca.png);background-position: center;background-size: 85%;background-repeat: no-repeat;filter: brightness(0.8);}
+.sliderRighttArrow .caretIcon {color: transparent;background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-derecha-blanca.png);background-position: center;background-size: 85%;background-repeat: no-repeat;filter: brightness(0.8);}
+
+.slide--post-Marcas-slider:hover {width: 6.5% !important;transition: 1s;}
+.slide--post-Marcas-slider {transition: 1s;}
+
+.slide--post-Marcas-slider:hover {width: 6.5% !important;transition: 1s;}
+
+.caretIcon:hover {filter: brightness(0.2);}
+
+.imageElementLink--carousel {
+  width: 100%;
+}
 
 @media (max-width: 700px) {
 .sliderTrack.sliderTrack--Mozaico-Cat.sliderTrack--slider {margin: 10px 0;}
 .slide.slide--Mozaico-Cat {margin: 2px;}
+.sliderLayoutContainer--carousel--marcas {margin: 10px 0 45px;}
+.paginationDotsContainer.paginationDotsContainer--carousel--marcas {position: absolute;top: 107%;}
+
+.slide--post-Marcas-slider:hover {width: 3.5% !important;}
+
+.paginationDot--Shelf__Slider--laptops--isActive {background: #001e49;width: 35px !important;border-radius: 2px;}
+.paginationDotsContainer--Shelf__Slider {top: 100%;}
+.slideChildrenContainer--carrusel-final-mobile {align-items: baseline;width: 94%;margin: 17px auto 0;}
 }

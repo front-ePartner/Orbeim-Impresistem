@@ -40,14 +40,20 @@
 @media (max-width: 600px) {
   .trigger--disclosure-icon-search-mobile--visible::before {
     content: "X";
-    font-size: 2rem;
-    top: 2rem;
+    font-size: 20px;
+    top: 0px;
+    width: 93%;
     position: absolute;
-    font-family: "Encode Sans";
+    font-family: "TT-Norms";
     font-weight: 600;
-    color: #324545;
-    background: white;
-    margin-left: 0;
+    color: #001E49;
+    background: #EDF4FF;
+    height: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
   }
   .trigger--Disclosure__Trigger-Politics {
     margin-bottom: 15px;

@@ -19,3 +19,8 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media screen and (max-width: 700px) {
+.inlineGridIcon {background-image: url(https://orbeim.vteximg.com.br/arquivos/categoria-mobile-1item.png);background-size: 52%;}
+.gridIcon {background-image: url(https://orbeim.vteximg.com.br/arquivos/categoria-mobile-2item.png);background-size: 50%;}
+}

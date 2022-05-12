@@ -17,6 +17,7 @@
     /*tab (selector de diferentes opciones)*/
     "responsive-layout.phone#flex-layout.row--product__tabs":{
         "children":[
+            "flex-layout.row#title--productos--destacados",
             "flex-layout.row#phone--product__tabs"
         ]
     },
@@ -53,7 +54,8 @@
         },
         "infinite": true,
         "showNavigationArrows": "desktopOnly",
-        "blockClass": "carousel"
+        "blockClass": ["carousel","slider-tabbersmobile"],
+        "centerMode": "center"
       },
       "children": [
         "tab-list.item#tabs__list--laptos",
@@ -102,7 +104,7 @@
     /*collage imagenes*/
     "responsive-layout.phone#flex-layout.row--home__first--collage--imagenes":{
         "children":[
-            "flex-layout.row#phone__first--collage--imagenes"
+          "flex-layout.row#accordion"
         ]
     },
     "flex-layout.row#phone__first--collage--imagenes":{
@@ -336,13 +338,13 @@
       "image#phone__first--image---third--collage":{
         "props": {
           "blockClass": "phone__first--image---third--collage",
-          "src": "assets/img/img9.png"
+          "src": "https://orbeim.vteximg.com.br/arquivos/banner-home2-mobile-12-1.png"
         }
       },
       "image#phone__second--image---third--collage":{
         "props": {
           "blockClass": "phone__second--image---third--collage",
-          "src": "assets/img/img10.png"
+          "src": "https://orbeim.vteximg.com.br/arquivos/banner-home2-mobile-12-2.png"
         }
       },
 
@@ -479,6 +481,8 @@
           "blockClass": "phone__collage--imagenes"
         },
         "children":[
+          "rich-text#home__lo--ultimo--de--impresistem",
+           "rich-text#ultimas-noticias",
           "slider-layout#phone__four-slider-images"
         ]
       },
@@ -491,7 +495,8 @@
           },
           "infinite": true,
           "showNavigationArrows": "always",
-          "blockClass": "carousel"
+          "showPaginationDots": "never",
+          "blockClass": [ "carrusel-final-mobile"]
         },
         "children":[
           "flex-layout.row#phone--first--img--lo--ultimo",
@@ -513,6 +518,7 @@
       },
       "rich-text#phone--first--img--lo--ultimo":{
         "props":{
+          "blockClass": [ "texto-carrusel-final-mobile"],
           "text":"Home office para el 2022"
         }
       },
@@ -533,6 +539,7 @@
       },
       "rich-text#phone--second--img--lo--ultimo":{
         "props":{
+          "blockClass": [ "texto-carrusel-final-mobile"],
           "text":"Practicas de las grandes empresas"
         }
       },
@@ -553,6 +560,7 @@
       },
       "rich-text#phone--third--img--lo--ultimo":{
         "props":{
+          "blockClass": [ "texto-carrusel-final-mobile"],
           "text":"Gaming controlado"
         }
       },
@@ -573,6 +581,7 @@
       },
       "rich-text#phone--four--img--lo--ultimo":{
         "props":{
+          "blockClass": [ "texto-carrusel-final-mobile"],
           "text":"Conectado desde cualquier parte del mundo"
         }
       },
@@ -593,6 +602,7 @@
       },
       "rich-text#phone--five--img--lo--ultimo":{
         "props":{
+          "blockClass": [ "texto-carrusel-final-mobile"],
           "text":"Podcast y streaming"
         }
       },
@@ -613,6 +623,7 @@
       },
       "rich-text#phone--six--img--lo--ultimo":{
         "props":{
+          "blockClass": [ "texto-carrusel-final-mobile"],
           "text":"Gaming controlado"
         }
       },
@@ -757,4 +768,5 @@
     "textAlignment": "center"
   }
 }
+
 }

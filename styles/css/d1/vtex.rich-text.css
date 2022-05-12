@@ -1,0 +1,5 @@
+@media (max-width: 600px) {
+    .wrapper--title--productos--destacados {
+        margin-left: 0;
+    }
+}

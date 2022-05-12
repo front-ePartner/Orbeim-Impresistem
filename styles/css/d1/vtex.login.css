@@ -1,0 +1,134 @@
+/* estilos para el tab de especificaciones mobile */
+:global(.vtex-disclosure-layout-1-x-content--espesc--visible) :global(.vtex-store-components-3-x-specificationsTableRow):first-child{
+    display: none;
+}
+:global(.vtex-disclosure-layout-1-x-content--espesc--visible) :global(.vtex-store-components-3-x-specificationsTableRow):nth-child(2){
+    display: none;
+}
+:global(.vtex-disclosure-layout-1-x-content--espesc--visible) :global(.vtex-store-components-3-x-specificationsTableRow):nth-child(3){
+    display: none;
+}
+:global(.vtex-disclosure-layout-1-x-content--espesc--visible) :global(.vtex-store-components-3-x-specificationsTableRow):nth-child(4){
+    display: none;
+}
+:global(.vtex-disclosure-layout-1-x-content--espesc--visible) :global(.vtex-store-components-3-x-specificationsTableRow):last-child{
+    display: none;
+}
+:global(.vtex-disclosure-layout-1-x-content--Informacioncaracteristicas--visible) :global(.vtex-store-components-3-x-specificationsTableRow):nth-child(5){
+    display: none;
+}
+/* estilos para el tab de especificaciones desktop */
+:global(.vtex-flex-layout-0-x-flexRowContent--espec) :global(.vtex-store-components-3-x-specificationsTableRow):first-child{
+    display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--espec) :global(.vtex-store-components-3-x-specificationsTableRow):nth-child(2){
+    display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--espec) :global(.vtex-store-components-3-x-specificationsTableRow):nth-child(3){
+    display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--espec) :global(.vtex-store-components-3-x-specificationsTableRow):nth-child(4){
+    display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--espec) :global(.vtex-store-components-3-x-specificationsTableRow):last-child{
+    display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRow--caracteristicas) :global(.vtex-store-components-3-x-specificationsTableRow):nth-child(5){
+    display: none;
+}
+
+.content {
+    display: block;
+    padding: 0 150px;
+    margin: 30px auto 60px auto;
+}
+.accessCodeOptionBtn :global(.vtex-button ){
+    background: #D3D3D3;
+}
+.accessCodeOptionBtn :global(.vtex-button__label){
+    color: #808080;
+    text-transform: initial;
+    font-weight: bold;
+    font-size: 13px;
+}
+.emailPasswordOptionBtn :global(.vtex-button ){
+    background: #D3D3D3;
+}
+.emailPasswordOptionBtn {
+    width: 95%;
+    margin-bottom: 40px;
+    margin: 0 auto;
+}
+.emailPasswordOptionBtn :global(.vtex-button__label){
+    color: #808080;
+    text-transform: initial;
+    font-weight: bold;
+    font-size: 13px;
+}
+.formTitle {
+    font-family: 'TT-Norms-Bold';
+}
+.accessCodeOptionBtn {
+    width: 95%;
+    margin-bottom: 40px;
+    margin: 0 auto;
+}
+.sendButton :global(.vtex-button__label){
+    padding: 12px 1rem !important;
+    transition: 400ms all;
+}
+.sendButton :global(.vtex-button){
+    transition: 400ms all;
+}
+.sendButton :global(.vtex-button):hover{
+    background: #001533;
+}
+.dontHaveAccount {
+    color: #808080;
+    font-family: 'TT-Norms-Bold';
+}
+.forgotPasswordLink {
+    color: #808080;
+    font-family: 'TT-Norms-Bold';
+}
+.formLinkContainer {
+    justify-content: center;
+}
+.backButton :global(.vtex-button ):hover{
+    background: transparent;
+}
+/* header */
+.label::before{
+    content: "" !important;
+    display: none;
+}
+.buttonLink :global(.vtex-button__label){
+    padding: 0 0;
+}
+.container :global(.vtex-button__label)::before{
+    width: 21px;
+    height: 21px;
+    justify-content: center;
+    margin-top: 0%;
+}
+.container :global(.vtex-button__label)::after{
+    text-transform: initial;
+
+}
+.container{
+    justify-content: center;
+    border-left: 1px solid #001533;
+    padding: 0;
+    height: 60%;
+}
+.buttonLink :global(.vtex-button__label ){
+    align-items: center;
+}
+.buttonLink :global(.vtex-button):hover{
+    background: transparent;
+}
+@media (max-width: 600px) {
+    .content {
+        padding: 0 10px;
+    }
+}

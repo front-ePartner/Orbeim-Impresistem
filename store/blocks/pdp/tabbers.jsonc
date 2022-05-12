@@ -65,11 +65,17 @@
     },
     "flex-layout.row#product1":{
         "children": [
-            "product-specification-group#table"
+            "product-specifications#product"
         ],
         "props":{
         "tabId": "product2",
-        "blockClass": "InformacionDos"
+        "blockClass": ["InformacionDos","espec"]
+        }
+    },
+    "product-specifications#product": {
+        "props": {
+          "shoudCollapseOnTabChange": true,
+          "collapsible": "never"
         }
     },
     //Contenido del segundo tabber
@@ -83,11 +89,11 @@
     },
     "flex-layout.row#product2":{
         "children": [
-            "product-specification-group#table"
+            "product-specifications#product"
         ],
         "props":{
         "tabId": "product1",
-        "blockClass": "informacionTabDos"
+        "blockClass": ["informacionTabDos","caracteristicas"]
         }
     },
     //Contenido del tercer tabber
@@ -101,10 +107,10 @@
     },
     "flex-layout.row#product3":{
         "children": [
-            "product-specification-group#table"
+            
         ],
         "props":{
-            "blockClass": "informacionTabDos"
+            "blockClass": ["informacionTabDos","adicional"]
         }
     }
 }

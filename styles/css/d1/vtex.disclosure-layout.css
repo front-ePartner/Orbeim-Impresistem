@@ -1,0 +1,51 @@
+@media (max-width: 600px) {
+    /* especificaciones M */
+    .trigger--especificaciones{
+        margin: 10px 0px !important;
+        width: 100% !important;
+        position: relative;
+    }
+    .trigger--especificaciones :global(.vtex-rich-text-0-x-paragraph--productMOBILE1){
+        text-transform: uppercase;
+    }
+    .trigger--especificaciones--hidden::after{
+        content: "";
+        background: url(/arquivos/flechaAbajoEspec.png) no-repeat;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+    .trigger--especificaciones--visible::after{
+        content: "";
+        background: url(/arquivos/flechaArriba.png) no-repeat;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px; 
+    }
+    .content--visible{
+        background: #F9F9F9;
+        border: 1px solid #D3D3D3;
+        padding: 0 10px;
+    }
+    .content--hidden {
+        display: none;
+    }
+    /* estilos del buscador */
+    .content--disclosure-search-mobile {
+        position: absolute;
+        left: 0;
+        top: 71px;
+        padding: 0;    
+    }
+    .trigger--disclosure-icon-search-mobile {
+        position: relative;
+    }
+}

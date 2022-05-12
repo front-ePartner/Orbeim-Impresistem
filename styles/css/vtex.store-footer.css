@@ -30,3 +30,13 @@
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+@media screen and (max-width: 700px) {
+.footerLayout--footer--mobile {
+  background-color: #001e49;
+  background-image: url(https://epartner.vtexassets.com/assets/vtex/assets-builder/vtex.store-theme/4.4.2/img/shape-bg___d8ee7ee….png);
+  background-size: 309%;
+  background-position: bottom;
+}
+}

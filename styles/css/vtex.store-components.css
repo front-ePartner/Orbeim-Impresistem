@@ -116,7 +116,7 @@
     background: transparent;
   }
 
-  .autoCompleteOuterContainer .vtex-input {
+/*  .autoCompleteOuterContainer .vtex-input {
     display: flex;
     justify-content: center;
     width: 90%;
@@ -130,6 +130,7 @@
     width: 85%;
     margin: 0 auto;
   }
+  */
   .-searchBarInnerContainer--search-bar-mobil {
     width: 90%;
     margin: 0 auto;
@@ -178,19 +179,11 @@
     width: auto;
     height: auto;
   }
-  .searchBarContainer {
-    position: absolute;
-    top: 5rem;
-    width: 100%;
-    left: 0;
-    height: auto;
-    width: 100% !important;
-  }
   .logoImage {
     width: 120px;
   }
   .imageElement--Search__Image {
-    width: 1.5rem;
+    width: 1.1rem;
   }
 
   
@@ -421,7 +414,6 @@
 
 .imageElement--home__first--image---third--collage {
   width: 98%;
-  height: 100%;
 }
 
 .imageElement--home__second--image---third--collage {
@@ -515,25 +507,9 @@
 /* footer menu desktop          */
 /*----------------------------*/
 
-.imageElement--phone--facebook {
-  margin-left: 42%;
-}
 
-.imageElement--phone--instagram {
-  position: relative;
-  top: -35px;
-  left: 53%;
-}
 
-.imageElement--phone--payu {
-  margin-left: 4%;
-}
 
-.imageElement--phone--visa {
-  position: relative;
-  top: -25px;
-  left: 18%;
-}
 
 .imageElement--medios--de--pago {
   margin-bottom: 26px;
@@ -543,7 +519,7 @@
 /*---------------------------*/
 /* footer menu phone         */
 /*---------------------------*/
-
+/*
 .imageElement--phone--medios--de--pago--image {
   margin-left: 22px;
 }
@@ -594,6 +570,7 @@
   top: 8px;
   left: 442%;
 }
+*/
 /*hamburguesa*/
 
 .imageElement--arrow--phone {
@@ -708,6 +685,11 @@
 
 
 
+:global(.vtex-slider-layout-0-x-slide--post-Marcas-slider):hover .imageElement--slider-images-nuestras-marcas {filter: brightness(0.4);}
+
+.imageElement--phone__third-slider-images--1 {box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 2%);padding: 2px 30px;margin: 10px;}
+
+
 
 
 @media (max-width: 700px) {
@@ -717,6 +699,10 @@
 .infoCardCallActionContainer.infoCardCallActionContainer--Mozaico-Cat.infoCardCallActionContainer--banner-slider :global(.vtex-button) :global(.vtex-button__label) {padding: 18px;color: white;}
 .infoCardTextContainer.infoCardTextContainer--Mozaico-Cat.infoCardTextContainer--banner-slider {height: 130px;width: 100%;}
 .infoCardContainer.infoCardContainer--Mozaico-Cat.infoCardContainer--banner-slider {width: 100%;}
+.imageElement--phone--medios--de--pago--image {margin-left:0px}
+.container {  padding: 0px 2% !important;}
+.imageElement--phone__third-slider-images--1 {width: 36px;padding: 11px 15px;}
+:global(.vtex-slider-layout-0-x-slide--post-Marcas-slider):hover .imageElement--slider-images-nuestras-marcas {filter: brightness(1);}
 }
 
 

@@ -1,7 +1,7 @@
 .flexRowContent.flexRowContent--orderByAndSwitcher {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: end;
   flex-direction: row-reverse;
 }
 
@@ -230,6 +230,7 @@
   background: white;
   width: 100%;
   padding-bottom: 2%;
+  margin: 10px 0;
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -389,9 +390,7 @@
 /* footer                                   */
 /*------------------------------------------*/
 
-.flexCol--1-footer-mobile {
-  height: 307px;
-}
+
 
 .flexCol--redes--sociales {
   position: relative;
@@ -444,7 +443,7 @@
   width: max-content;
 }
 .flexCol--slider-images-nuestras-marcas {
-  width: 75%;
+  width: 100%;
   height: 230px;
   overflow: hidden;
   margin: 25px 0px;
@@ -452,10 +451,7 @@
   border-radius: 5px;
   transition: 0.1s all ease;
 }
-.flexCol--slider-images-nuestras-marcas:hover {
-  width: 95%;
-  z-index: 1;
-}
+
 /*----------------------------------------*/
 
 /*Quitar puntos de slides que muestra el carrusel de marcas*/
@@ -733,7 +729,8 @@
     display: none;
   }
   .flexRow--newsletter-form--phone {
-    margin-left: 0rem;
+    margin: 0 auto !important;
+    width: 90%;
   }
   .flexRowContent--flex-card {
     margin: 0;
@@ -782,11 +779,81 @@
 .flexRowContent--Home__Shelf {flex-wrap: wrap;}
 
 
+.flexRowContent--home__footer--columna-1 {display: grid;grid-template-columns: 92% 8%;  align-items: center;border-bottom: 1px solid white;padding: 0 2px;}
+.flexRowContent--home__footer--columna-2 {display: grid;grid-template-columns: 92% 8%;  align-items: center;border-bottom: 1px solid white;padding: 0 2px;}
+.flexRowContent--home__footer--columna-3 {display: grid;grid-template-columns: 92% 8%;  align-items: center;border-bottom: 1px solid white;padding: 0 2px;}
+.flexRowContent--home__footer--columna-4 {display: grid;grid-template-columns: 92% 8%;  align-items: center;border-bottom: 1px solid white;padding: 0 2px;}
+
+:global(.vtex-product-summary-2-x-container--vitrina-categoria):hover .flexRow--cetegoria {visibility: visible;}
+.flexRow--cetegoria {visibility: hidden;border-top: 1px solid #e1e1e1;margin-top: 15px;  padding-top: 10px;}
+.flexRowContent--checkFiltrado {margin: 0% 0 10%;}
+
+
+
+
+
+
+
+
+
+/*ESTILOS PARA ACORDEON*/
+.flexCol--textColumn.flexCol--acordeon {position: relative;}
+.flexColChild--acordeon {position: absolute;width: 100%;}
+
+/*BACKGROUNDS*/
+.flexRowContent--container-accordion .stretchChildrenWidth:hover .flexCol--acordeon-1 {background-image: url(https://orbeim.vteximg.com.br/arquivos/dark-1.png);}
+.flexRowContent--container-accordion .stretchChildrenWidth:hover .flexCol--acordeon-2 {background-image: url(https://orbeim.vteximg.com.br/arquivos/dark-2.png);}
+.flexRowContent--container-accordion .stretchChildrenWidth:hover .flexCol--acordeon-3 {background-image: url(https://orbeim.vteximg.com.br/arquivos/dark-3.png);}
+.flexRowContent--container-accordion .stretchChildrenWidth:hover .flexCol--acordeon-4 {background-image: url(https://orbeim.vteximg.com.br/arquivos/dark-4.png);}
+
+.flexCol--acordeon-1 {background-image: url(https://orbeim.vteximg.com.br/arquivos/banner2-3-1.png);transition: all 0.5s;}
+.flexCol--acordeon-2 {background-image: url(https://orbeim.vteximg.com.br/arquivos/banner2-2.png);transition: all 0.5s;}
+.flexCol--acordeon-3 {background-image: url(https://orbeim.vteximg.com.br/arquivos/banner2-3.png);transition: all 0.5s;}
+.flexCol--acordeon-4 {background-image: url(https://orbeim.vteximg.com.br/arquivos/banner2-4.png);transition: all 0.5s;}
+
+.flexCol--slider-images-nuestras-marcas::after {position: absolute;display: flex;right: 0;left: 0;top: 80%;justify-content: center;color: white;font-size: 20px;transition: 1s;}
+:global(.vtex-slider-layout-0-x-slide--post-Marcas-slider):hover .flexCol--slider-images-nuestras-marcas::after {position: absolute;display: flex;right: 0;left: 0;top: 45%;justify-content: center;color: white;font-size: 30px;font-family: 'TT-Norms-Bold';}
+.flexCol--nuestras-marcas1::after {content: "LAPTOS"}
+.flexCol--nuestras-marcas2::after {content: "GAMER"}
+.flexCol--nuestras-marcas3::after {content: "TECLADOS"}
+.flexCol--nuestras-marcas4::after {content: "TABLETS"}
+.flexCol--nuestras-marcas5::after {content: "CORPORATIVO"}
+.flexCol--nuestras-marcas6::after {content: "MONITORES"}
+
+
+
+.flexRow--images-nuestras-marcas-b {margin: 50px 0 0;}
+
+
 
 @media screen and (max-width: 700px) {
 .flexRowContent--style-price-and-cart.flexRowContent--vitrina {border-color: #b9babb !important;visibility: visible;}
-.flexCol.flexCol--buycolection.flexCol--shelf-vitrina {margin-left: 0;}
-.flexCol.flexCol--buycolection.flexCol--shelf-vitrina :global(.vtex-button__label) {padding: 0;}
+.flexCol--buycolection.flexCol--shelf-vitrina {margin-left: 0;}
+.flexCol--buycolection.flexCol--shelf-vitrina :global(.vtex-button__label) {padding: 0;}
 .flexRowContent--imageVitrina {align-items: center;height: 180px;overflow: hidden;}
 .flexRow.flexRow--productCountMobileRow :global(.vtex-store-components-3-x-container) {padding: 0 0%;}
+.flexCol--newsletter-form--contenedor {width: 85% !important;margin:30px auto 15px;}
+.flexRowContent.flexRowContent--newsletter-form--phone {  background: #FFC533;  }
+.flexRow--cetegoria {visibility: visible; }
+.flexCol--redes--sociales {display: contents;}
+.flexColChild--redes--sociales {width: 12%;justify-content: center;display: flex;margin: 0 0 25px;}
+.flexColChild--phone--desarrollado--por {justify-content: center;align-items: center;text-align: center;}
+.flexCol--phone--desarrollado--por {justify-content: center;text-align: center;margin-top: 10px;}
+.flexColChild--phone--desarrollado--por :global(.vtex-rich-text-0-x-container) {justify-content: center;font-size: 12px;}
+.flexRowContent--2-footer-mobile {margin-top: 25px !important;}
+.flexCol--1-footer-mobile {margin-top: 25px;}
+.flexRow--phone--home__collage--imagenes {margin: 20px 0 0px;}
+
+:global(.vtex-slider-layout-0-x-slide--post-Marcas-slider):hover .flexCol--slider-images-nuestras-marcas::after {   position: absolute;    display: flex;    right: 0;    left: 0;    top: 60%;    justify-content: center;    color: white;    font-size: 20px;    font-family: 'TT-Norms-Bold';}
+:global(.vtex-slider-layout-0-x-slide--post-Marcas-slider) .flexCol--slider-images-nuestras-marcas::after {    position: absolute;    display: flex;    right: 0;    left: 0;    top: 60%;    justify-content: center;    color: white;    font-size: 20px;    font-family: 'TT-Norms-Bold';}
+
+.flexRow--phone__tercer--imagenes {margin: 25px 0;}
+
+
+/*ACORDEON*/
+.flexColChild--acordeon {  position: relative;  width: 100%;}
+.flexRowContent--container-accordion .stretchChildrenWidth:hover .container--acordeon-Boton {  top: 15px;  width: 100%;}
+
+
+.flexRowContent--phone__collage--imagenes {margin-top: 30px;}
 }

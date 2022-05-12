@@ -2,22 +2,22 @@
   // Contenido Columnas
 "flex-layout.col#PrimeraCol1": {
   "children": [
-    "disclosure-layout#simple"
+    "disclosure-layout#simple-footer"
   ]
 },
 "flex-layout.col#PrimeraCol2":{
   "children": [
-    "disclosure-layout#simple2"
+    "disclosure-layout#simple2-footer"
   ]
 },
 "flex-layout.col#PrimeraCol3":{
   "children": [
-    "disclosure-layout#simple3"
+    "disclosure-layout#simple3-footer"
   ]
 },
 "flex-layout.col#PrimeraCol4":{
   "children": [
-    "disclosure-layout#simple4"
+    "disclosure-layout#simple4-footer"
   ]
 },
 
@@ -59,28 +59,28 @@
   "props": {
       "blockClass":"image--icon-angle--down",
       "src": "assets/iconosIM/flecha-hacia-abajo-para-navegar.png",
-      "maxHeight": 24
+      "maxHeight": 14
     }
 },
 "image#icon-angle--down2":{
   "props": {
       "blockClass":"image--icon-angle--down2",
       "src": "assets/iconosIM/flecha-hacia-abajo-para-navegar.png",
-      "maxHeight": 24
+      "maxHeight": 14
     }
 },
 "image#icon-angle--down3":{
   "props": {
       "blockClass":"image--icon-angle--down3",
       "src": "assets/iconosIM/flecha-hacia-abajo-para-navegar.png",
-      "maxHeight": 24
+      "maxHeight": 14
     }
 },
 "image#icon-angle--down4":{
   "props": {
       "blockClass":"image--icon-angle--down4",
       "src": "assets/iconosIM/flecha-hacia-abajo-para-navegar.png",
-      "maxHeight": 24
+      "maxHeight": 14
     }
 },
 
@@ -91,43 +91,43 @@
   "props": {
       "blockClass":"image--icon-angle--up",
       "src": "assets/iconosIM/flecha-hacia-arriba-para-navegar.png",
-      "maxHeight": 24
+      "maxHeight": 14
     }
 },
 "image#icon-angle--up2":{
   "props": {
       "blockClass":"image--icon-angle--up2",
       "src": "assets/iconosIM/flecha-hacia-arriba-para-navegar.png",
-      "maxHeight": 24
+      "maxHeight": 14
     }
 },
 "image#icon-angle--up3":{
   "props": {
       "blockClass":"image--icon-angle--up3",
       "src": "assets/iconosIM/flecha-hacia-arriba-para-navegar.png",
-      "maxHeight": 24
+      "maxHeight": 14
     }
 },
 "image#icon-angle--up4":{
   "props": {
       "blockClass":"image--icon-angle--up4",
       "src": "assets/iconosIM/flecha-hacia-arriba-para-navegar.png",
-      "maxHeight": 24
+      "maxHeight": 14
     }
 },
 /*----------------------------------------------------------------------------*/
 /*                         Comienzo de Columna 1                             */
 /*--------------------------------------------------------------------------*/
 
-"disclosure-layout#simple":{
+"disclosure-layout#simple-footer":{
   "props":{
       "blockClass":"disclosure--layout--simple"
   },
-  "children": ["disclosure-trigger#simple", "disclosure-content#simple"]
+  "children": ["disclosure-trigger#simple-footer", "disclosure-content#simple--footer"]
 },
-"disclosure-trigger#simple": {
+"disclosure-trigger#simple-footer": {
   "props":{
-      "blockClass":"disclosure--trigger--simple"
+      "blockClass":"disclosure--trigger--simple--foter"
   },
   "children": ["flex-layout.row#home__footer--columna-1"]
 },
@@ -136,9 +136,10 @@
       "blockClass":"home__footer--columna-1"
   },
   "children": [
-      "disclosure-state-indicator#footer",
-      "flex-layout.col#home__footer--columna-1--tileFCol",
-      "flex-layout.col#espacio--menu"
+    
+    "flex-layout.col#home__footer--columna-1--tileFCol",
+    "disclosure-state-indicator#footer"
+    
   ]
 },
 /*lineas que se colocan en el menu*/
@@ -150,7 +151,7 @@
 "flex-layout.col#home__footer--columna-1--tileFCol":{
   "children": ["rich-text#tileFCol"]
 },
-"disclosure-content#simple": {
+"disclosure-content#simple--footer": {
   "children": [
       "rich-text#answer--primera--columna", 
       "rich-text#answer2--primera--columna", 
@@ -161,14 +162,14 @@
 },
 "rich-text#tileFCol": {
   "props": {
-    "blockClass": "TituloCont",
+    "blockClass": ["TituloCont","amarillo"],
     "text": "SOBRE NOSOTROS"
   }
 },
 "rich-text#answer--primera--columna": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Quiénes somos](/)"
+    "text": "[Quiénes somos](/about-us)"
   }
 },
 "rich-text#answer2--primera--columna": {
@@ -207,13 +208,13 @@
 /*                         Comienzo de Columna 2                             */
 /*--------------------------------------------------------------------------*/
 
-"disclosure-layout#simple2":{
+"disclosure-layout#simple2-footer":{
   "props":{
       "blockClass":"disclosure--layout--simple2"
   },
-  "children": ["disclosure-trigger#simple2", "disclosure-content#simple2"]
+  "children": ["disclosure-trigger#simple2-footer", "disclosure-content#simple2--footer"]
 },
-"disclosure-trigger#simple2": {
+"disclosure-trigger#simple2-footer": {
   "props":{
       "blockClass":"disclosure--trigger--simple2"
   },
@@ -224,50 +225,73 @@
       "blockClass":"home__footer--columna-2"
   },
   "children": [
-      "disclosure-state-indicator#footer2",
+      
       "flex-layout.col#home__footer--columna-2--tileFCol",
-      "flex-layout.col#espacio--menu"
+      "disclosure-state-indicator#footer2"
   ]
 },
 "flex-layout.col#home__footer--columna-2--tileFCol":{
   "children": ["rich-text#tileFCol2"]
 },
-"disclosure-content#simple2": {
+"disclosure-content#simple2--footer": {
   "children": [
       "rich-text#answer--primera--columna2", 
-      "rich-text#answer2--primera--columna2"]
+      "rich-text#answer2--primera--columna2",
+      "rich-text#answer2--primera--columna2.1",
+      "rich-text#answer2--primera--columna2.2",
+      "rich-text#answer2--primera--columna2.3"
+    ]
 },
 "rich-text#tileFCol2": {
   "props": {
     "blockClass": "TituloCont",
-    "text": "INFORMACION"
+    "text": "PRODUCTOS"
   }
 },
 "rich-text#answer--primera--columna2": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Preguntas frecuentes](/)"
+    "text": "[Laptops y Ultrabooks](/)"
   }
 },
 "rich-text#answer2--primera--columna2": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Términos y condiciones](/)"
+    "text": "[PCs de escritorio](/)"
   }
 },
+"rich-text#answer2--primera--columna2.1": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Tablets](/)"
+  }
+},
+"rich-text#answer2--primera--columna2.2": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Perifericos](/)"
+  }
+},
+"rich-text#answer2--primera--columna2.3": {
+  "props": {
+    "blockClass": "ContenidoDesplegable",
+    "text": "[Seguridad](/)"
+  }
+},
+
 /* >>>>>>>>>>>>Cierre de  Columna 2*/
 
 /*----------------------------------------------------------------------------*/
 /*                         Comienzo de Columna 3                            */
 /*--------------------------------------------------------------------------*/
 
-"disclosure-layout#simple3":{
+"disclosure-layout#simple3-footer":{
   "props":{
       "blockClass":"disclosure--layout--simple3"
   },
-  "children": ["disclosure-trigger#simple3", "disclosure-content#simple3"]
+  "children": ["disclosure-trigger#simple3-footer", "disclosure-content#simple3--footer"]
 },
-"disclosure-trigger#simple3": {
+"disclosure-trigger#simple3-footer": {
   "props":{
       "blockClass":"disclosure--trigger--simple3"
   },
@@ -278,15 +302,15 @@
       "blockClass":"home__footer--columna-3"
   },
   "children": [
-      "disclosure-state-indicator#footer3",
+      
       "flex-layout.col#home__footer--columna-3--tileFCol3",
-      "flex-layout.col#espacio--menu"
+      "disclosure-state-indicator#footer3"
   ]
 },
 "flex-layout.col#home__footer--columna-3--tileFCol3":{
   "children": ["rich-text#tileFCol3"]
 },
-"disclosure-content#simple3": {
+"disclosure-content#simple3--footer": {
   "children": [
       "rich-text#answer--primera--columna3", 
       "rich-text#answer2--primera--columna3", 
@@ -298,43 +322,43 @@
 "rich-text#tileFCol3": {
   "props": {
     "blockClass": "TituloCont",
-    "text": "FAQ"
+    "text": "SERVICIO AL CLIENTE"
   }
 },
 "rich-text#answer--primera--columna3": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Quiénes somos](/)"
+    "text": "[Nuestras SEDES](/)"
   }
 },
 "rich-text#answer2--primera--columna3": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Nuestras SEDES](/)"
+    "text": "[Modalidades de crédito](/)"
   }
 },
 "rich-text#answer3--primera--columna3": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Aviso legal](/)"
+    "text": "[Politicas de tratamiento de datos](/)"
   }
 },
 "rich-text#answer4--primera--columna3": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Donde consignar](/)"
+    "text": "[Politicas de envios y devoluciones](/)"
   }
 },
 "rich-text#answer5--primera--columna3": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Certificación comercial](/)"
+    "text": "[Términos y condiciones](/)"
   }
 },
 "rich-text#answer6--primera--columna3": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Politicas de tratamiento de datos](/)"
+    "text": "[FAQ](/)"
   }
 },
 /* >>>>>>>>>>>>Cierre de  Columna 3*/
@@ -343,13 +367,13 @@
 /*                         Comienzo de Columna 4                             */
 /*--------------------------------------------------------------------------*/
 
-"disclosure-layout#simple4":{
+"disclosure-layout#simple4-footer":{
   "props":{
       "blockClass":"disclosure--layout--simple4"
   },
-  "children": ["disclosure-trigger#simple4", "disclosure-content#simple4"]
+  "children": ["disclosure-trigger#simple4-footer", "disclosure-content#simple4--footer"]
 },
-"disclosure-trigger#simple4": {
+"disclosure-trigger#simple4-footer": {
   "props":{
       "blockClass":"disclosure--trigger--simple4"
   },
@@ -360,22 +384,21 @@
       "blockClass":"home__footer--columna-4"
   },
   "children": [
-      "disclosure-state-indicator#footer4",
+
       "flex-layout.col#home__footer--columna-4--tileFCol",
-      "flex-layout.col#espacio--menu"
+      "disclosure-state-indicator#footer4"
   ]
 },
 "flex-layout.col#home__footer--columna-4--tileFCol":{
   "children": ["rich-text#tileFCol4"]
 },
-"disclosure-content#simple4": {
+"disclosure-content#simple4--footer": {
   "children": [
       "rich-text#answer--primera--columna4", 
       "rich-text#answer2--primera--columna4", 
       "rich-text#answer3--primera--columna4", 
-      "rich-text#answer4--primera--columna4", 
-      "rich-text#answer5--primera--columna4",
-       "rich-text#answer6--primera--columna4"]
+      "rich-text#answer4--primera--columna4"
+]
 },
 "rich-text#tileFCol4": {
   "props": {
@@ -386,25 +409,25 @@
 "rich-text#answer--primera--columna4": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Quiénes somos](/)"
+    "text": "[co.atencuionalcliente@gmail.com](/)"
   }
 },
 "rich-text#answer2--primera--columna4": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Nuestras SEDES](/)"
+    "text": "[+57 123 123 1234 Ext.1520](/)"
   }
 },
 "rich-text#answer3--primera--columna4": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Aviso legal](/)"
+    "text": "[Direccion,Departamento,Ciudad](/)"
   }
 },
 "rich-text#answer4--primera--columna4": {
   "props": {
     "blockClass": "ContenidoDesplegable",
-    "text": "[Donde consignar](/)"
+    "text": "[Lun-Vie 9am a 12pm y 2pm a 5pm](/)"
   }
 },
 "rich-text#answer5--primera--columna4": {

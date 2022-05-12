@@ -7,22 +7,45 @@
  * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
  * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
  */
-{
+ {
   "store.orderplaced": {
     "blocks": ["order-placed"]
   },
 
   "store.account": {
-    "blocks": ["my-account"],
+    "blocks": [
+      "responsive-layout.desktop#bannerlogin",
+      "responsive-layout.phone#bannerloginM",
+      "my-account"
+    ],
     "parent": {
       "challenge": "challenge.profile"
     }
   },
 
   "store.login": {
-    "blocks": ["login-content#default"]
+    "blocks": [
+      "responsive-layout.desktop#bannerlogin",
+      "responsive-layout.phone#bannerloginM",
+      "login-content#default"
+    ]
   },
-
+  "responsive-layout.desktop#bannerlogin": {
+    "children": ["image#banner-login"]
+  },
+  "responsive-layout.phone#bannerloginM": {
+    "children": ["image#banner-loginM"]
+  },
+  "image#banner-login":{
+    "props":{
+      "src": "https://orbeim.vteximg.com.br/arquivos/login11Banner.png"
+    }
+  },
+  "image#banner-loginM":{
+    "props":{
+      "src": "https://orbeim.vteximg.com.br/arquivos/bannerLoginM.png"
+    }
+  },
   "login-content#default": {
     "props": {
       "isInitialScreenOptionOnly": false,

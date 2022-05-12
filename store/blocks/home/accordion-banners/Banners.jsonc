@@ -13,54 +13,245 @@
   },
   "flex-layout.col#col-image1": {
     "props": {
-      "blockClass": "textColumn",
+      "blockClass": ["textColumn","acordeon","acordeon-1"],
       "preventVerticalStretch": true
     },
-    "children": ["image#1"]
+    "children": [
+      
+      "rich-text#ACORDEON-Boton1",
+      "rich-text#ACORDEON-Titulo1",
+      "rich-text#ACORDEON-Texto1",
+      "rich-text#ACORDEON-Link1"
+    ]
   },
   "flex-layout.col#col-image2": {
     "props": {
-      "blockClass": "textColumn",
+      "blockClass": ["textColumn","acordeon","acordeon-2"],
       "preventVerticalStretch": true
     },
-    "children": ["image#2"]
+    "children": [
+  
+      "rich-text#ACORDEON-Boton2",
+      "rich-text#ACORDEON-Titulo2",
+      "rich-text#ACORDEON-Texto2",
+      "rich-text#ACORDEON-Link2"
+    ]
   },
   "flex-layout.col#col-image3": {
     "props": {
-      "blockClass": "textColumn",
+      "blockClass": ["textColumn","acordeon","acordeon-3"],
       "preventVerticalStretch": true
     },
-    "children": ["image#3"]
+    "children": [
+ 
+      "rich-text#ACORDEON-Boton3",
+      "rich-text#ACORDEON-Titulo3",
+      "rich-text#ACORDEON-Texto3",
+      "rich-text#ACORDEON-Link3"
+    ]
   },
   "flex-layout.col#col-image4": {
     "props": {
-      "blockClass": "textColumn",
+      "blockClass": ["textColumn","acordeon","acordeon-4"],
       "preventVerticalStretch": true
     },
-    "children": ["image#4"]
+    "children": [
+      
+      "rich-text#ACORDEON-Boton4",
+      "rich-text#ACORDEON-Titulo4",
+      "rich-text#ACORDEON-Texto4",
+      "rich-text#ACORDEON-Link4"
+    ]
   },
+  //CONTENIDO-1
   "image#1": {
     "props": {
       "blockClass": "image-accordion",
       "src": "assets/img/img19.png"
     }
   },
+
+  "rich-text#ACORDEON-Boton1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "DOCUMENTOS",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-Boton","acordeon-Boton1"]
+    }
+  },
+  "rich-text#ACORDEON-Titulo1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "PRODUCTOS IDEALES PARA \n CUALQUIER OFICINA",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-titulo", "acordeon-titulo1"]
+    }
+  },
+  "rich-text#ACORDEON-Texto1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Encuentra gran variedad de productos para mejorar tu productividad",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-texto","acordeon-texto1"]
+    }
+  },
+  "rich-text#ACORDEON-Link1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "CONOCER MÁS",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-link","acordeon-link1"]
+    }
+  },
+  //CONTENIDO-2
   "image#2": {
     "props": {
       "blockClass": "image-accordion",
       "src": "assets/img/img1.png"
     }
   },
+
+  "rich-text#ACORDEON-Boton2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "MOBILITY",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-Boton","acordeon-Boton2"]
+    }
+  },
+  "rich-text#ACORDEON-Titulo2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "PRODUCTOS IDEALES PARA \n CUALQUIER OFICINA",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-titulo", "acordeon-titulo2"]
+    }
+  },
+  "rich-text#ACORDEON-Texto2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Encuentra gran variedad de productos para mejorar tu productividad",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-texto","acordeon-texto2"]
+    }
+  },
+  "rich-text#ACORDEON-Link2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "CONOCER MÁS",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-link","acordeon-link2"]
+    }
+  },
+  //CONTENIDO-3
   "image#3": {
     "props": {
       "blockClass": "image-accordion",
       "src": "assets/img/img2.png"
     }
   },
+
+  "rich-text#ACORDEON-Boton3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "CORP",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-Boton","acordeon-Boton3"]
+    }
+  },
+  "rich-text#ACORDEON-Titulo3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "PRODUCTOS IDEALES PARA \n CUALQUIER OFICINA",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-titulo", "acordeon-titulo3"]
+    }
+  },
+  "rich-text#ACORDEON-Texto3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Encuentra gran variedad de productos para mejorar tu productividad",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-texto","acordeon-texto3"]
+    }
+  },
+  "rich-text#ACORDEON-Link3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "CONOCER MÁS",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-link","acordeon-link3"]
+    }
+  },
+  //CONTENIDO-4
   "image#4": {
     "props": {
       "blockClass": "image-accordion",
       "src": "assets/img/img3.png"
+    }
+  },
+  "rich-text#ACORDEON-Boton4": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "CONSUMER DEVICES",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-Boton","acordeon-Boton4"]
+    }
+  },
+  "rich-text#ACORDEON-Titulo4": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "PRODUCTOS IDEALES PARA \n CUALQUIER OFICINA",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-titulo", "acordeon-titulo4"]
+    }
+  },
+  "rich-text#ACORDEON-Texto4": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Encuentra gran variedad de productos para mejorar tu productividad",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-texto","acordeon-texto4"]
+    }
+  },
+  "rich-text#ACORDEON-Link4": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "CONOCER MÁS",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": ["acordeon-link","acordeon-link4"]
     }
   }
 }

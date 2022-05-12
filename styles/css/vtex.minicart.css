@@ -14,24 +14,23 @@
 
 .minicartContainer :global(.vtex-button) {
   width: 25px;
-  height: 34px;
-  background-image: url(https://orbeim.vtexcommercestable.com.br/arquivos/carrito.png);
+  height: 43px;
+  background: url(https://orbeim.vtexcommercestable.com.br/arquivos/carrito.png) no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.minicartContainer :global(.vtex-button):hover {
+  width: 25px;
+  height: 43px;
+  background: url(https://orbeim.vtexcommercestable.com.br/arquivos/carrito.png) no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50%;
 }
 
-.overlay--mini-cart-icono {
-  margin-top: 7rem;
-}
 @media (max-width: 600px) {
-  .openIconContainer--mini-cart-icono::before {
-    content: "|";
-    margin: 0 1rem;
-    font-size: 2rem;
-    font-weight: 900;
-    color: black;
-  }
+
   .openIconContainer--mini-cart-icono {
     display: flex;
   }

@@ -1,0 +1,148 @@
+/* box de precio */
+.flexCol--containerPrecio .flexColChild--containerPrecio {
+    height: auto !important;
+}
+.flexColChild--containerPrecio .flexRowContent {
+    margin: 0;
+}
+.flexCol--containerPrecio {
+    justify-content: flex-end;
+}
+/* box de cantidad  */
+.flexCol--containerCantidad  :global(.vtex-product-quantity-1-x-quantitySelectorTitle){
+    width: 76%;
+    display: flex;
+    justify-content: flex-start;
+}
+:global(.vtex-product-quantity-1-x-quantitySelectorStepper) :global(.vtex-numeric-stepper-container){
+    justify-content: flex-start;
+}
+.flexCol--containerCantidad :global(.vtex-numeric-stepper__plus-button ){
+    background: #F5F5F5;
+    border-color: #2A2A2A;
+    border-width: 1px;
+    border-left: 0;
+}
+.flexCol--containerCantidad :global(.vtex-numeric-stepper__minus-button ){
+    background: #F5F5F5;
+    border-color: #2A2A2A;
+    border-width: 1px;
+    border-right: 0;
+}
+.flexCol--containerCantidad :global(.vtex-numeric-stepper__input ){
+    background: #F5F5F5;
+    border-color: #2A2A2A;
+    border-width: 1px;
+}
+.flexCol--containerCantidad :global(.vtex-numeric-stepper__plus-button__text){
+    color: #2A2A2A;
+}
+/* ajuste hover boton de agregar */
+.flexRow--button-buy-product :global(.vtex-button):hover :global(.vtex-button__label)::before{
+    background-image: none !important;
+}
+.flexRowContent--informacionTabDos {
+    padding: 30px 130px;
+}
+.flexColChild--containerPrecio :global(.vtex-product-price-1-x-sellingPriceValue) :global(.vtex-product-price-1-x-currencyContainer){
+    font-family: 'TT-Norms-Bold';
+}
+.flexCol--imagenes-producto  {
+    position: relative;
+}
+.flexColChild--imagenes-producto:first-child{
+    position: absolute;
+    width: 100%;
+}
+.flexRow--button-buy-product :global(.vtex-button){
+    transition: 400ms all;
+}
+.flexRow--button-buy-product :global(.vtex-button){
+    background: #001533;
+}
+/* header */
+.flexRow--header-Prin{
+    width: 100%;
+}
+.flexRow--header-Prin :global(.vtex-store-components-3-x-container){
+    padding: 0px;
+    margin: 0;
+    max-width: 100%;
+}
+.flexRowContent--header-Prin {
+    padding: 0 50px;
+}
+.flexRow--logo{
+    display: flex;
+    align-items: center;
+}
+.flexRowContent--header-Prin .stretchChildrenWidth:last-child {
+    display: flex;
+    align-items: center;
+}
+.flexRow--llamadosHeader{
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    background: #EDF4FF;
+    border-radius: 100px;
+    padding: 0 16px;
+}
+.flexRowContent--flex-level-1-card1 .stretchChildrenWidth{
+    justify-content: flex-end;
+}
+.flexRow--flex-level-1-card1 {
+    margin-top: 3px;
+}
+/* producto */
+.flexRowContent--contenedor-producto {
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+.flexRowContent--Productbreadcrumb {
+    margin: 30px 0 0 0;
+}
+.flexRowContent--cantidadPrecio{
+    padding: 15px 0;
+}
+.flexRowContent--button-buy-product {
+    margin: 15px 0;
+    padding: 0;
+}
+@media (max-width: 600px) {
+    /* ajuste producto mobile */
+    .flexRowContent--contenedor-producto {
+        padding: 0;
+        margin: 0;
+    }
+    .flexRowContent--contenedor-producto .stretchChildrenWidth:first-child{
+        padding: 0;
+    }
+    /* tebber mobile */
+    .flexRow--especificaione-M{
+        margin: 30px 0;
+    }
+    /* header mobile */
+    .flexRow--Login-cartM{
+        width: 113px;
+        background: #EDF4FF;
+        padding: 0 8px;
+        border-radius: 100px;
+    }
+    .flexRowContent--Login-cartM .stretchChildrenWidth:last-child{
+        width: 50%;
+        height: 23px;
+        margin: 10px 0;
+        border-left: 2px solid #001E49;
+    }
+    .flexRowContent--Header-top-tablet .stretchChildrenWidth:first-child{
+        display: none;
+    }
+    .flexRowContent--Productbreadcrumb{
+        margin: 30px 0;
+    }
+    :global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) .flexRowContent--main-header-mobile {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+}

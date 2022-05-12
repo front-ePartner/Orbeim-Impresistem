@@ -153,8 +153,23 @@
   border-color: #E3E4E6;
   background-color: transparent;
 }
+.filterApplyButtonWrapper :global(.vtex-button) :global(.vtex-button__label) {
+  color: black;
+  font-weight: 900;
+}
 /*------------------------------------------*/
+
+
+.galleryItem--grid {padding: 4px;}
+
 @media (max-width: 700px) {
-.searchResultContainer {padding: 0;}
-.galleryItem.galleryItem--normal.galleryItem--grid {padding: 0;}
+.searchResultContainer {padding: 0% 2% !important;}
+.galleryItem.galleryItem--normal.galleryItem--grid {padding: 0 3px;margin-bottom: 10px;}
+.sidebar {  z-index: 9999999;}
+.filterApplyButtonWrapper :global(.vtex-button) {background-color: #FFC533;}
+.filterApplyButtonWrapper :global(.vtex-button) :global(.vtex-button__label) {color: black;font-weight: 900;}
+.caretIcon {color: transparent;}
+.accordionFilterItemIcon .caretIcon {color: transparent;    background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-filtros.png);    background-size: 100%;    background-repeat: no-repeat;    transform: rotate(180deg);}
+.gallery {    margin: 0% 0 10%;}
+.galleryTitle--layout {margin: 12px 7px 0;font-size: 32px;}
 }

@@ -249,7 +249,7 @@
 }
 
 .container--medios--de--pago--phone {
-  margin-left: 34%;
+
   color: white;
 }
 
@@ -263,9 +263,6 @@
   font-weight: 600;
 }
 
-.wrapper--footer-mobile--text {
-  margin-left: 10%;
-}
 
 .wrapper--footer-mobile--text :global(.vtex-rich-text-0-x-paragraph) {
   color: #b9b3b3;
@@ -392,6 +389,7 @@
 /*---------------------------------------*/
 .heading--impre-tiene-para-ti.heading--nuestras--marcas.heading-level-2.headingLevel2.headingLevel2--impre-tiene-para-ti {
   font-size: 27px;
+  margin: 10px 0;
 }
 /*-----------------------------------*/
 
@@ -471,6 +469,7 @@
 
 .paragraph--impre-tiene-para-ti {
   color: #808080;
+  margin: 0;
 }
 /*
   __  __          _ _          ___                        
@@ -489,9 +488,7 @@
     width: 1rem !important;
     left: 44%;
   }
-  .container--TituloCont {
-    max-width: 1px;
-  }
+
 }
 .wrapper--paragraphSmart_1B,
 .wrapper--paragraphSmart_2B,
@@ -509,9 +506,75 @@
   line-height: inherit;
 }
 
+
+
+
+
+/*ESTILOS PARA ACORDEON*/
+
+
+/*BOTON*/
+:global(.vtex-flex-layout-0-x-flexRowContent--container-accordion) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):hover .container--acordeon-Boton {top: 29px;width: 100%;}
+.paragraph--acordeon-Boton {border: 1px solid;font-size: 14px;padding: 5px;transition: all 1s;}
+.container--acordeon-Boton {position: relative;top: 193px;left: 0;width: 200px;transition: all 1s;}
+
+
+/*TITULO*/
+:global(.vtex-flex-layout-0-x-flexRowContent--container-accordion) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):hover .container--acordeon-titulo {visibility: visible;}
+.container--acordeon-titulo {position: relative;top: 85px;width: 100%;left: 0;right: 0;transition: all 0.5s;visibility: hidden;}
+.wrapper--acordeon-titulo {width: 100%;}
+.paragraph--acordeon-titulo {font-size: 23px;font-family: 'TT-Norms-bold';line-height: 1.2;}
+
+/*TEXTO*/
+:global(.vtex-flex-layout-0-x-flexRowContent--container-accordion) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):hover .container--acordeon-texto {visibility: visible;}
+.container--acordeon-texto {position: relative;top: 154px;transition: all 0.5s;visibility: hidden;}
+.paragraph--acordeon-texto {font-size: 12px;}
+
+/*LINK*/
+:global(.vtex-flex-layout-0-x-flexRowContent--container-accordion) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):hover .container--acordeon-link {visibility: visible;}
+.container--acordeon-link {position: relative;top: 181px;transition: all 0.5s;visibility: hidden;}
+.paragraph--acordeon-link {font-size: 14px;text-decoration: underline;}
+
+
+/*BOLD TITULOS*/
+.heading--title--productos--destacados {font-family: 'TT-Norms-Bold';font-weight: 100;}
+.paragraph--bloque-gamer {font-family: 'TT-Norms-Bold';letter-spacing: 2px;}
+.paragraph--nuevo-mundo {font-family: 'TT-Norms-Bold';    letter-spacing: 2px;}
+.heading--text-descubre-nuestros-productos {font-family: 'TT-Norms-Bold';}
+.heading--text-descubre-la-laptop-ideal {font-family: 'TT-Norms-Bold';    font-size: 28px;width: 80%;margin: 0 auto 33px;}
+.heading--nuestras--marcas {font-family: 'TT-Norms-Bold';    letter-spacing: 01px;}
+
+
+
+
+
 @media (max-width: 700px) {
 .paragraph.paragraph--Mozaico-Cat-titulo {color: black;}
 .paragraph.paragraph--Mozaico-Cat-texto {color: #808080;}
 .link.link--Mozaico-Cat-link {color: #001E49;font-size: 12px;}
 .paragraph.paragraph--Mozaico-Cat-link {margin: 0 0 40px;}
+.heading--medios--de--pago--phone {font-size: 13px !important;margin:40px 0 15px;letter-spacing: 2px;}
+.container--medios--de--pago--phone {text-align: center;justify-content: center;align-items: center;}
+.paragraph--TituloCont {font-family: 'TT-Norms';letter-spacing: 3px;}
+.container--ContenidoDesplegable {margin: 16px;}
+.paragraph--footer-mobile--text {font-size: 8px;text-align: center;justify-content: center;}
+.container--footer-mobile--text {justify-content: center;}
+.paragraph.paragraph--medios--de--pago--phone {  letter-spacing: 2px;  margin-top: 33px;}
+.paragraph--TituloCont.paragraph--amarillo {color: #ffc533;}
+.headingLevel2--title--productos--destacados {font-size: 23px !important;margin: 35px 0 20px;}
+.paragraph--phone--title--productos--destacados {  font-family: 'TT-Norms-Bold';  text-transform: uppercase;  font-size: 23px;}
+
+/*ACORDEON*/
+.container--acordeon-Boton {  position: relative;  top: 135px;  left: 0;  width: 200px;  transition: all 1s;}
+:global(.vtex-flex-layout-0-x-flexRowContent--container-accordion) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):hover .container--acordeon-Boton {  top: 5px;  width: 100%;}
+.paragraph--Mozaico-Cat-titulo {font-family: 'TT-Norms-Bold';margin: 32px auto 0;width: 80%;font-size: 24px;}
+.paragraph--Mozaico-Cat-texto {font-size: 13px;width: 80%;margin: 8px auto 20px;}
+.container--acordeon-titulo {  position: relative;  top: 0;  width: 100%;  left: 0;  right: 0;  transition: all 0.5s;  visibility: hidden;}
+.container--acordeon-texto {  position: relative;  top: 0px;  transition: all 0.5s;  visibility: hidden;}
+.paragraph--acordeon-titulo {  font-size: 22px;  font-family: 'TT-Norms-bold';  line-height: 1.2;    width: 91%;  margin: 0 auto;}
+.container--acordeon-link {  position: relative;  top: 0px;  transition: all 0.5s;  visibility: hidden;}
+.paragraph--acordeon-Boton {  border: 1px solid;  font-size: 10px;  padding: 5px;  margin: 19px 0 25px;  transition: all 1s;}
+.wrapper--texto-carrusel-final-mobile .paragraph {margin: 0 0 12px;}
+.heading--impre-tiene-para-ti.heading--nuestras--marcas.heading-level-2.headingLevel2.headingLevel2--impre-tiene-para-ti {  font-size: 23x !important;  margin: 10px 0;}
+.vtex-rich-text-0-x-headingLevel2--text-descubre-nuestros-productos {  font-size: 21px;  margin: 0 0 36px;}
 }

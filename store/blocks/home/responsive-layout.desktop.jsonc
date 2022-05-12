@@ -167,6 +167,13 @@
       "flex-layout.col#home__third--collage--imagenes--1"
     ]
   },
+  "flex-layout.col#first-row-images": {
+    "children": [
+      "flex-layout.col#home__first--collage--imagenes--1",
+      "flex-layout.col#home__second--collage--imagenes--1",
+      "flex-layout.col#home__third--collage--imagenes--1"
+    ]
+  },
   "flex-layout.col#home__first--collage--imagenes--1": {
     "props": {
       "width": "33.3333333%"
@@ -473,18 +480,21 @@
   "image#home__first--image---third--collage": {
     "props": {
       "blockClass": "home__first--image---third--collage",
-      "src": "assets/img/img9.png"
+      "src": "https://orbeim.vteximg.com.br/arquivos/banner-home2-mobile-12-1.png"
     }
   },
   "image#home__second--image---third--collage": {
     "props": {
       "blockClass": "home__second--image---third--collage",
-      "src": "assets/img/img10.png"
+      "src": "https://orbeim.vteximg.com.br/arquivos/banner-home2-mobile-12-2.png"
     }
   },
 
   //Secion Describe nuestros Productos
   "responsive-layout.desktop#flex-layout.descubre-nuestros-productos": {
+    "children": ["flex-layout.row#descubre-nuestros-productos"]
+  },
+  "responsive-layout.phone#flex-layout.descubre-nuestros-productos": {
     "children": ["flex-layout.row#descubre-nuestros-productos"]
   },
   "flex-layout.row#descubre-nuestros-productos": {
@@ -933,6 +943,7 @@
   },
   "slider-layout#slider-images-nuestras-marcas-b": {
     "props": {
+      
       "itemsPerPage": {
         "desktop": 6,
         "tablet": 1,
@@ -940,10 +951,16 @@
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel",
+      "blockClass": ["carousel","post-Marcas-slider"],
       "centerMode": "center"
     },
     "children": [
+      "flex-layout.col#image1",
+      "flex-layout.col#image2",
+      "flex-layout.col#image3",
+      "flex-layout.col#image4",
+      "flex-layout.col#image5",
+      "flex-layout.col#image6",
       "flex-layout.col#image1",
       "flex-layout.col#image2",
       "flex-layout.col#image3",
@@ -955,37 +972,37 @@
 
   "flex-layout.col#image1": {
     "props": {
-      "blockClass": ["slider-images-nuestras-marcas"]
+      "blockClass": ["slider-images-nuestras-marcas","nuestras-marcas1"]
     },
     "children": ["image#slider-images-nuestras-marcas-b-1"]
   },
   "flex-layout.col#image2": {
     "props": {
-      "blockClass": ["slider-images-nuestras-marcas"]
+      "blockClass": ["slider-images-nuestras-marcas","nuestras-marcas2"]
     },
     "children": ["image#slider-images-nuestras-marcas-b-2"]
   },
   "flex-layout.col#image3": {
     "props": {
-      "blockClass": ["slider-images-nuestras-marcas"]
+      "blockClass": ["slider-images-nuestras-marcas","nuestras-marcas3"]
     },
     "children": ["image#slider-images-nuestras-marcas-b-3"]
   },
   "flex-layout.col#image4": {
     "props": {
-      "blockClass": ["slider-images-nuestras-marcas"]
+      "blockClass": ["slider-images-nuestras-marcas","nuestras-marcas4"]
     },
     "children": ["image#slider-images-nuestras-marcas-b-4"]
   },
   "flex-layout.col#image5": {
     "props": {
-      "blockClass": ["slider-images-nuestras-marcas"]
+      "blockClass": ["slider-images-nuestras-marcas","nuestras-marcas5"]
     },
     "children": ["image#slider-images-nuestras-marcas-b-5"]
   },
   "flex-layout.col#image6": {
     "props": {
-      "blockClass": ["slider-images-nuestras-marcas"]
+      "blockClass": ["slider-images-nuestras-marcas","nuestras-marcas6"]
     },
     "children": ["image#slider-images-nuestras-marcas-b-6"]
   },
@@ -1112,7 +1129,7 @@
       "orderBy":"OrderByTopSaleDESC",
       "width": "100%",
       "blockClass": "depto-tab",
-      "paginationDotsVisibility": "desktopOnly",
+      "paginationDotsVisibility": "mobileOnly",
       "productList":{
         "maxItems": 10,
         "itemsPerPage": 4,
@@ -1138,7 +1155,7 @@
       "orderBy":"OrderByTopSaleDESC",
       "width": "100%",
       "blockClass": "depto-tab",
-      "paginationDotsVisibility": "desktopOnly",
+      "paginationDotsVisibility": "mobileOnly",
       "productList":{
         "maxItems": 10,
         "itemsPerPage": 4,
@@ -1164,7 +1181,7 @@
       "orderBy":"OrderByTopSaleDESC",
       "width": "100%",
       "blockClass": "depto-tab",
-      "paginationDotsVisibility": "desktopOnly",
+      "paginationDotsVisibility": "mobileOnly",
       "productList":{
         "maxItems": 10,
         "itemsPerPage": 4,

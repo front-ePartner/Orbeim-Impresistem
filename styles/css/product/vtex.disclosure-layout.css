@@ -16,3 +16,11 @@
     color:white ;
     font-weight: bold;
 }
+.trigger.trigger--disclosure--trigger--simple--foter {
+    width: 100%;
+  }
+
+.trigger--disclosure--trigger--simple1 {width: 100%;}
+.trigger--disclosure--trigger--simple2 {width: 100%;}
+.trigger--disclosure--trigger--simple3 {width: 100%;}
+.trigger--disclosure--trigger--simple4 {width: 100%;}

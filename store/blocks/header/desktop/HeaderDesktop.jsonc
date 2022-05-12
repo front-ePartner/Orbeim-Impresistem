@@ -21,12 +21,61 @@
       "fullWidth": true
     },
     "children": [
-      "logo#desktop",
-      "search-bar#desktop",
-      "minicart.v2",
-      "login#desktop",
-      "header-spacer"
+      "flex-layout.row#header-prin"
     ]
+  },
+  //  contenedor del header
+  "flex-layout.row#header-prin": {
+    "children": [
+      "flex-layout.row#logo",
+      "search-bar#desktop",
+      "flex-layout.row#login-cart"
+    ],
+    "props": {
+      "width":"100%",
+      "blockClass":"header-Prin"
+    }
+  },
+  // logo ajuste para el tamaño
+  "flex-layout.row#logo": {
+    "children": [
+      "logo#desktop"
+    ],
+    "props": {
+      "width":"10%",
+      "blockClass":"logo"
+    }
+  },
+  // modulo de login y cart
+  "flex-layout.row#login-cart": {
+    "children": [
+      "flex-layout.row#cart",
+      "flex-layout.row#login"
+    ],
+    "props": {
+      "width":"14%",
+      "blockClass":"llamadosHeader"
+    }
+  },
+  // ajuste login
+  "flex-layout.row#login": {
+    "children": [
+      "login#desktop"
+    ],
+    "props": {
+      "width":"70%",
+      "blockClass":"login"
+    }
+  },
+  // ajsute cart
+  "flex-layout.row#cart": {
+    "children": [
+      "minicart.v2"
+    ],
+    "props": {
+      "width":"30%",
+      "blockClass":"cart"
+    }
   },
   "login#desktop": {
     "props": {

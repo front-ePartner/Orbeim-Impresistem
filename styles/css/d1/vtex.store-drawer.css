@@ -1,0 +1,53 @@
+@media (max-width: 600px) {
+    .openIconContainer--menu-mobile {
+        padding: 0;
+    }
+    .opened{
+        margin-top: 6rem !important;
+    }
+    .closeIconContainer--menu-mobile{
+        position: relative;
+        top: 0;
+    }
+    .closeIconContainer--menu-mobile{
+        position: absolute;
+        top: 6px;
+        left: 14px;
+        width: 100%;
+        z-index: 99999;
+        background: transparent;
+    }
+
+    .closeIconContainer--menu-mobile .closeIcon--menu-mobile {
+        display: none;
+    }
+    .closeIconContainer--menu-mobile .closeIcon--menu-mobile {
+        width: 90%;
+    }
+    .closeIconButton--menu-mobile::before{
+        content: "";
+        background: url(/arquivos/cerraarTitulo.png);
+        background-size: 100%;
+        display: block;
+        width: 10px;
+        height: 20px;
+    }
+    .drawerContent--menu-mobile :global(.vtex-menu-2-x-styledLinkContainer--subMenuItem__Tile)::after{
+        display: none;
+        padding-left: 40px;
+    }
+    .drawerContent--menu-mobile :global(.vtex-menu-2-x-styledLinkContainer--subMenuItem__Tile){
+        padding: 10px 30px;
+        margin: 0 20px;
+        border-bottom: 1.74194px solid rgba(49, 69, 69, 0.2);
+    }
+    .drawerContent--menu-mobile :global(.vtex-menu-2-x-styledLinkContainer--subMenuItem__Tile):hover{
+        background: transparent;
+    }
+    .drawer-0-x-closed .closed--menu-mobile{
+        display: none;
+    }
+    :global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) .opened {
+        margin-top: 4rem !important;
+    }
+}

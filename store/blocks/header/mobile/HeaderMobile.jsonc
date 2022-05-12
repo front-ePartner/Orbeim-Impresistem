@@ -20,14 +20,25 @@
       "flex-layout.col#mobile__home--drawer",
       "logo#mobile",
       "flex-layout.col#spacer",
-      "disclosure-layout#simple",
-      "minicart.v2"
+      "flex-layout.row#cartLoginM"
     ],
     "props": {
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
+    }
+  },
+  // columna para el carrito y el login
+  "flex-layout.row#cartLoginM": {
+    "children": [
+      "disclosure-layout#simple",
+      "minicart.v2"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "width":"30%",
+      "blockClass":"Login-cartM"
     }
   },
   "disclosure-layout#simple": {
@@ -63,7 +74,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "arquivos/logo.png"
+      "url": "/arquivos/logo.png"
     }
   },
 
@@ -76,7 +87,7 @@
   "image#ImageSearch": {
     "props": {
       "blockClass": ["Search__Image", ""],
-      "src": "https://pianteco.vteximg.com.br/arquivos/search-icon-piante.png"
+      "src": "https://orbeim.vteximg.com.br/arquivos/buscadorImpre.png"
     }
   },
 
@@ -98,10 +109,80 @@
   },
   "flex-layout.col#opciones--menu": {
     "children": [
-      "flex-layout.col#PrimeraCol1--header",
-      "flex-layout.col#opciones--menu--espacio"
+      // estilos sebas
+      "menu#drawer",
+      "menu-item#Mi-cuenta",
+      "menu-item#blog",
+      "menu-item#nosotros",
+      "menu-item#ofertas"
     ]
   },
+  "menu-item#Mi-cuenta": {
+    "props": {
+      "blockClass": ["llamadosgenerales","mi-cuenta"],
+      "id": "menu-item-6-17",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/login",
+        "noFollow": false,
+        "tagTitle": "Mi cuenta",
+        "text": "Mi cuenta"
+      }
+    }
+  },
+  "menu-item#blog": {
+    "props": {
+      "blockClass": ["llamadosgenerales"],
+      "id": "menu-item-6-17",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blog",
+        "noFollow": false,
+        "tagTitle": "Blog",
+        "text": "Blog"
+      }
+    }
+  },
+  "menu-item#nosotros": {
+    "props": {
+      "blockClass": ["llamadosgenerales"],
+      "id": "menu-item-6-17",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nosotros",
+        "noFollow": false,
+        "tagTitle": "Nosotros",
+        "text": "Nosotros"
+      }
+    }
+  },
+  "menu-item#ofertas": {
+    "props": {
+      "blockClass": ["ofertas-Button"],
+      "id": "menu-item-6-17",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/ofertas",
+        "noFollow": false,
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      }
+    }
+  },
+  // menu faltantes
+
   "flex-layout.col#opciones--menu--espacio": {
     "props": {
       "blockClass": "opciones--menu--espacio"

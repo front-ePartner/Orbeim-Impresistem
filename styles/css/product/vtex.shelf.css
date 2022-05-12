@@ -4,3 +4,23 @@
 .relatedProducts--shelf{
     margin: 0px 0 50px 0;
 }
+
+.caretIcon:hover {filter: brightness(0.2);}
+
+.caretIcon--depto-tab {color: transparent;}
+.arrowLeft--depto-tab .caretIcon--depto-tab {background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-izquierda-blanca.png);background-position: center;background-size: 85%;background-repeat: no-repeat;filter: brightness(0.8);}
+.arrowRight--depto-tab .caretIcon--depto-tab {background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-derecha-blanca.png);background-position: center;background-size: 85%;background-repeat: no-repeat;filter: brightness(0.8);}
+
+.caretIcon {color: transparent;}
+.arrowLeft .caretIcon {background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-izquierda-blanca.png);background-position: center;background-size: 85%;background-repeat: no-repeat;filter: brightness(0.8);}
+.arrowRight .caretIcon {background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-derecha-blanca.png);background-position: center;background-size: 85%;background-repeat: no-repeat;filter: brightness(0.8);}
+
+
+.dot--isActive.dot--isActive--depto-tab {width: 39px;background: #001e49;border-radius: 2px;}
+
+.arrowRight .caretIcon:hover {
+    filter: brightness(0.2);
+}
+.arrowLeft .caretIcon:hover {
+    filter: brightness(0.2);
+}

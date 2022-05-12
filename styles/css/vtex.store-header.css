@@ -48,6 +48,8 @@
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
     backdrop-filter: blur(8px);
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 
   /* header background when stuck and not hovered */

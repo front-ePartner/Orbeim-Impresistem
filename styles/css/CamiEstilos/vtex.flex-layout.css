@@ -1,0 +1,21 @@
+@media (max-width: 600px) {
+
+.flexRow.flexRow--bannerText {left: 0;padding: 0;top: -209px;right: 0;text-align: center;justify-content: center;}
+
+.flexColChild.flexColChild--bannerText {display: flex;justify-content: center;}
+
+}
+
+.flexCol.flexCol--textColumn1 {margin: 24px 22px 0 0;}
+
+
+
+.flexCol--404-container :global(.vtex-rich-text-0-x-container--title--productos--destacados) {display: none;}
+
+.flexCol--404-container :global(.vtex-rich-text-0-x-wrapper--productos_preferidos_mejor_precio) {display: none;}
+
+.flexCol--404-container .flexRow--home__collage--imagenes {padding: 0 3%;}
+
+.flexColChild.flexColChild--404-container {
+  margin-bottom: 30px;
+}

@@ -31,7 +31,6 @@
 
 .paper--quickview {
   min-width: 320px;
-  max-width: 96rem;
 }
 
 .headerContainer--quickview {
@@ -126,4 +125,10 @@
 .headerContainer--x-de-cerrado {
   position: absolute;
   right: 0;
+}
+
+.headerContainer--x-de-cerrado {border: none;}
+
+@media (max-width: 700px) {
+.headerContainer--x-de-cerrado {  position: absolute;  right: 0;  top: 5%;  border: none;}
 }

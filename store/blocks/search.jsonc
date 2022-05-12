@@ -90,7 +90,8 @@
   },
   "search-result-layout.desktop": {
     "children": [
-      "flex-layout.row#searchbread",
+      "flex-layout.row#product-breadcrumb",
+      "breadcrumb.search",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
     ],
@@ -110,12 +111,15 @@
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "blockClass": ["TituloCategory"]
     }
   },
   "flex-layout.row#searchtitle": {
-    "children": ["search-title.v2"]
+    "children": ["search-title.v2"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
   },
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
@@ -192,6 +196,8 @@
 
   "search-result-layout.mobile": {
     "children": [
+      "breadcrumb.search",
+      "flex-layout.row#searchtitle",
       "flex-layout.row#filtroSeleccionado",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#filterMobile",
@@ -223,6 +229,7 @@
   },
   "flex-layout.row#searchinfomobile": {
     "children": [
+      
       "flex-layout.col#orderByMobile",
       
       "flex-layout.col#switcherMobile"
@@ -286,7 +293,7 @@
           "component": "GridSummary",
           "itemsPerRow": {
             "(min-width:1300px)": 4,
-            "desktop": 3,
+            "desktop": 4,
             "tablet": 3,
             "phone": 2
           }
@@ -294,7 +301,12 @@
         {
           "name": "list",
           "component": "ListSummary",
-          "itemsPerRow": 3
+          "itemsPerRow": {
+            "(min-width:1300px)": 3,
+            "desktop": 3,
+            "tablet": 3,
+            "phone": 1
+          }
         }
       ],
       "ListSummary": "product-summary.shelf",
@@ -367,5 +379,16 @@
       "blockClass": "filtroseleccionado"
     
     }
-  }
+  },
+   "filter-navigator.v3": {
+        "blocks": ["sidebar-close-button"],
+         "props": {
+            "truncateFilters": true,
+            "showClearByFilter": true,
+            "navigationTypeOnMobile": "collapsible",
+            "appliedFiltersOverview": "show",
+            "initiallyCollapsed": "false",
+            "updateOnFilterSelectionOnMobile": true
+        }
+     }
 }
