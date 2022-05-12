@@ -77,16 +77,22 @@
 .sliderLeftArrow .caretIcon {color: transparent;background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-izquierda-blanca.png);background-position: center;background-size: 85%;background-repeat: no-repeat;filter: brightness(0.8);}
 .sliderRighttArrow .caretIcon {color: transparent;background-image: url(https://orbeim.vteximg.com.br/arquivos/flecha-derecha-blanca.png);background-position: center;background-size: 85%;background-repeat: no-repeat;filter: brightness(0.8);}
 
-.slide--post-Marcas-slider:hover {width: 6.5% !important;transition: 1s;}
+.slide--post-Marcas-slider:hover {width: 4.5% !important;transition: 1s;}
 .slide--post-Marcas-slider {transition: 1s;}
 
-.slide--post-Marcas-slider:hover {width: 6.5% !important;transition: 1s;}
+
 
 .caretIcon:hover {filter: brightness(0.2);}
 
 .imageElementLink--carousel {
   width: 100%;
 }
+
+.sliderFrame {height: 500px;}
+
+.sliderContainer.sliderContainer--depto-tab {padding-bottom: 34px;}
+
+
 
 @media (max-width: 700px) {
 .sliderTrack.sliderTrack--Mozaico-Cat.sliderTrack--slider {margin: 10px 0;}

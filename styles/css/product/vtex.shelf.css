@@ -24,3 +24,15 @@
 .arrowLeft .caretIcon:hover {
     filter: brightness(0.2);
 }
+
+.sliderContainer--depto-tab {
+    max-width: 100%;
+}
+.container--depto-tab {
+    padding-bottom: 0;
+}
+
+.sliderFrame :global(.vtex-slider-0-x-sliderFrame) {height: 500px;}
+.slide--depto-tab {
+    min-height: 500px;
+}

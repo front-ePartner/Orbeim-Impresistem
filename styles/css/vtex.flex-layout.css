@@ -496,7 +496,7 @@
 
 .flexRowContent--imageVitrina {
   align-items: center;
-  height: 230px;
+  height: 312px;
   overflow: hidden;
 }
 
@@ -830,7 +830,7 @@
 .flexRowContent--style-price-and-cart.flexRowContent--vitrina {border-color: #b9babb !important;visibility: visible;}
 .flexCol--buycolection.flexCol--shelf-vitrina {margin-left: 0;}
 .flexCol--buycolection.flexCol--shelf-vitrina :global(.vtex-button__label) {padding: 0;}
-.flexRowContent--imageVitrina {align-items: center;height: 180px;overflow: hidden;}
+.flexRowContent--imageVitrina {align-items: center;height: 312px;overflow: hidden;}
 .flexRow.flexRow--productCountMobileRow :global(.vtex-store-components-3-x-container) {padding: 0 0%;}
 .flexCol--newsletter-form--contenedor {width: 85% !important;margin:30px auto 15px;}
 .flexRowContent.flexRowContent--newsletter-form--phone {  background: #FFC533;  }

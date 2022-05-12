@@ -21,8 +21,8 @@
 .nameContainer {
   justify-content: start;
   padding-top: 0;
-  padding-bottom: 1rem;
-  min-height: 60px;
+  padding-bottom: 6px;
+  min-height: 40px;
 }
 /* Se cambia el color del titulo */
 .brandName {
@@ -49,7 +49,7 @@
 /*VITRINAS*/
 .element.element--ProductShelf.element--ProductShelfHome {
   padding: 0;
-  margin: 0px 1rem;
+  margin: 0px;
   background-color: initial;
 }
 
@@ -103,6 +103,17 @@
 
 .container--ProductShelfHome {background: white;}
 .element--ProductShelfHome {position: relative;}
+.container--ProductShelf.container--ProductShelfHome.containerNormal.containerNormal--ProductShelf.containerNormal--ProductShelfHome {
+  max-width: 600px!important;
+}
+.container--ProductShelf.container--ProductShelfHome.containerNormal.containerNormal--ProductShelf.containerNormal--ProductShelfHome {
+  height: 95%;
+  padding: 0 0%;
+}
+
+.imageContainer.imageWrapper {
+  justify-content: center;
+}
 
 @media screen and (max-width: 700px) {
 .containerNormal--ProductShelfHome {margin: 0 3px;border-color: rgb(194 194 194);}

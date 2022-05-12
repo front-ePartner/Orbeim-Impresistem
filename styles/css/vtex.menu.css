@@ -13,7 +13,7 @@
 }
 
 .submenuWrapper--isOpen {
-  width: 21rem;
+  width: 23rem;
   background: white;
   margin: 0;
   margin-top: -2px;
@@ -22,11 +22,13 @@
 .submenuWrapper--SubSubMenu__Group--isOpen {
   display: flex;
   justify-content: flex-start;
-  max-height: 32.35vw;
+  max-height: 37.35vw;
   min-height: 34.45rem;
   z-index: -1;
+  top: -13px;
   padding-right: 10px;
   min-width: 100%;
+  left: 2%;
 }
 
 .submenu--SubSubMenu__Group {
@@ -39,7 +41,7 @@
   max-height: 50rem;
   overflow: auto;
   overflow-x: hidden;
-  min-width: 17rem;
+  min-width: 21rem;
   min-height: 33rem;
   height: 28vw;
 }
@@ -118,10 +120,10 @@
   background-image: url(/arquivos/almacenamiento.png);
 }
 .styledLinkContent--subMenuItem--3::before {
-  background-image: url(/arquivos/almacenamiento.png);
+  background-image: url(https://orbeim.vteximg.com.br/arquivos/conectividad.png);
 }
 .styledLinkContent--subMenuItem--4::before {
-  background-image: url(/arquivos/almacenamiento.png);
+  background-image: url(https://orbeim.vteximg.com.br/arquivos/drones.png);
 }
 .styledLinkContent--subMenuItem--5::before {
   background-image: url(/arquivos/gamer.png);
@@ -130,13 +132,13 @@
   background-image: url(/arquivos/computacion.png);
 }
 .styledLinkContent--subMenuItem--7::before {
-  background-image: url(/arquivos/almacenamiento.png);
+  background-image: url(https://orbeim.vteximg.com.br/arquivos/impresion-suministros.png);
 }
 .styledLinkContent--subMenuItem--8::before {
   background-image: url(/arquivos/celulares-tablet.png);
 }
 .styledLinkContent--subMenuItem--9::before {
-  background-image: url(/arquivos/almacenamiento.png);
+  background-image: url(https://orbeim.vteximg.com.br/arquivos/camaras.png);
 }
 .styledLinkContent--subMenuItem--10::before {
   background-image: url(/arquivos/televisores.png);
@@ -148,10 +150,10 @@
   background-image: url(/arquivos/movilidad.png);
 }
 .styledLinkContent--subMenuItem--13::before {
-  background-image: url(/arquivos/almacenamiento.png);
+  background-image: url(https://orbeim.vteximg.com.br/arquivos/seguridad.png);
 }
 .styledLinkContent--subMenuItem--14::before {
-  background-image: url(/arquivos/almacenamiento.png);
+  background-image: url(https://orbeim.vteximg.com.br/arquivos/sala-conferencias.png);
 }
 
 .styledLink--subMenuItem__Tile {

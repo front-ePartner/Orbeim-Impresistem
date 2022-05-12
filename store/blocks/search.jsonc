@@ -90,7 +90,7 @@
   },
   "search-result-layout.desktop": {
     "children": [
-      "flex-layout.row#product-breadcrumb",
+      
       "breadcrumb.search",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result"
@@ -141,9 +141,11 @@
       "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
       "flex-layout.row#fetchmore"
+      
     ],
     "props": {
       "width": "grow",
+      "blockClass": ["contenido-pag-category"],
       "preventVerticalStretch": true
     }
   },

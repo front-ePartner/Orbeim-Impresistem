@@ -98,4 +98,10 @@
 .headerRowContainer--Menu-Bottom {
   padding: 10px 0;
 }
+
+
+.headerRowContainer.headerRowContainer--main-header.headerRowContainer--Header__Container.headerRowContainer--Menu-Bottom {
+  background: #ECECEC;
+  padding: 0;
+}
 /*----------------------------------------------------------------------------------*/

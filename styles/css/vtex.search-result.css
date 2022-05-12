@@ -17,9 +17,7 @@
   align-self: center
 }
 
-.galleryItem--list {
-  border-bottom: 1px #E7E9EE solid;
-}
+
 
 /*Cambiar color de filtro de precios en category*/
 .filterrTemplateOverflow {
@@ -161,6 +159,18 @@
 
 
 .galleryItem--grid {padding: 4px;}
+.galleryTitle--layout {
+  margin: 0;
+}
+
+.orderByButton {background: transparent;}
+.gallery--grid::before {
+  content: "";
+  width: 100%;
+  border-top: 1px solid #b2b2b269;
+  margin: 4px 0 0 auto;
+  display: block;
+}
 
 @media (max-width: 700px) {
 .searchResultContainer {padding: 0% 2% !important;}

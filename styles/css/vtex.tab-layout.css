@@ -31,6 +31,11 @@
   padding: 0px 10px;
 }
 
+.contentContainer {
+  padding: 0 10px;
+}
+
+
 @media screen and (max-width: 700px) {
 .contentContainer {
   padding: 0px 0px !important;

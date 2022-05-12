@@ -106,6 +106,7 @@
   },
   "search-bar#desktop": {
     "props": {
+      "width":"74%",
       "placeholder": "Buscar,  Tienda ..."
     }
   },
